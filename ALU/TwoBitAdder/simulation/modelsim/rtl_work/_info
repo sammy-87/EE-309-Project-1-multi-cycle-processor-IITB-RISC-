@@ -1,0 +1,49 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/TwoBitAdder/simulation/modelsim
+Etwobitadder
+Z1 w1540228530
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/TwoBitAdder/TwoBitAdder.vhd
+Z5 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/TwoBitAdder/TwoBitAdder.vhd
+l0
+L7
+V]b32UXPS>BH@WmHcPB:751
+!s100 YWm=?bEdTMT=dD78W1lVY1
+Z6 OV;C;10.4d;61
+31
+Z7 !s110 1540228591
+!i10b 1
+Z8 !s108 1540228591.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/TwoBitAdder/TwoBitAdder.vhd|
+Z10 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/TwoBitAdder/TwoBitAdder.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Astruct
+R2
+R3
+DEx4 work 11 twobitadder 0 22 ]b32UXPS>BH@WmHcPB:751
+l12
+L11
+VfmlYoONR=h3NaF>5=9?1J3
+!s100 R>MY`S2eC8J?7D_P33ee_0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

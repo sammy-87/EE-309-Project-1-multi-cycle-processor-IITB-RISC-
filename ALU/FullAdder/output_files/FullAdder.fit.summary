@@ -1,0 +1,11 @@
+Fitter Status : Successful - Mon Oct 22 22:57:30 2018
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : FullAdder
+Top-level Entity Name : FullAdder
+Family : MAX V
+Device : 5M1270ZT144C5
+Timing Models : Final
+Total logic elements : 2 / 1,270 ( < 1 % )
+Total pins : 5 / 114 ( 4 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

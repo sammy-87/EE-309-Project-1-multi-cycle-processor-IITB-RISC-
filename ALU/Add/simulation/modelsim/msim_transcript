@@ -1,0 +1,51 @@
+# Reading C:/altera_lite/16.0/modelsim_ase/tcl/vsim/pref.tcl
+# do Add_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying C:/altera_lite/16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/Add/FullAdder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 23:19:43 on Oct 22,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/Add/FullAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FullAdder
+# -- Compiling architecture Struct of FullAdder
+# End time: 23:19:43 on Oct 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/Add/Add.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 23:19:43 on Oct 22,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/Add/Add.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Add
+# -- Compiling architecture Struct of Add
+# End time: 23:19:43 on Oct 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.add
+# vsim work.add 
+# Start time: 23:19:49 on Oct 22,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.add(struct)
+# Loading work.fulladder(struct)
+add wave -position insertpoint sim:/add/*
+force -freeze sim:/add/x 1001001001010101 0
+force -freeze sim:/add/y 1001001001010111 0
+run
+force -freeze sim:/add/x 0001001001010101 0
+run
+# End time: 23:23:18 on Oct 22,2018, Elapsed time: 0:03:29
+# Errors: 0, Warnings: 0

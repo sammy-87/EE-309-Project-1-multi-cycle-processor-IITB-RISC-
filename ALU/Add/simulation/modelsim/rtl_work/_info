@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/Add/simulation/modelsim
+Eadd
+Z1 w1540230471
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/Add/Add.vhd
+Z5 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/Add/Add.vhd
+l0
+L7
+V1l@Wh5BSTdL9bK@cZdFeY2
+!s100 k[;;V6b>1jONmC6CdRCmh1
+Z6 OV;C;10.4d;61
+31
+Z7 !s110 1540230583
+!i10b 1
+Z8 !s108 1540230583.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/Add/Add.vhd|
+Z10 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/Add/Add.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Astruct
+R2
+R3
+DEx4 work 3 add 0 22 1l@Wh5BSTdL9bK@cZdFeY2
+l23
+L14
+VBn;mNVXik[TfGQ4nZn:7c3
+!s100 OUWGI6KYNDEYkPlklQJWl0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efulladder
+Z13 w1540229228
+R2
+R3
+R0
+Z14 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/Add/FullAdder.vhd
+Z15 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/Add/FullAdder.vhd
+l0
+L7
+V?4A<FNoCc:hh`bVMjK[Kb2
+!s100 gEG0cnmQi[>0]8CVT;NbU2
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/Add/FullAdder.vhd|
+Z17 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/Add/FullAdder.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 9 fulladder 0 22 ?4A<FNoCc:hh`bVMjK[Kb2
+l12
+L11
+VC<_=XnLeV=8`HHg0O]B1m3
+!s100 GYaLEWdbhXLHPDPZ1=WC02
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12

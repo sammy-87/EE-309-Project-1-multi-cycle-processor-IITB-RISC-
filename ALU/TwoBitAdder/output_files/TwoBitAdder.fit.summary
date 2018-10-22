@@ -1,0 +1,11 @@
+Fitter Status : Successful - Mon Oct 22 22:45:51 2018
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : TwoBitAdder
+Top-level Entity Name : TwoBitAdder
+Family : MAX V
+Device : 5M1270ZT144C5
+Timing Models : Final
+Total logic elements : 2 / 1,270 ( < 1 % )
+Total pins : 4 / 114 ( 4 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

@@ -1,0 +1,39 @@
+# Reading C:/altera_lite/16.0/modelsim_ase/tcl/vsim/pref.tcl
+# do TwoBitAdder_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying C:/altera_lite/16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/TwoBitAdder/TwoBitAdder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 22:46:31 on Oct 22,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/TwoBitAdder/TwoBitAdder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity TwoBitAdder
+# -- Compiling architecture Struct of TwoBitAdder
+# End time: 22:46:31 on Oct 22,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.twobitadder
+# vsim work.twobitadder 
+# Start time: 22:47:01 on Oct 22,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.twobitadder(struct)
+add wave -position insertpoint sim:/twobitadder/*
+force -freeze sim:/twobitadder/x0 0 0
+force -freeze sim:/twobitadder/y0 1 0
+run
+force -freeze sim:/twobitadder/x0 1 0
+run
+# End time: 22:49:22 on Oct 22,2018, Elapsed time: 0:02:21
+# Errors: 0, Warnings: 0

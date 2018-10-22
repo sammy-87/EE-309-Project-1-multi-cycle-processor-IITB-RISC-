@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/TwoBitAdder/TwoBitAdder.vhd
+source_file = 1, c:/altera_lite/16.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera_lite/16.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera_lite/16.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera_lite/16.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/ALU/TwoBitAdder/db/TwoBitAdder.cbx.xml
+design_name = TwoBitAdder
+instance = comp, \x0~I\, x0, TwoBitAdder, 1
+instance = comp, \y0~I\, y0, TwoBitAdder, 1
+instance = comp, \s0~0\, s0~0, TwoBitAdder, 1
+instance = comp, \c0~0\, c0~0, TwoBitAdder, 1
+instance = comp, \s0~I\, s0, TwoBitAdder, 1
+instance = comp, \c0~I\, c0, TwoBitAdder, 1
