@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue Oct 23 14:23:09 2018
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : rf
+Top-level Entity Name : rf
+Family : MAX V
+Device : 5M240ZT144C5
+Timing Models : Final
+Total logic elements : 168 / 240 ( 70 % )
+Total pins : 60 / 114 ( 53 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

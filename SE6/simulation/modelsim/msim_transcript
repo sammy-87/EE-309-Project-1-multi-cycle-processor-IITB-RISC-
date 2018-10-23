@@ -1,0 +1,37 @@
+# Reading C:/altera_lite/16.0/modelsim_ase/tcl/vsim/pref.tcl
+# do SE6_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying C:/altera_lite/16.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/SE6/SE6.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 10:51:46 on Oct 23,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/SE6/SE6.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SE6
+# -- Compiling architecture Struct of SE6
+# End time: 10:51:46 on Oct 23,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.se6
+# vsim work.se6 
+# Start time: 10:52:02 on Oct 23,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.se6(struct)
+add wave -position insertpoint sim:/se6/*
+force -freeze sim:/se6/ip 101001 0
+run
+run
+# End time: 10:52:51 on Oct 23,2018, Elapsed time: 0:00:49
+# Errors: 0, Warnings: 0

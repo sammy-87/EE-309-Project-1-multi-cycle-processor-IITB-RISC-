@@ -1,0 +1,25 @@
+|SE6
+ip[0] => op[0].DATAIN
+ip[1] => op[1].DATAIN
+ip[2] => op[2].DATAIN
+ip[3] => op[3].DATAIN
+ip[4] => op[4].DATAIN
+ip[5] => op[5].DATAIN
+op[0] <= ip[0].DB_MAX_OUTPUT_PORT_TYPE
+op[1] <= ip[1].DB_MAX_OUTPUT_PORT_TYPE
+op[2] <= ip[2].DB_MAX_OUTPUT_PORT_TYPE
+op[3] <= ip[3].DB_MAX_OUTPUT_PORT_TYPE
+op[4] <= ip[4].DB_MAX_OUTPUT_PORT_TYPE
+op[5] <= ip[5].DB_MAX_OUTPUT_PORT_TYPE
+op[6] <= <GND>
+op[7] <= <GND>
+op[8] <= <GND>
+op[9] <= <GND>
+op[10] <= <GND>
+op[11] <= <GND>
+op[12] <= <GND>
+op[13] <= <GND>
+op[14] <= <GND>
+op[15] <= <GND>
+
+

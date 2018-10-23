@@ -1,0 +1,28 @@
+|Shift7
+ip[0] => op[7].DATAIN
+ip[1] => op[8].DATAIN
+ip[2] => op[9].DATAIN
+ip[3] => op[10].DATAIN
+ip[4] => op[11].DATAIN
+ip[5] => op[12].DATAIN
+ip[6] => op[13].DATAIN
+ip[7] => op[14].DATAIN
+ip[8] => op[15].DATAIN
+op[0] <= <GND>
+op[1] <= <GND>
+op[2] <= <GND>
+op[3] <= <GND>
+op[4] <= <GND>
+op[5] <= <GND>
+op[6] <= <GND>
+op[7] <= ip[0].DB_MAX_OUTPUT_PORT_TYPE
+op[8] <= ip[1].DB_MAX_OUTPUT_PORT_TYPE
+op[9] <= ip[2].DB_MAX_OUTPUT_PORT_TYPE
+op[10] <= ip[3].DB_MAX_OUTPUT_PORT_TYPE
+op[11] <= ip[4].DB_MAX_OUTPUT_PORT_TYPE
+op[12] <= ip[5].DB_MAX_OUTPUT_PORT_TYPE
+op[13] <= ip[6].DB_MAX_OUTPUT_PORT_TYPE
+op[14] <= ip[7].DB_MAX_OUTPUT_PORT_TYPE
+op[15] <= ip[8].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,61 @@
+library std;
+use std.standard.all;
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity rf is 
+	port(
+			 rf_a1,rf_a2,rf_a3   : in std_logic_vector(2 DOWNTO 0);
+			 rd  : in std_logic; -- read.
+			 rst : in std_logic; -- async. clear.
+			 clk : in std_logic; -- clock.
+			 wr  : in std_logic; -- write
+			 rf_d3 : in std_logic_vector(15 downto 0);
+			 rf_d1,rf_d2,rf_d3   : out std_logic_vector(15 DOWNTO 0)); -- output
+end rf;
+
+architecture behave of rf is
+
+component Reg is 
+	port(
+		 d   : in std_logic_vector(15 DOWNTO 0);
+		 en  : in std_logic; -- load/enable.
+		 rst : in std_logic; -- async. clear.
+		 clk : in std_logic; -- clock.
+		 q   : out std_logic_vector(15 DOWNTO 0)); -- output
+end Reg;
+
+type registerFile is array(0 to 7) of std_logic_vector(15 downto 0);
+signal registers :- registerFile;
+type bitarr is array(0 to 7) of std_logic;
+signal wrarr :- bitarr
+
+begin
+
+inst_reg : for i in 0 to 7 generate
+R0: Reg port map (d => rf_d3, en => wrarr(i), rst => rst, clk => clk, q => registers(i));
+end generate inst_reg;
+ 
+reg_file : process (clk, rst, rd, wr)
+	begin	
+	
+		if rd = '1' then
+			rf_d1 <= registers(to_integer(unsigned(rf_a1)));
+			rf_d2 <= registers(to_integer(unsigned(rf_a2)));
+		
+		elsif wr = '1' then
+			wrarr = "00000000";
+			wrarr(to_integer(unsigned(rf_a3))) <= '1';
+		
+		end if;
+		
+	end process reg_file;
+		
+end behave
+ 
+
+
+
+
+	

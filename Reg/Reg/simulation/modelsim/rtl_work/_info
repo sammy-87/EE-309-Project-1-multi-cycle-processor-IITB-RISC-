@@ -1,0 +1,49 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/Reg/Reg/simulation/modelsim
+Ereg
+Z1 w1540273155
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/Reg/Reg/Reg.vhd
+Z5 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/Reg/Reg/Reg.vhd
+l0
+L7
+V<F[Oc4]<1:A<l=e^A>^Gk3
+!s100 ^4Kg`BVPziQJkimZT7Y@?0
+Z6 OV;C;10.4d;61
+31
+Z7 !s110 1540273210
+!i10b 1
+Z8 !s108 1540273210.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/Reg/Reg/Reg.vhd|
+Z10 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/project_files/Reg/Reg/Reg.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Adescription
+R2
+R3
+DEx4 work 3 reg 0 22 <F[Oc4]<1:A<l=e^A>^Gk3
+l18
+L16
+VdNdM1P`jNR]zRnHmzN`1l2
+!s100 M2`<mlLMZeWc;0mzl]9@[0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
