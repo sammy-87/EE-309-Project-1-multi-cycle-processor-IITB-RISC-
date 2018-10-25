@@ -1,0 +1,71 @@
+library std;
+use std.standard.all;
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity memory is 
+	port(
+		 mem_d   : inout std_logic_vector(15 DOWNTO 0);
+		 mem_a   : in std_logic_vector(9 downto 0);
+		 rd_bar  : in std_logic; -- read enable.
+		 wr_bar  : in std_logic; -- write enable
+		 rst : in std_logic; -- clear.
+		 clk : in std_logic; -- clock.
+		 mem_out : out std_logic_vector(15 DOWNTO 0)); -- output
+end memory;
+
+architecture stucture of memory is 
+
+component Reg is 
+	port(
+		 d   : in std_logic_vector(15 DOWNTO 0);
+		 en  : in std_logic; -- load/enable.
+		 rst : in std_logic; -- async. clear.
+		 clk : in std_logic; -- clock.
+		 q   : out std_logic_vector(15 DOWNTO 0)); -- output
+end component;
+
+type memarr is array(0 to 1023) of std_logic_vector(15 downto 0);
+signal mem1 : memarr, rdarr;
+signal wrarr : std_logic_vector(1023 downto 0) <= ( others => '1');
+signal rd : std_logic_vector(15 downto 0);
+
+begin
+
+variable wr_var : std_logic_vector(1023 downto 0) <= ( others => '0');
+mem_out_var : std_logic_vector(15 downto 0) <= (others => '0');
+
+inst_rd : for i in 0 to 15 generate
+
+	rd(i) <= (not(rd_bar));
+	
+end generate inst_rd;	
+
+inst_mem : for i in 0 to 1023 generate
+
+	rdarr(i) <= (not(rd_bar)) and memarr(i);
+	mem_reg : Reg port map (d => mem_d, en => wrarr(i), rst => rst, clk => clk, q => rdarr(i));
+	
+end generate inst_mem;
+
+mem_proc : process(wr_bar, rd_bar, mem_a)
+
+	begin
+		
+		if wr_bar ='0' then
+			wr_var(to_integer(unsigned(mem_a))) := '1';
+		
+	
+		elsif rd_bar = '0' then
+			mem_out_var := rdarr(to_integer(unsigned(mem_a)));
+			
+		end if;
+		
+end generate inst_mem;
+
+		wrarr <= not(wr_var);
+		mem_out <= mem_out_var;
+
+end structure;
+

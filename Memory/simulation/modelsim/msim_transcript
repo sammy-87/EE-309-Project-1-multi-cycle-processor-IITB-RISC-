@@ -1,0 +1,74 @@
+# do memory_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work gate_work 
+# Copying /home/pranil/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {memory.vho}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 23:44:54 on Oct 25,2018
+# vcom -reportprogress 300 -93 -work work memory.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package maxv_atom_pack
+# -- Loading package maxv_components
+# -- Compiling entity memory
+# -- Compiling architecture structure of memory
+# End time: 23:44:54 on Oct 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vsim work.memory
+# vsim work.memory 
+# Start time: 23:44:59 on Oct 25,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading maxv.maxv_atom_pack(body)
+# Loading maxv.maxv_components
+# Loading work.memory(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading maxv.maxv_io(behave)
+# Loading maxv.maxv_lcell(vital_le_atom)
+# Loading maxv.maxv_asynch_lcell(vital_le)
+# Loading maxv.maxv_lcell_register(vital_le_reg)
+# ** Warning: Design size of 71834 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+add wave -position insertpoint sim:/memory/*
+force -freeze sim:/memory/rst 1 0
+run
+force -freeze sim:/memory/clk 0 0, 1 {50 ps} -r 100
+force -freeze sim:/memory/rd_bar 0 0
+force -freeze sim:/memory/wr_bar 1 0
+force -freeze sim:/memory/rd_bar 1 0
+force -freeze sim:/memory/mem_a 00000 0
+run
+force -freeze sim:/memory/wr_bar 0 0
+force -freeze sim:/memory/mem_a 00010 0
+force -freeze sim:/memory/mem_d 0011010100110101 0
+run
+force -freeze sim:/memory/wr_bar 1 0
+force -freeze sim:/memory/rd_bar 0 0
+run
+run
+force -freeze sim:/memory/rst 0 0
+force -freeze sim:/memory/rd_bar 1 0
+force -freeze sim:/memory/wr_bar 0 0
+run
+run
+force -freeze sim:/memory/rd_bar 0 0
+force -freeze sim:/memory/wr_bar 1 0
+run
+# End time: 23:53:03 on Oct 25,2018, Elapsed time: 0:08:04
+# Errors: 0, Warnings: 1
