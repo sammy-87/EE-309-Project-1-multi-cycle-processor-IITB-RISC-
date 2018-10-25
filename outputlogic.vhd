@@ -28,38 +28,41 @@ end component;
 begin
 	state : statereg port map (d => nextstate, rst => reset, clk => clk, q => currentstate);
 	statelogic_ist : process(currentstate, reset, ir, tp)
+
+	control_variable : out std_logic_vector(36 DOWNTO 0);
+
 	begin
 		if reset = '1' then
 			--nextstate <= "10000";
-			control_signal <= (others =>'0');
+			control_variable := (others =>'0');
 
 		elsif currentstate = "10000" then
-			control_signal <= (others =>'0');
+			control_variable := (others =>'0');
 			--nextstate <= "00000";
 			
 
 		elsif currentstate = "00000" the
-			control_signal <= (others => '0');
-			control_signal(1) <= '1';
-			control_signal(5) <= '1';
-			control_signal(18) <= '1';
-			control_signal(19) <= '1';
-			control_signal(27) <= '1';
-			control_signal(28) <= '1';
-			control_signal(31) <= '1';
+			control_variable := (others => '0');
+			control_variable(1) := '1';
+			control_variable(5) := '1';
+			control_variable(18) := '1';
+			control_variable(19) := '1';
+			control_variable(27) := '1';
+			control_variable(28) := '1';
+			control_variable(31) := '1';
 			--nextstate <= "00001";
 			
 			
 		elsif currentstate = "00001" then
-			control_signal <= (others => '0');
-			control_signal(0) <= '1';
-			control_signal(1) <= '1';
-			control_signal(7) <= '1';
-			control_signal(22) <= '1';
-			control_signal(23) <= '1';
-			control_signal(24) <= '1';
-			control_signal(25) <= '1';
-			control_signal(34) <= '1';
+			control_variable := (others => '0');
+			control_variable(0) := '1';
+			control_variable(1) := '1';
+			control_variable(7) := '1';
+			control_variable(22) := '1';
+			control_variable(23) := '1';
+			control_variable(24) := '1';
+			control_variable(25) := '1';
+			control_variable(34) := '1';
 
 			--nextstate(0) <=(ir(13) and ir(12)) or (ir(15) and ir(12)) or (ir(14) and ir(13));
 			--nextstate(1) <= ir(15) or ((not ir(13)) and (not ir(12))) or (ir(14) and ir(12)) or ((not ir(14)) and (not ir(12)));
@@ -71,24 +74,24 @@ begin
 		elsif currentstate = "00010" then
 			if ir(15)= "1" then
 				-- compare
-				control_signal <= (others => '0');
-				control_signal(0) <= '1';
-				control_signal(1) <= '1';
-				control_signal(16) <= '1';
-				control_signal(17) <= '1';
-				control_signal(21) <= '1';
-				control_signal(28) <= '1';
+				control_variable := (others => '0');
+				control_variable(0) := '1';
+				control_variable(1) := '1';
+				control_variable(16) := '1';
+				control_variable(17) := '1';
+				control_variable(21) := '1';
+				control_variable(28) := '1';
 
 			elsif ((ir(0)="0") and (ir(1)="0")) or ((ir(0)="0") and (ir(1)="1") and C = '1') or ((ir(0)="1") and (ir(1)="0") and Z = '1')   
-				control_signal <= (others => '0');
-				control_signal(0) <= '1';
-				control_signal(1) <= '1';
-				control_signal(21) <= '1';
-				control_signal(28) <= '1';
-				control_signal(36) <= '1';
+				control_variable := (others => '0');
+				control_variable(0) := '1';
+				control_variable(1) := '1';
+				control_variable(21) := '1';
+				control_variable(28) := '1';
+				control_variable(36) := '1';
 
 			elsif ir(13) = "0" then
-				control_signal(35) <= '1';
+				control_variable(35) := '1';
 			end if;
 
 			else
@@ -108,59 +111,59 @@ begin
 
 		elsif currentstate = "00011" then
 			nextstate <= "00000";
-			control_signal <= (others => '0');
-				control_signal(0) <= '1';
-				control_signal(1) <= '1';
-				control_signal(7) <= '1';
+			control_variable := (others => '0');
+				control_variable(0) := '1';
+				control_variable(1) := '1';
+				control_variable(7) := '1';
 
 				if ir(14) = "1" then
-					control_signal(36) <= '1';
+					control_variable(36) := '1';
 				else
 					if ir(12) = "0" then
-						control_signal(10) <= '1';
-					else
-						control_signal(9) <= '1';
+						control_variable(10) := '1';
+					else:=
+						control_variable(9) := '1';
 					end if;
 				end if;
 				
 				if Rf_a3 = "111" then
-					control_signal(12) <= '1';
-					control_signal(13) <= '1';
-					control_signal(31)	<= '1';
-					control_signal(32) <= '1';
+					control_variable(12) := '1';
+					control_variable(13) := '1';
+					control_variable(31) := '1';
+					control_variable(32) := '1';
 				else
-					control_signal(12) <= '1';
-					control_signal(14) <= '1';
-					control_signal(15)	<= '1';	
+					control_variable(12) := '1';
+					control_variable(14) := '1';
+					control_variable(15) := '1';	
 				end if;	
 
 		elsif currentstate = "00100" then
 			nextstate <= "00011";
-			control_signal <= (others => '0');
-			control_signal(0) <= '1';
-			control_signal(1) <= '1';
-			control_signal(20) <= '1';
-			control_signal(27) <= '1';
-			control_signal(35) <= '1';
-			control_signal(36) <= '1';
+			control_variable := (others => '0');
+			control_variable(0)  := '1';
+			control_variable(1)  := '1';
+			control_variable(20) := '1';
+			control_variable(27) := '1';
+			control_variable(35) := '1';
+			control_variable(36) := '1';
 
 		elsif currentstate = "00101" then
 			nextstate <= "00000";
-			control_signal <= (others => '0');
-			control_signal(0) <= '1';
-			control_signal(1) <= '1';
-			control_signal(7) <= '1';
-			control_signal(11) <= '1';
+			control_variable := (others => '0');
+			control_variable(0) := '1';
+			control_variable(1) := '1';
+			control_variable(7) := '1';
+			control_variable(11) := '1';
 
 			if Rf_a3 = "111" then
-				control_signal(12) <= '1';
-				control_signal(13) <= '1';
-				control_signal(31)	<= '1';
-				control_signal(32) <= '1';
+				control_variable(12) := '1';
+				control_variable(13) := '1';
+				control_variable(31) := '1';
+				control_variable(32) := '1';
 			else
-				control_signal(12) <= '1';
-				control_signal(14) <= '1';
-				control_signal(15)	<= '1';	
+				control_variable(12) := '1';
+				control_variable(14) := '1';
+				control_variable(15) := '1';	
 			end if;	
 		
 		elsif currentstate = "00110" then
@@ -171,38 +174,38 @@ begin
 				nextstate <= "01000";
 			end if;
 
-			control_signal <= (others => '0');
-			control_signal(0) <= '1';
-			control_signal(1) <= '1';
-			control_signal(19) <= '1';
-			control_signal(20) <= '1';
-			control_signal(24) <= '1';
-			control_signal(25) <= '1';
+			control_variable := (others => '0');
+			control_variable(0) := '1';
+			control_variable(1) := '1';
+			control_variable(19) := '1';
+			control_variable(20) := '1';
+			control_variable(24) := '1';
+			control_variable(25) := '1';
 
 		elsif currentstate = "00111" then
 			nextstate <= "00000";
-			control_signal <= (others => '0');
-			control_signal(1) <= '1';
-			control_signal(2) <= '1';
-			control_signal(27) <= '1';
-			control_signal(29) <= '1';
+			control_variable := (others => '0');
+			control_variable(1) := '1';
+			control_variable(2) := '1';
+			control_variable(27) := '1';
+			control_variable(29) := '1';
 
 		elsif currentstate = "01000" then
-			control_signal <= (others => '0');
-			control_signal(0) <= '1';
-			control_signal(2) <= '1';
-			control_signal(12) <= '1';
-			control_signal(14) <= '1';
-			control_signal(15) <= '1';
+			control_variable := (others => '0');
+			control_variable(0)  := '1';
+			control_variable(2)  := '1';
+			control_variable(12) := '1';
+			control_variable(14) := '1';
+			control_variable(15) := '1';
 
 		elsif currentstate = "01001" then
 			nextstate <= "01010";
-			control_signal <= (others => '0');
-			control_signal(1) <= '1';
-			control_signal(3) <= '1';
-			control_signal(22) <= '1';
-			control_signal(27) <= '1';
-			control_signal(29) <= '1';
+			control_variable := (others => '0');
+			control_variable(1) := '1';
+			control_variable(3) := '1';
+			control_variable(22) := '1';
+			control_variable(27) := '1';
+			control_variable(29) := '1';
 
 		elsif currentstate = "01010" then
 			if tp = '1' then
@@ -211,46 +214,46 @@ begin
 				nextstate <= "01001";
 			end if;
 
-			control_signal <= (others => '0');
-			control_signal(0) <= '1';
-			control_signal(1) <= '1';
-			control_signal(7) <= '1';
-			control_signal(9) <= '1';
-			control_signal(10) <= '1';
-			control_signal(34) <= '1';
+			control_variable := (others => '0');
+			control_variable(0) := '1';
+			control_variable(1) := '1';
+			control_variable(7) := '1';
+			control_variable(9) := '1';
+			control_variable(10) := '1';
+			control_variable(34) := '1';
 			if Rf_a3 = "111" then
-				control_signal(12) <= '1';
-				control_signal(13) <= '1';
-				control_signal(31)	<= '1';
-				control_signal(32) <= '1';
+				control_variable(12) := '1';
+				control_variable(13) := '1';
+				control_variable(31) := '1';
+				control_variable(32) := '1';
 			else
-				control_signal(12) <= '1';
-				control_signal(14) <= '1';
-				control_signal(15)	<= '1';	
+				control_variable(12) := '1';
+				control_variable(14) := '1';
+				control_variable(15) := '1';	
 			end if;	
 			
 			
 
 		elsif currentstate = "01011" then
 			nextstate <= "01100";
-			control_signal <= (others => '0');
-			control_signal(0) <= '1';
-			control_signal(1) <= '1';
-			control_signal(8) <= '1';
-			control_signal(24) <= '1';
+			control_variable := (others => '0');
+			control_variable(0) := '1';
+			control_variable(1) := '1';
+			control_variable(8) := '1';
+			control_variable(24) := '1';
 
 		elsif currentstate = "01100" then
 			if tp = '1' then
 				nextstate <= "00000";
-				control_signal <= (others => '0');
-				control_signal(0) <= '1';
-				control_signal(3) <= '1';
-				control_signal(4) <= '1';
-				control_signal(12) <= '1';
-				control_signal(14) <= '1';
-				control_signal(15) <= '1';
-				control_signal(22) <= '1';	
-				control_signal(34) <= '1';
+				control_variable := (others => '0');
+				control_variable(0) := '1';
+				control_variable(3) := '1';
+				control_variable(4) := '1';
+				control_variable(12) := '1';
+				control_variable(14) := '1';
+				control_variable(15) := '1';
+				control_variable(22) := '1';	
+				control_variable(34) := '1';
 				
 			else
 				nextstate <= "01011";
@@ -259,53 +262,55 @@ begin
 
 		elsif currentstate = "01101" then
 			nextstate <= "00000";
-			control_signal <= (others => '0');
-			control_signal(0) <= '1';
-			control_signal(1) <= '1';
-			control_signal(12) <= '1';
-			control_signal(16) <= '1';
-			control_signal(17) <= '1';
-			control_signal(18) <= '1';
-			control_signal(19) <= '1';
-			control_signal(20) <= '1';
+			control_variable := (others => '0');
+			control_variable(0) := '1';
+			control_variable(1) := '1';
+			control_variable(12) := '1';
+			control_variable(16) := '1';
+			control_variable(17) := '1';
+			control_variable(18) := '1';
+			control_variable(19) := '1';
+			control_variable(20) := '1';
 
 			if tz = '1' then
-			control_signal(31) <= '1';	
+			control_variable(31) := '1';	
 
 			else
-			control_signal(14) <= '1';
-			control_signal(15) <= '1';	
+			control_variable(14) := '1';
+			control_variable(15) := '1';	
 			
 			end if;
 
 
 		elsif currentstate = "01110" then
 			nextstate <= "00000";
-			control_signal <= (others => '0');
-			control_signal(0) <= '1';
-			control_signal(1) <= '1';
-			control_signal(7) <= '1';
-			control_signal(12) <= '1';	
-			control_signal(18) <= '1';
-			control_signal(20) <= '1';
-			control_signal(21) <= '1';
-			control_signal(31) <= '1';
+			control_variable := (others => '0');
+			control_variable(0) := '1';
+			control_variable(1) := '1';
+			control_variable(7) := '1';
+			control_variable(12) := '1';	
+			control_variable(18) := '1';
+			control_variable(20) := '1';
+			control_variable(21) := '1';
+			control_variable(31) ;= '1';
 
 		elsif currentstate = "01111" then
 			nextstate <= "00000";
-			control_signal <= (others => '0');
-			control_signal(0) <= '1';
-			control_signal(1) <= '1';
-			control_signal(7) <= '1';
-			control_signal(12) <= '1';	
-			control_signal(14) <= '1';
-			control_signal(31) <= '1';	
-			control_signal(33) <= '1';	
+			control_variable := (others => '0');
+			control_variable(0) := '1';
+			control_variable(1) := '1';
+			control_variable(7) := '1';
+			control_variable(12) := '1';	
+			control_variable(14) := '1';
+			control_variable(31) := '1';	
+			control_variable(33) := '1';	
 
 		else  
 			nextstate <= "00000";
 			
 
 		end if;
+
+	control_signal <= control_variable;	
 	end process;					
 end arch ; -- arch
