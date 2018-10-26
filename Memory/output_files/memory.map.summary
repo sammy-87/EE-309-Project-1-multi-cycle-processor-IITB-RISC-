@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Thu Oct 25 23:44:04 2018
+Analysis & Synthesis Status : Successful - Fri Oct 26 12:25:33 2018
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : memory
 Top-level Entity Name : memory
 Family : MAX V
-Total logic elements : 897
-Total pins : 41
+Total logic elements : 889
+Total pins : 52
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

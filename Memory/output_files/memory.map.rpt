@@ -1,5 +1,5 @@
 Analysis & Synthesis report for memory
-Thu Oct 25 23:44:04 2018
+Fri Oct 26 12:25:33 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -42,13 +42,13 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Oct 25 23:44:04 2018       ;
+; Analysis & Synthesis Status ; Successful - Fri Oct 26 12:25:33 2018       ;
 ; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name               ; memory                                      ;
 ; Top-level Entity Name       ; memory                                      ;
 ; Family                      ; MAX V                                       ;
-; Total logic elements        ; 897                                         ;
-; Total pins                  ; 41                                          ;
+; Total logic elements        ; 889                                         ;
+; Total pins                  ; 52                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -137,14 +137,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                  ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
-; Reg.vhd                          ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Memory/Reg.vhd    ;         ;
-; memory.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                           ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                    ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------+---------+
+; memory.vhd                       ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -152,74 +151,42 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Total logic elements                        ; 897   ;
-;     -- Combinational with no register       ; 385   ;
+; Total logic elements                        ; 889   ;
+;     -- Combinational with no register       ; 361   ;
 ;     -- Register only                        ; 512   ;
-;     -- Combinational with a register        ; 0     ;
+;     -- Combinational with a register        ; 16    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 352   ;
-;     -- 3 input functions                    ; 32    ;
-;     -- 2 input functions                    ; 1     ;
+;     -- 4 input functions                    ; 328   ;
+;     -- 3 input functions                    ; 49    ;
+;     -- 2 input functions                    ; 0     ;
 ;     -- 1 input functions                    ; 0     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 897   ;
+;     -- normal mode                          ; 889   ;
 ;     -- arithmetic mode                      ; 0     ;
 ;     -- qfbk mode                            ; 0     ;
 ;     -- register cascade mode                ; 0     ;
 ;     -- synchronous clear/load mode          ; 0     ;
 ;     -- asynchronous clear/load mode         ; 512   ;
 ;                                             ;       ;
-; Total registers                             ; 512   ;
-; I/O pins                                    ; 41    ;
+; Total registers                             ; 528   ;
+; I/O pins                                    ; 52    ;
 ; Maximum fan-out node                        ; clk   ;
-; Maximum fan-out                             ; 512   ;
-; Total fan-out                               ; 3570  ;
-; Average fan-out                             ; 3.81  ;
+; Maximum fan-out                             ; 528   ;
+; Total fan-out                               ; 3555  ;
+; Average fan-out                             ; 3.78  ;
 +---------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                ;
-+-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------+-------------+--------------+
-; Compilation Hierarchy Node    ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name              ; Entity Name ; Library Name ;
-+-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------+-------------+--------------+
-; |memory                       ; 897 (385)   ; 512          ; 0          ; 41   ; 0            ; 385 (385)    ; 512 (0)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory                          ; memory      ; work         ;
-;    |Reg:\inst_mem:0:mem_reg|  ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:0:mem_reg  ; Reg         ; work         ;
-;    |Reg:\inst_mem:10:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:10:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:11:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:11:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:12:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:12:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:13:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:13:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:14:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:14:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:15:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:15:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:16:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:16:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:17:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:17:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:18:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:18:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:19:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:19:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:1:mem_reg|  ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:1:mem_reg  ; Reg         ; work         ;
-;    |Reg:\inst_mem:20:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:20:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:21:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:21:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:22:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:22:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:23:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:23:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:24:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:24:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:25:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:25:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:26:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:26:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:27:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:27:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:28:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:28:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:29:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:29:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:2:mem_reg|  ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:2:mem_reg  ; Reg         ; work         ;
-;    |Reg:\inst_mem:30:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:30:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:31:mem_reg| ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:31:mem_reg ; Reg         ; work         ;
-;    |Reg:\inst_mem:3:mem_reg|  ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:3:mem_reg  ; Reg         ; work         ;
-;    |Reg:\inst_mem:4:mem_reg|  ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:4:mem_reg  ; Reg         ; work         ;
-;    |Reg:\inst_mem:5:mem_reg|  ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:5:mem_reg  ; Reg         ; work         ;
-;    |Reg:\inst_mem:6:mem_reg|  ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:6:mem_reg  ; Reg         ; work         ;
-;    |Reg:\inst_mem:7:mem_reg|  ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:7:mem_reg  ; Reg         ; work         ;
-;    |Reg:\inst_mem:8:mem_reg|  ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:8:mem_reg  ; Reg         ; work         ;
-;    |Reg:\inst_mem:9:mem_reg|  ; 16 (16)     ; 16           ; 0          ; 0    ; 0            ; 0 (0)        ; 16 (16)           ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |memory|Reg:\inst_mem:9:mem_reg  ; Reg         ; work         ;
-+-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------+-------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
+; |memory                    ; 889 (889)   ; 528          ; 0          ; 52   ; 0            ; 361 (361)    ; 512 (512)         ; 16 (16)          ; 0 (0)           ; 0 (0)      ; |memory             ; memory      ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -228,12 +195,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 512   ;
+; Total registers                              ; 528   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 512   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 512   ;
+; Number of registers using Clock Enable       ; 528   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -243,7 +210,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 34:1               ; 16 bits   ; 352 LEs       ; 352 LEs              ; 0 LEs                  ; No         ; |memory|mem_out_var        ;
+; 32:1               ; 16 bits   ; 336 LEs       ; 336 LEs              ; 0 LEs                  ; Yes        ; |memory|mem_out[0]~reg0    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -253,44 +220,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Thu Oct 25 23:43:47 2018
+    Info: Processing started: Fri Oct 26 12:25:16 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off memory -c memory
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file Reg.vhd
-    Info (12022): Found design unit 1: Reg-description File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/Reg.vhd Line: 16
-    Info (12023): Found entity 1: Reg File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/Reg.vhd Line: 7
+    Info (12022): Found design unit 1: Reg-description File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd Line: 16
+    Info (12023): Found entity 1: Reg File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file memory.vhd
-    Info (12022): Found design unit 1: memory-structure File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 19
-    Info (12023): Found entity 1: memory File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 8
+    Info (12022): Found design unit 1: memory-structure File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 19
+    Info (12023): Found entity 1: memory File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 8
 Info (12127): Elaborating entity "memory" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at memory.vhd(58): signal "mem1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 58
-Info (12128): Elaborating entity "Reg" for hierarchy "Reg:\inst_mem:0:mem_reg" File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 41
-Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "mem_d[0]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-    Warning (13040): bidirectional pin "mem_d[1]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-    Warning (13040): bidirectional pin "mem_d[2]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-    Warning (13040): bidirectional pin "mem_d[3]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-    Warning (13040): bidirectional pin "mem_d[4]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-    Warning (13040): bidirectional pin "mem_d[5]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-    Warning (13040): bidirectional pin "mem_d[6]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-    Warning (13040): bidirectional pin "mem_d[7]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-    Warning (13040): bidirectional pin "mem_d[8]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-    Warning (13040): bidirectional pin "mem_d[9]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-    Warning (13040): bidirectional pin "mem_d[10]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-    Warning (13040): bidirectional pin "mem_d[11]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-    Warning (13040): bidirectional pin "mem_d[12]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-    Warning (13040): bidirectional pin "mem_d[13]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-    Warning (13040): bidirectional pin "mem_d[14]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-    Warning (13040): bidirectional pin "mem_d[15]" has no driver File: /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd Line: 10
-Info (21057): Implemented 938 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "mem_a[5]" File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 11
+    Warning (15610): No output dependent on input pin "mem_a[6]" File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 11
+    Warning (15610): No output dependent on input pin "mem_a[7]" File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 11
+    Warning (15610): No output dependent on input pin "mem_a[8]" File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 11
+    Warning (15610): No output dependent on input pin "mem_a[9]" File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 11
+    Warning (15610): No output dependent on input pin "mem_a[10]" File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 11
+    Warning (15610): No output dependent on input pin "mem_a[11]" File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 11
+    Warning (15610): No output dependent on input pin "mem_a[12]" File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 11
+    Warning (15610): No output dependent on input pin "mem_a[13]" File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 11
+    Warning (15610): No output dependent on input pin "mem_a[14]" File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 11
+    Warning (15610): No output dependent on input pin "mem_a[15]" File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 11
+Info (21057): Implemented 941 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 36 input pins
     Info (21059): Implemented 16 output pins
-    Info (21060): Implemented 16 bidirectional pins
-    Info (21061): Implemented 897 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 1221 megabytes
-    Info: Processing ended: Thu Oct 25 23:44:04 2018
+    Info (21061): Implemented 889 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 1226 megabytes
+    Info: Processing ended: Fri Oct 26 12:25:33 2018
     Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:42
+    Info: Total CPU time (on all processors): 00:00:40
 
 

@@ -1,0 +1,26 @@
+library std;
+use std.standard.all;
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity uP is
+   port(instruction: in std_logic_vector(15 downto 0);
+			clk: in std_logic;
+			rst: in std_logic);
+end entity;
+
+architecture Struct of uP is
+
+component ALU_final is
+   port(alu_a,alu_b: in std_logic_vector(15 downto 0);
+		k1: in std_logic; op: in std_logic;
+		alu_out: out std_logic_vector(15 downto 0);
+      c_out: out std_logic);
+end component;
+
+begin
+	
+	alu: ALU_final port map()
+	
+end Struct;

@@ -7,26 +7,26 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/pranil/Desktop/EE309 Microcontrollers/Memory/simulation/modelsim
+Z0 d/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/simulation/modelsim
 Ememory
-Z1 w1540490923
+Z1 w1540535596
 Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z5 8/home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd
-Z6 F/home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd
+Z5 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd
+Z6 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd
 l0
 L8
-VM_3_=nVkE[SYLjAXOiYDW0
-!s100 Y4hMD]jeJiHNla^=_75>:1
+VUA=YjbXQ4;Sj:a=<9NQS12
+!s100 iTd<ggP>ajR2:WU@D<J_93
 Z7 OV;C;10.4d;61
 31
-Z8 !s110 1540491029
+Z8 !s110 1540535697
 !i10b 1
-Z9 !s108 1540491029.000000
-Z10 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd|
-Z11 !s107 /home/pranil/Desktop/EE309 Microcontrollers/Memory/memory.vhd|
+Z9 !s108 1540535697.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd|
+Z11 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd|
 !i113 1
 Z12 o-93 -work work
 Z13 tExplicit 1
@@ -34,11 +34,11 @@ Astructure
 R2
 R3
 R4
-DEx4 work 6 memory 0 22 M_3_=nVkE[SYLjAXOiYDW0
+DEx4 work 6 memory 0 22 UA=YjbXQ4;Sj:a=<9NQS12
 l35
 L19
-VKkJ^f2kR>P90lWZHY4[^72
-!s100 lB9IS429RChGB7]H`O8jV2
+VjD<bamKVbMzlEiAnlLk]40
+!s100 OSUX[lOL1WU?]LT8ZS0k;0
 R7
 31
 R8

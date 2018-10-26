@@ -1,0 +1,50 @@
+# do uP_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying /home/pranil/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 00:32:04 on Oct 26,2018
+# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux4to1
+# -- Compiling architecture data of mux4to1
+# End time: 00:32:04 on Oct 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vsim work.mux4to1
+# vsim work.mux4to1 
+# Start time: 00:32:08 on Oct 26,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.mux4to1(data)
+add wave -position insertpoint sim:/mux4to1/*
+force -freeze sim:/mux4to1/S1 0 0
+force -freeze sim:/mux4to1/S0 1 0
+force -freeze sim:/mux4to1/D0 0000000000000011 0
+force -freeze sim:/mux4to1/D1 0000000000000111 0
+force -freeze sim:/mux4to1/D2 1100000000000011 0
+force -freeze sim:/mux4to1/D3 0001100000000011 0
+run
+force -freeze sim:/mux4to1/S1 1 0
+run
+force -freeze sim:/mux4to1/S0 0 0
+run
+force -freeze sim:/mux4to1/S1 0 0
+run
+run
+run
+# End time: 00:34:26 on Oct 26,2018, Elapsed time: 0:02:18
+# Errors: 0, Warnings: 0

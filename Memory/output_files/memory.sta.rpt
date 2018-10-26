@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for memory
-Thu Oct 25 23:44:09 2018
+Fri Oct 26 12:25:40 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -16,16 +16,19 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   8. Recovery Summary
   9. Removal Summary
  10. Minimum Pulse Width Summary
- 11. Clock Transfers
- 12. Report TCCS
- 13. Report RSKM
- 14. Unconstrained Paths Summary
- 15. Clock Status Summary
- 16. Unconstrained Input Ports
- 17. Unconstrained Output Ports
- 18. Unconstrained Input Ports
- 19. Unconstrained Output Ports
- 20. TimeQuest Timing Analyzer Messages
+ 11. Setup: 'clk'
+ 12. Hold: 'clk'
+ 13. Setup Transfers
+ 14. Hold Transfers
+ 15. Report TCCS
+ 16. Report RSKM
+ 17. Unconstrained Paths Summary
+ 18. Clock Status Summary
+ 19. Unconstrained Input Ports
+ 20. Unconstrained Output Ports
+ 21. Unconstrained Input Ports
+ 22. Unconstrained Output Ports
+ 23. TimeQuest Timing Analyzer Messages
 
 
 
@@ -83,22 +86,32 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
 
 
-----------------
-; Fmax Summary ;
-----------------
-No paths to report.
++--------------------------------------------------+
+; Fmax Summary                                     ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 106.97 MHz ; 106.97 MHz      ; clk        ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
------------------
-; Setup Summary ;
------------------
-No paths to report.
++--------------------------------+
+; Setup Summary                  ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; clk   ; -8.348 ; -123.239      ;
++-------+--------+---------------+
 
 
-----------------
-; Hold Summary ;
-----------------
-No paths to report.
++-------------------------------+
+; Hold Summary                  ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; clk   ; 2.885 ; 0.000         ;
++-------+-------+---------------+
 
 
 --------------------
@@ -122,10 +135,240 @@ No paths to report.
 +-------+--------+---------------+
 
 
--------------------
-; Clock Transfers ;
--------------------
-Nothing to report.
++---------------------------------------------------------------------------------------------------------------+
+; Setup: 'clk'                                                                                                  ;
++--------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node   ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+; -8.348 ; RAM[16][10] ; mem_out[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 9.015      ;
+; -8.299 ; RAM[24][1]  ; mem_out[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.966      ;
+; -8.233 ; RAM[0][14]  ; mem_out[14]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 8.900      ;
+; -8.158 ; RAM[20][1]  ; mem_out[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.825      ;
+; -8.111 ; RAM[16][1]  ; mem_out[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.778      ;
+; -8.022 ; RAM[28][9]  ; mem_out[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.689      ;
+; -7.929 ; RAM[30][13] ; mem_out[13]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 8.596      ;
+; -7.880 ; RAM[17][9]  ; mem_out[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.547      ;
+; -7.855 ; RAM[30][12] ; mem_out[12]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 8.522      ;
+; -7.852 ; RAM[29][12] ; mem_out[12]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 8.519      ;
+; -7.786 ; RAM[25][1]  ; mem_out[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.453      ;
+; -7.715 ; RAM[30][14] ; mem_out[14]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 8.382      ;
+; -7.668 ; RAM[4][9]   ; mem_out[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.335      ;
+; -7.660 ; RAM[0][1]   ; mem_out[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.327      ;
+; -7.660 ; RAM[17][7]  ; mem_out[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.327      ;
+; -7.640 ; RAM[18][9]  ; mem_out[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.307      ;
+; -7.632 ; RAM[16][9]  ; mem_out[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.299      ;
+; -7.630 ; RAM[12][3]  ; mem_out[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.297      ;
+; -7.606 ; RAM[17][1]  ; mem_out[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.273      ;
+; -7.586 ; RAM[7][9]   ; mem_out[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.253      ;
+; -7.574 ; RAM[29][10] ; mem_out[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 8.241      ;
+; -7.545 ; RAM[29][9]  ; mem_out[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.212      ;
+; -7.520 ; RAM[20][4]  ; mem_out[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.187      ;
+; -7.517 ; RAM[2][4]   ; mem_out[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.184      ;
+; -7.509 ; RAM[5][1]   ; mem_out[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.176      ;
+; -7.485 ; RAM[31][5]  ; mem_out[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.152      ;
+; -7.485 ; RAM[16][15] ; mem_out[15]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 8.152      ;
+; -7.467 ; RAM[23][5]  ; mem_out[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.134      ;
+; -7.460 ; RAM[16][13] ; mem_out[13]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 8.127      ;
+; -7.457 ; RAM[16][7]  ; mem_out[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.124      ;
+; -7.440 ; RAM[23][2]  ; mem_out[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.107      ;
+; -7.431 ; RAM[20][10] ; mem_out[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 8.098      ;
+; -7.411 ; RAM[29][14] ; mem_out[14]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 8.078      ;
+; -7.407 ; RAM[18][10] ; mem_out[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 8.074      ;
+; -7.391 ; RAM[12][8]  ; mem_out[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.058      ;
+; -7.379 ; RAM[0][13]  ; mem_out[13]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 8.046      ;
+; -7.370 ; RAM[19][9]  ; mem_out[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.037      ;
+; -7.359 ; RAM[0][0]   ; mem_out[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.026      ;
+; -7.342 ; RAM[0][10]  ; mem_out[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 8.009      ;
+; -7.341 ; RAM[16][4]  ; mem_out[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.008      ;
+; -7.338 ; RAM[0][4]   ; mem_out[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.005      ;
+; -7.337 ; RAM[16][8]  ; mem_out[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 8.004      ;
+; -7.331 ; RAM[17][15] ; mem_out[15]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.998      ;
+; -7.315 ; RAM[30][11] ; mem_out[11]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.982      ;
+; -7.314 ; RAM[15][0]  ; mem_out[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.981      ;
+; -7.311 ; RAM[29][11] ; mem_out[11]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.978      ;
+; -7.301 ; RAM[18][13] ; mem_out[13]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.968      ;
+; -7.301 ; RAM[30][15] ; mem_out[15]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.968      ;
+; -7.293 ; RAM[17][3]  ; mem_out[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.960      ;
+; -7.289 ; RAM[7][2]   ; mem_out[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.956      ;
+; -7.288 ; RAM[29][7]  ; mem_out[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.955      ;
+; -7.281 ; RAM[0][9]   ; mem_out[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.948      ;
+; -7.268 ; RAM[0][6]   ; mem_out[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.935      ;
+; -7.260 ; RAM[4][3]   ; mem_out[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.927      ;
+; -7.256 ; RAM[21][1]  ; mem_out[1]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.923      ;
+; -7.236 ; RAM[23][3]  ; mem_out[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.903      ;
+; -7.229 ; RAM[1][2]   ; mem_out[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.896      ;
+; -7.220 ; RAM[3][13]  ; mem_out[13]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.887      ;
+; -7.198 ; RAM[4][0]   ; mem_out[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.865      ;
+; -7.194 ; RAM[17][10] ; mem_out[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.861      ;
+; -7.190 ; RAM[17][6]  ; mem_out[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.857      ;
+; -7.149 ; RAM[30][9]  ; mem_out[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.816      ;
+; -7.132 ; RAM[0][3]   ; mem_out[3]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.799      ;
+; -7.129 ; RAM[22][9]  ; mem_out[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.796      ;
+; -7.090 ; RAM[31][13] ; mem_out[13]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.757      ;
+; -7.082 ; RAM[24][5]  ; mem_out[5]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.749      ;
+; -7.080 ; RAM[16][12] ; mem_out[12]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.747      ;
+; -7.059 ; RAM[17][12] ; mem_out[12]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.726      ;
+; -7.050 ; RAM[18][12] ; mem_out[12]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.717      ;
+; -7.044 ; RAM[11][12] ; mem_out[12]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.711      ;
+; -7.044 ; RAM[19][11] ; mem_out[11]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.711      ;
+; -7.041 ; RAM[7][14]  ; mem_out[14]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.708      ;
+; -7.019 ; RAM[31][9]  ; mem_out[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.686      ;
+; -7.004 ; RAM[4][8]   ; mem_out[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.671      ;
+; -7.002 ; RAM[6][4]   ; mem_out[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.669      ;
+; -7.000 ; RAM[12][10] ; mem_out[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.667      ;
+; -6.987 ; RAM[28][14] ; mem_out[14]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.654      ;
+; -6.980 ; RAM[12][6]  ; mem_out[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.647      ;
+; -6.979 ; RAM[29][13] ; mem_out[13]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.646      ;
+; -6.978 ; RAM[3][10]  ; mem_out[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.645      ;
+; -6.975 ; RAM[18][6]  ; mem_out[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.642      ;
+; -6.973 ; RAM[4][7]   ; mem_out[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.640      ;
+; -6.956 ; RAM[21][9]  ; mem_out[9]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.623      ;
+; -6.948 ; RAM[19][7]  ; mem_out[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.615      ;
+; -6.936 ; RAM[16][6]  ; mem_out[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.603      ;
+; -6.924 ; RAM[4][14]  ; mem_out[14]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.591      ;
+; -6.916 ; RAM[3][6]   ; mem_out[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.583      ;
+; -6.914 ; RAM[24][2]  ; mem_out[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.581      ;
+; -6.912 ; RAM[15][15] ; mem_out[15]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.579      ;
+; -6.912 ; RAM[18][14] ; mem_out[14]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.579      ;
+; -6.893 ; RAM[6][2]   ; mem_out[2]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.560      ;
+; -6.892 ; RAM[22][10] ; mem_out[10]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.559      ;
+; -6.882 ; RAM[11][6]  ; mem_out[6]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.549      ;
+; -6.879 ; RAM[28][7]  ; mem_out[7]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.546      ;
+; -6.874 ; RAM[31][4]  ; mem_out[4]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.541      ;
+; -6.874 ; RAM[28][15] ; mem_out[15]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.541      ;
+; -6.871 ; RAM[0][12]  ; mem_out[12]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.538      ;
+; -6.865 ; RAM[12][0]  ; mem_out[0]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.532      ;
+; -6.864 ; RAM[3][14]  ; mem_out[14]~reg0 ; clk          ; clk         ; 1.000        ; 0.000      ; 7.531      ;
+; -6.864 ; RAM[19][8]  ; mem_out[8]~reg0  ; clk          ; clk         ; 1.000        ; 0.000      ; 7.531      ;
++--------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Hold: 'clk'                                                                                                  ;
++-------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node   ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+; 2.885 ; RAM[5][11]  ; mem_out[11]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.106      ;
+; 3.524 ; RAM[5][13]  ; mem_out[13]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.745      ;
+; 3.544 ; RAM[6][12]  ; mem_out[12]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 3.765      ;
+; 3.621 ; RAM[26][7]  ; mem_out[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.842      ;
+; 3.741 ; RAM[26][8]  ; mem_out[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.962      ;
+; 3.766 ; RAM[4][2]   ; mem_out[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.987      ;
+; 3.998 ; RAM[28][3]  ; mem_out[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.219      ;
+; 4.043 ; RAM[12][1]  ; mem_out[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.264      ;
+; 4.044 ; RAM[28][0]  ; mem_out[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.265      ;
+; 4.070 ; RAM[12][2]  ; mem_out[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.291      ;
+; 4.110 ; RAM[2][0]   ; mem_out[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.331      ;
+; 4.128 ; RAM[1][4]   ; mem_out[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.349      ;
+; 4.142 ; RAM[13][9]  ; mem_out[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.363      ;
+; 4.149 ; RAM[14][12] ; mem_out[12]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.370      ;
+; 4.187 ; RAM[9][14]  ; mem_out[14]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.408      ;
+; 4.249 ; RAM[10][11] ; mem_out[11]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.470      ;
+; 4.254 ; RAM[6][10]  ; mem_out[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.475      ;
+; 4.287 ; RAM[4][5]   ; mem_out[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.508      ;
+; 4.287 ; RAM[2][7]   ; mem_out[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.508      ;
+; 4.319 ; RAM[11][1]  ; mem_out[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.540      ;
+; 4.339 ; RAM[12][5]  ; mem_out[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.560      ;
+; 4.444 ; RAM[6][13]  ; mem_out[13]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.665      ;
+; 4.487 ; RAM[20][0]  ; mem_out[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.708      ;
+; 4.490 ; RAM[23][14] ; mem_out[14]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.711      ;
+; 4.548 ; RAM[9][1]   ; mem_out[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.769      ;
+; 4.590 ; RAM[20][3]  ; mem_out[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.811      ;
+; 4.612 ; RAM[5][5]   ; mem_out[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.833      ;
+; 4.615 ; RAM[29][0]  ; mem_out[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.836      ;
+; 4.673 ; RAM[13][13] ; mem_out[13]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.894      ;
+; 4.677 ; RAM[3][1]   ; mem_out[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.898      ;
+; 4.689 ; RAM[25][8]  ; mem_out[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.910      ;
+; 4.695 ; RAM[1][8]   ; mem_out[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.916      ;
+; 4.696 ; RAM[13][7]  ; mem_out[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.917      ;
+; 4.720 ; RAM[10][15] ; mem_out[15]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.941      ;
+; 4.737 ; RAM[27][2]  ; mem_out[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.958      ;
+; 4.742 ; RAM[21][0]  ; mem_out[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.963      ;
+; 4.750 ; RAM[7][12]  ; mem_out[12]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.971      ;
+; 4.752 ; RAM[9][4]   ; mem_out[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.973      ;
+; 4.754 ; RAM[9][11]  ; mem_out[11]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.975      ;
+; 4.767 ; RAM[27][13] ; mem_out[13]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 4.988      ;
+; 4.769 ; RAM[25][5]  ; mem_out[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 4.990      ;
+; 4.823 ; RAM[25][2]  ; mem_out[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.044      ;
+; 4.826 ; RAM[14][10] ; mem_out[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.047      ;
+; 4.842 ; RAM[9][10]  ; mem_out[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.063      ;
+; 4.844 ; RAM[10][5]  ; mem_out[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.065      ;
+; 4.852 ; RAM[13][5]  ; mem_out[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.073      ;
+; 4.856 ; RAM[30][4]  ; mem_out[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.077      ;
+; 4.863 ; RAM[10][7]  ; mem_out[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.084      ;
+; 4.867 ; RAM[30][1]  ; mem_out[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.088      ;
+; 4.872 ; RAM[26][10] ; mem_out[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.093      ;
+; 4.877 ; RAM[17][5]  ; mem_out[5]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.098      ;
+; 4.880 ; RAM[26][1]  ; mem_out[1]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.101      ;
+; 4.883 ; RAM[13][15] ; mem_out[15]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.104      ;
+; 4.895 ; RAM[25][15] ; mem_out[15]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.116      ;
+; 4.900 ; RAM[27][8]  ; mem_out[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.121      ;
+; 4.926 ; RAM[13][11] ; mem_out[11]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.147      ;
+; 4.962 ; RAM[11][4]  ; mem_out[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.183      ;
+; 4.968 ; RAM[27][15] ; mem_out[15]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.189      ;
+; 4.984 ; RAM[10][2]  ; mem_out[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.205      ;
+; 4.984 ; RAM[2][15]  ; mem_out[15]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.205      ;
+; 4.995 ; RAM[10][6]  ; mem_out[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.216      ;
+; 5.010 ; RAM[24][6]  ; mem_out[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.231      ;
+; 5.012 ; RAM[5][0]   ; mem_out[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.233      ;
+; 5.024 ; RAM[17][2]  ; mem_out[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.245      ;
+; 5.032 ; RAM[2][3]   ; mem_out[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.253      ;
+; 5.034 ; RAM[10][13] ; mem_out[13]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.255      ;
+; 5.038 ; RAM[13][2]  ; mem_out[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.259      ;
+; 5.042 ; RAM[1][12]  ; mem_out[12]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.263      ;
+; 5.044 ; RAM[5][15]  ; mem_out[15]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.265      ;
+; 5.056 ; RAM[6][8]   ; mem_out[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.277      ;
+; 5.058 ; RAM[13][12] ; mem_out[12]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.279      ;
+; 5.065 ; RAM[22][4]  ; mem_out[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.286      ;
+; 5.082 ; RAM[10][9]  ; mem_out[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.303      ;
+; 5.090 ; RAM[24][14] ; mem_out[14]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.311      ;
+; 5.107 ; RAM[6][14]  ; mem_out[14]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.328      ;
+; 5.120 ; RAM[6][11]  ; mem_out[11]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.341      ;
+; 5.127 ; RAM[26][4]  ; mem_out[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.348      ;
+; 5.135 ; RAM[14][6]  ; mem_out[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.356      ;
+; 5.136 ; RAM[24][12] ; mem_out[12]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.357      ;
+; 5.145 ; RAM[27][7]  ; mem_out[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.366      ;
+; 5.165 ; RAM[2][9]   ; mem_out[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.386      ;
+; 5.178 ; RAM[14][13] ; mem_out[13]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.399      ;
+; 5.179 ; RAM[15][9]  ; mem_out[9]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.400      ;
+; 5.179 ; RAM[14][3]  ; mem_out[3]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.400      ;
+; 5.180 ; RAM[9][8]   ; mem_out[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.401      ;
+; 5.188 ; RAM[7][11]  ; mem_out[11]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.409      ;
+; 5.194 ; RAM[21][8]  ; mem_out[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.415      ;
+; 5.200 ; RAM[2][8]   ; mem_out[8]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.421      ;
+; 5.201 ; RAM[14][7]  ; mem_out[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.422      ;
+; 5.225 ; RAM[9][15]  ; mem_out[15]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.446      ;
+; 5.228 ; RAM[25][11] ; mem_out[11]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.449      ;
+; 5.242 ; RAM[30][2]  ; mem_out[2]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.463      ;
+; 5.247 ; RAM[19][0]  ; mem_out[0]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.468      ;
+; 5.251 ; RAM[5][7]   ; mem_out[7]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.472      ;
+; 5.253 ; RAM[18][4]  ; mem_out[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.474      ;
+; 5.257 ; RAM[12][4]  ; mem_out[4]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.478      ;
+; 5.265 ; RAM[27][10] ; mem_out[10]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.486      ;
+; 5.286 ; RAM[2][11]  ; mem_out[11]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.507      ;
+; 5.292 ; RAM[21][14] ; mem_out[14]~reg0 ; clk          ; clk         ; 0.000        ; 0.000      ; 5.513      ;
+; 5.295 ; RAM[6][6]   ; mem_out[6]~reg0  ; clk          ; clk         ; 0.000        ; 0.000      ; 5.516      ;
++-------+-------------+------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 512      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; clk        ; clk      ; 512      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
 ---------------
@@ -148,9 +391,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 24    ; 24   ;
-; Unconstrained Input Port Paths  ; 4208  ; 4208 ;
+; Unconstrained Input Port Paths  ; 4224  ; 4224 ;
 ; Unconstrained Output Ports      ; 16    ; 16   ;
-; Unconstrained Output Port Paths ; 624   ; 624  ;
+; Unconstrained Output Port Paths ; 16    ; 16   ;
 +---------------------------------+-------+------+
 
 
@@ -281,7 +524,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Thu Oct 25 23:44:08 2018
+    Info: Processing started: Fri Oct 26 12:25:39 2018
 Info: Command: quartus_sta memory -c memory
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -294,13 +537,18 @@ Info (332142): No user constrained base clocks found in the design. Calling "der
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name clk clk
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
-Info (332140): No fmax paths to report
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
-Info (332140): No Setup paths to report
-Info (332140): No Hold paths to report
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -8.348
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -8.348            -123.239 clk 
+Info (332146): Worst-case hold slack is 2.885
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     2.885               0.000 clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
-Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case minimum pulse width slack is -2.289
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -310,7 +558,7 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 1010 megabytes
-    Info: Processing ended: Thu Oct 25 23:44:09 2018
+    Info: Processing ended: Fri Oct 26 12:25:40 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
