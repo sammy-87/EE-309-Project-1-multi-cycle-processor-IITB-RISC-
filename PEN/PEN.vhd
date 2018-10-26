@@ -22,29 +22,29 @@ begin
 	begin
 		variable next_var : std_logic_vector(7 downto 0);
 		
-		if (penin(7) = '1') then 
-			penout <= "111";
-			next_var := ("01111111" and penin);
-		elsif (penin(6) = '1') then 
-			penout <= "110";
-			next_var := ("00111111" and penin);
-		elsif (penin(5) = '1') then 
-			penout <= "101";
-			next_var := ("00011111" and penin);
-		elsif (penin(4) = '1') then 
-			penout <= "100";
-			next_var := ("00001111" and penin);
-		elsif (penin(3) = '1') then 
-			penout <= "011";
-			next_var := ("00000111" and penin);
-		elsif (penin(2) = '1') then 
-			penout <= "010";
-			next_var := ("00000011" and penin);
+		if (penin(0) = '1') then 
+			penout <= "000";
+			next_var := ("11111110" and penin);
 		elsif (penin(1) = '1') then 
 			penout <= "001";
-			next_var := ("00000001" and penin);
+			next_var := ("11111100" and penin);
+		elsif (penin(2) = '1') then 
+			penout <= "010";
+			next_var := ("11111000" and penin);
+		elsif (penin(3) = '1') then 
+			penout <= "011";
+			next_var := ("11110000" and penin);
+		elsif (penin(4) = '1') then 
+			penout <= "100";
+			next_var := ("11100000" and penin);
+		elsif (penin(5) = '1') then 
+			penout <= "101";
+			next_var := ("11000000" and penin);
+		elsif (penin(6) = '1') then 
+			penout <= "110";
+			next_var := ("10000000" and penin);
 		else
-			penout <= "000";
+			penout <= "111";
 			next_var := ("00000000" and penin);
 		end if;
 			
