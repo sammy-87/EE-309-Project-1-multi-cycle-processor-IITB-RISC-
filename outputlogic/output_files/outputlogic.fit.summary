@@ -1,0 +1,11 @@
+Fitter Status : Successful - Fri Oct 26 14:36:16 2018
+Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Revision Name : outputlogic
+Top-level Entity Name : outputlogic
+Family : MAX V
+Device : 5M1270ZT144C5
+Timing Models : Final
+Total logic elements : 105 / 1,270 ( 8 % )
+Total pins : 72 / 114 ( 63 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

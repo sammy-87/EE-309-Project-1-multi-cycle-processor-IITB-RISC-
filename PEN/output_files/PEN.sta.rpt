@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for PEN
-Tue Oct 23 13:22:06 2018
+Fri Oct 26 17:31:31 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -141,9 +141,9 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 8     ; 8    ;
-; Unconstrained Input Port Paths  ; 52    ; 52   ;
-; Unconstrained Output Ports      ; 10    ; 10   ;
-; Unconstrained Output Port Paths ; 52    ; 52   ;
+; Unconstrained Input Port Paths  ; 60    ; 60   ;
+; Unconstrained Output Ports      ; 11    ; 11   ;
+; Unconstrained Output Port Paths ; 60    ; 60   ;
 +---------------------------------+-------+------+
 
 
@@ -168,16 +168,17 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; pennext[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pennext[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pennext[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pennext[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pennext[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pennext[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pennext[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pennext[7]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; penout[0]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; penout[1]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; penout[2]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; tp          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -202,16 +203,17 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; pennext[0]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pennext[1]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pennext[2]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pennext[3]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pennext[4]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pennext[5]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pennext[6]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pennext[7]  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; penout[0]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; penout[1]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; penout[2]   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; tp          ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -221,7 +223,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Tue Oct 23 13:22:05 2018
+    Info: Processing started: Fri Oct 26 17:31:30 2018
 Info: Command: quartus_sta PEN -c PEN
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -246,8 +248,8 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4862 megabytes
-    Info: Processing ended: Tue Oct 23 13:22:06 2018
+    Info: Peak virtual memory: 1005 megabytes
+    Info: Processing ended: Fri Oct 26 17:31:31 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
