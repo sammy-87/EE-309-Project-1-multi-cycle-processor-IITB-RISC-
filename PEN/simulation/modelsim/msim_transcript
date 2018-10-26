@@ -1,0 +1,43 @@
+# do PEN_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying /home/pranil/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 17:32:42 on Oct 26,2018
+# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PEN
+# -- Compiling architecture behave of PEN
+# End time: 17:32:42 on Oct 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vsim work.pen
+# vsim work.pen 
+# Start time: 17:32:48 on Oct 26,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pen(behave)
+add wave -position insertpoint sim:/pen/*
+force -freeze sim:/pen/penin 01001110 0
+run
+run
+force -freeze sim:/pen/penin 01001100 0
+run
+force -freeze sim:/pen/penin 01001000 0
+run
+force -freeze sim:/pen/penin 01000000 0
+run
+run

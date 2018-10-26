@@ -1,0 +1,76 @@
+# do outputlogic_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim ALTERA vmap 10.4d Lib Mapping Utility 2015.12 Dec 30 2015
+# vmap work rtl_work 
+# Copying /home/pranil/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/outputlogic/statereg.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:35:29 on Oct 25,2018
+# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/outputlogic/statereg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity statereg
+# -- Compiling architecture description of statereg
+# End time: 20:35:30 on Oct 25,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/pranil/Desktop/EE309 Microcontrollers/outputlogic/outputlogic.vhd}
+# Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+# Start time: 20:35:30 on Oct 25,2018
+# vcom -reportprogress 300 -93 -work work /home/pranil/Desktop/EE309 Microcontrollers/outputlogic/outputlogic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity outputlogic
+# -- Compiling architecture arch of outputlogic
+# End time: 20:35:30 on Oct 25,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vsim work.outputlogic
+# vsim work.outputlogic 
+# Start time: 20:35:43 on Oct 25,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.outputlogic(arch)
+# Loading work.statereg(description)
+add wave -position insertpoint sim:/outputlogic/*
+force -freeze sim:/outputlogic/reset 1 0
+run
+force -freeze sim:/outputlogic/tz 0 0
+force -freeze sim:/outputlogic/tp 0 0
+force -freeze sim:/outputlogic/ir 0000000000000000 0
+force -freeze sim:/outputlogic/clk 0 0, 1 {50 ps} -r 100
+force -freeze sim:/outputlogic/C 0 0
+force -freeze sim:/outputlogic/Z 0 0
+force -freeze sim:/outputlogic/Rf_a3 0 0
+# Value length (1) does not equal array index length (3).
+# 
+# ** Error: (vsim-4011) Invalid force value: 0 0.
+# 
+run
+run
+force -freeze sim:/outputlogic/reset 0 0
+force -freeze sim:/outputlogic/Rf_a3 000 0
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/outputlogic/ir 0001000000000000 0
+run
+run
+run
+# Window cannot be closed because the modal window "Quit Vsim" is still open.
+# End time: 21:16:50 on Oct 25,2018, Elapsed time: 0:41:07
+# Errors: 1, Warnings: 1

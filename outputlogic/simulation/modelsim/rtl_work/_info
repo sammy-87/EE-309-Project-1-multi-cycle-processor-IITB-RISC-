@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/pranil/Desktop/EE309 Microcontrollers/outputlogic/simulation/modelsim
+Eoutputlogic
+Z1 w1540479733
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/pranil/Desktop/EE309 Microcontrollers/outputlogic/outputlogic.vhd
+Z5 F/home/pranil/Desktop/EE309 Microcontrollers/outputlogic/outputlogic.vhd
+l0
+L7
+VcJGHKI=PL^YDmceY<4o<m1
+!s100 ]TLCXlIDNm;6IEAGRLmM_2
+Z6 OV;C;10.4d;61
+31
+Z7 !s110 1540479930
+!i10b 1
+Z8 !s108 1540479930.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/outputlogic/outputlogic.vhd|
+Z10 !s107 /home/pranil/Desktop/EE309 Microcontrollers/outputlogic/outputlogic.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Aarch
+R2
+R3
+DEx4 work 11 outputlogic 0 22 cJGHKI=PL^YDmceY<4o<m1
+l28
+L20
+V?3kHm^5WJVCU3bPGF:_463
+!s100 SD`:nZ7aGdWTbHM^GgE:l3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Estatereg
+Z13 w1540292601
+R2
+R3
+R0
+Z14 8/home/pranil/Desktop/EE309 Microcontrollers/outputlogic/statereg.vhd
+Z15 F/home/pranil/Desktop/EE309 Microcontrollers/outputlogic/statereg.vhd
+l0
+L7
+V1zVZ>X?NC;]]WZ<KFYKC;2
+!s100 anNHQXz:9L8?FD0GzPMA81
+R6
+31
+R7
+!i10b 1
+Z16 !s108 1540479929.000000
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/outputlogic/statereg.vhd|
+Z18 !s107 /home/pranil/Desktop/EE309 Microcontrollers/outputlogic/statereg.vhd|
+!i113 1
+R11
+R12
+Adescription
+R2
+R3
+DEx4 work 8 statereg 0 22 1zVZ>X?NC;]]WZ<KFYKC;2
+l17
+L15
+V^VI8l1dUokmVRWIIV`gmR0
+!s100 ]32N[zla4>P4l_QPTfX432
+R6
+31
+R7
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R11
+R12
