@@ -36,6 +36,7 @@ begin
 		if reset = '1' then
 			nextstate <= "10000";
 			control_variable := (others =>'0');
+			
 
 		elsif currentstate = "10000" then
 			control_variable := (others =>'0');

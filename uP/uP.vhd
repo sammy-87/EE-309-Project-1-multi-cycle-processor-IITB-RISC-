@@ -90,14 +90,40 @@ component PEN is
 			penout: out std_logic_vector(2 downto 0));
 end component;
 
+component mux2to1_8bit is
+   port(S0:in std_logic;
+	D0,D1:in std_logic_vector(7 downto 0);
+	Y:out std_logic_vector(7 downto 0));
+end component;
 
-signal c,carry : std_logic;
-signal G2,G1,H2,H1,k1,op,L1,P2,P1,EnP,D,E1,E2,F,M1,M2,M3,en7,WR,En1,En2,En3,I,J1,J2,A1,A2 : std_logic;
-signal t1_in,t1_out,t2_in,t2_out,t3_in,t3_out,mem_out,PC_out,alu_a,alu_b,SE6_out,SE9_out,alu_out,pc_in,shift7_out,rf_d3,rf_d1,rf_d2: std_logic_vector(15 downto 0);
+component Reg8 is 
+	port(
+		 d   : in std_logic_vector(7 DOWNTO 0);
+		 en  : in std_logic; -- load/enable.
+		 rst : in std_logic; -- async. clear.
+		 clk : in std_logic; -- clock.
+		 q   : out std_logic_vector(7 DOWNTO 0)); -- output
+end component;
+
+component memory is 
+	port(
+		 mem_d   : in std_logic_vector(15 DOWNTO 0);
+		 mem_a   : in std_logic_vector(15 downto 0);
+		 rd_bar  : in std_logic; -- read enable.
+		 wr_bar  : in std_logic; -- write enable
+		 rst : in std_logic; -- clear.
+		 clk : in std_logic; -- clock.
+		 mem_out : out std_logic_vector(15 DOWNTO 0)); -- output
+end component;
+
+signal c,carry,tp : std_logic;
+signal G2,G1,H2,H1,k1,op,L1,P2,P1,EnP,D,E1,E2,F,M1,M2,M3,en7,WR,En1,En2,En3,I,J1,J2,A1,A2,EnPEN,EnI,N,B1,B2,C1,wr_bar,rd_bar : std_logic;
+signal t1_in,t1_out,t2_in,t2_out,t3_in,t3_out,mem_out,PC_out,alu_a,alu_b,SE6_out,SE9_out,alu_out,pc_in,shift7_out,mem_a,mem_d,rf_d3,rf_d1,rf_d2,ir: std_logic_vector(15 downto 0);
 signal ir9_11,ir3_5,ir6_8,PEN_out,rf_a1,rf_a2,rf_a3: std_logic_vector(2 downto 0);
 signal ir0_8 : std_logic_vector(8 downto 0);
 signal ir0_5 : std_logic_vector(5 downto 0);
-signal ir0_7 : std_logic_vector(7 downto 0);
+signal ir0_7,PEN_next,PEN_in_reg,PEN_out_reg : std_logic_vector(7 downto 0);
+
 
 begin
 	
@@ -128,8 +154,22 @@ begin
 	se6_inst: SE6 port map (ip=>ir0_5,op=>SE6_out);
 	Shift7_inst: Shift7 port map (ip=>ir0_8,op=>Shift7_out);
 	
-	--mux_pen: mux2to1_8bit port map (S0=>,D0=>,D1=>);
+	mux_pen: mux2to1_8bit port map (S0=>N,D0=>PEN_next,D1=>ir0_7,Y=>PEN_in_reg);
+	reg_PEN: Reg8 port map (d=>PEN_in_reg,en=>EnPEN,rst=>rst,clk=>clk,q=>PEN_out_reg);
+	PEN_inst: PEN port map(penin=>PEN_out_reg,tp=>tp,pennext=>PEN_next,penout=>PEN_out); 
 	
-	--PEN_inst: 
+	IR_reg: Reg port map (d=>instruction,en=>EnI,rst=>rst,clk=>clk,q=>ir);
+	
+	ir0_5 <= ir(5 downto 0);
+	ir0_7 <= ir(7 downto 0);
+	ir0_8 <= ir(8 downto 0);
+	ir3_5 <= ir(5 downto 3);
+	ir6_8 <= ir(8 downto 6);
+	ir9_11 <= ir(11 downto 9);
+	
+	mux_mem_a : mux4to1 port map (S0=>B1,S1=>B2,D0=>Pc_out,D1=>T1_out,D2=>T2_out,D3=>PC_out,Y=>mem_a);
+	mux_mem_d : mux2to1_16bit port map (S0=>C1,D0=>T1_out,D1=>T2_out,Y=>mem_d);
+	
+	inst_mem : memory port map (mem_a=>mem_a,mem_d=>mem_d,wr_bar=>wr_bar,rd_bar=>rd_bar,mem_out=>mem_out,clk=>clk,rst=>rst);
 	
 end Struct;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uP
-Fri Oct 26 11:48:04 2018
+Fri Oct 26 19:04:56 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -14,7 +14,20 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "Reg:IR_reg"
+ 10. Port Connectivity Checks: "PEN:PEN_inst"
+ 11. Port Connectivity Checks: "rf:rf_inst|Reg:\inst_reg:6:R"
+ 12. Port Connectivity Checks: "rf:rf_inst|Reg:\inst_reg:5:R"
+ 13. Port Connectivity Checks: "rf:rf_inst|Reg:\inst_reg:4:R"
+ 14. Port Connectivity Checks: "rf:rf_inst|Reg:\inst_reg:3:R"
+ 15. Port Connectivity Checks: "rf:rf_inst|Reg:\inst_reg:2:R"
+ 16. Port Connectivity Checks: "rf:rf_inst|Reg:\inst_reg:1:R"
+ 17. Port Connectivity Checks: "rf:rf_inst|Reg:\inst_reg:0:R"
+ 18. Port Connectivity Checks: "rf:rf_inst"
+ 19. Port Connectivity Checks: "bit_reg:c_bit"
+ 20. Port Connectivity Checks: "ALU_final:alu|Add:A1|FullAdder:F0"
+ 21. Port Connectivity Checks: "mux4to1:mux_alu_b"
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -41,13 +54,13 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri Oct 26 11:48:04 2018       ;
+; Analysis & Synthesis Status ; Successful - Fri Oct 26 19:04:56 2018       ;
 ; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name               ; uP                                          ;
-; Top-level Entity Name       ; PEN                                         ;
+; Top-level Entity Name       ; uP                                          ;
 ; Family                      ; MAX V                                       ;
-; Total logic elements        ; 13                                          ;
-; Total pins                  ; 20                                          ;
+; Total logic elements        ; 0                                           ;
+; Total pins                  ; 18                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -59,7 +72,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; 5M1270ZT144C5      ;                    ;
-; Top-level entity name                                                      ; PEN                ; uP                 ;
+; Top-level entity name                                                      ; uP                 ; uP                 ;
 ; Family name                                                                ; MAX V              ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -136,47 +149,61 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                              ; Library ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
-; ../PEN/PEN.vhd                   ; yes             ; User VHDL File  ; /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd ;         ;
-+----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                       ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                                                ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
+; ../mux4to1.vhd                   ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd                 ;         ;
+; ../Shift7/Shift7.vhd             ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd           ;         ;
+; ../SE9/SE9.vhd                   ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd                 ;         ;
+; ../SE6/SE6.vhd                   ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd                 ;         ;
+; ../rf_final/rf.vhd               ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd             ;         ;
+; ../rf_final/R7.vhd               ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd             ;         ;
+; ../PEN/PEN.vhd                   ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd                 ;         ;
+; ../Memory/Reg.vhd                ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd              ;         ;
+; ../Memory/memory.vhd             ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd           ;         ;
+; ../ALU/ALU_final/FullAdder.vhd   ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd ;         ;
+; ../ALU/ALU_final/ALU_final.vhd   ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/ALU_final.vhd ;         ;
+; ../ALU/ALU_final/Add.vhd         ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/Add.vhd       ;         ;
+; uP.vhd                           ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd                   ;         ;
+; ../bit_reg.vhd                   ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd                 ;         ;
+; ../mux2to1.vhd                   ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd                 ;         ;
+; ../mux4to1_3bit.vhd              ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd            ;         ;
+; ../mux2to1_16bit.vhd             ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd           ;         ;
+; ../mux2to1_8bit.vhd              ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd            ;         ;
+; Reg8.vhd                         ; yes             ; User VHDL File  ; C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/Reg8.vhd                 ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Total logic elements                        ; 13       ;
-;     -- Combinational with no register       ; 13       ;
-;     -- Register only                        ; 0        ;
-;     -- Combinational with a register        ; 0        ;
-;                                             ;          ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 7        ;
-;     -- 3 input functions                    ; 3        ;
-;     -- 2 input functions                    ; 3        ;
-;     -- 1 input functions                    ; 0        ;
-;     -- 0 input functions                    ; 0        ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 13       ;
-;     -- arithmetic mode                      ; 0        ;
-;     -- qfbk mode                            ; 0        ;
-;     -- register cascade mode                ; 0        ;
-;     -- synchronous clear/load mode          ; 0        ;
-;     -- asynchronous clear/load mode         ; 0        ;
-;                                             ;          ;
-; Total registers                             ; 0        ;
-; I/O pins                                    ; 20       ;
-; Maximum fan-out node                        ; penin[6] ;
-; Maximum fan-out                             ; 6        ;
-; Total fan-out                               ; 54       ;
-; Average fan-out                             ; 1.64     ;
-+---------------------------------------------+----------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 0     ;
+;     -- Combinational with no register       ; 0     ;
+;     -- Register only                        ; 0     ;
+;     -- Combinational with a register        ; 0     ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- 2 input functions                    ; 0     ;
+;     -- 1 input functions                    ; 0     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+; I/O pins                                    ; 18    ;
++---------------------------------------------+-------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -184,7 +211,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-; |PEN                       ; 13 (13)     ; 0            ; 0          ; 20   ; 0            ; 13 (13)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |PEN                ; PEN         ; work         ;
+; |uP                        ; 0 (0)       ; 0            ; 0          ; 18   ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |uP                 ; uP          ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -204,93 +231,300 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Reg:IR_reg"                                                                              ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; q[15..12] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "PEN:PEN_inst"                                                                       ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; tp   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "rf:rf_inst|Reg:\inst_reg:6:R"                                                                               ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity         ; Details                                                                                             ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; d    ; Input  ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Bidir" but port on entity declared as "Input"  ;
+; q    ; Output ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Bidir" but port on entity declared as "Output" ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "rf:rf_inst|Reg:\inst_reg:5:R"                                                                               ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity         ; Details                                                                                             ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; d    ; Input  ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Bidir" but port on entity declared as "Input"  ;
+; q    ; Output ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Bidir" but port on entity declared as "Output" ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "rf:rf_inst|Reg:\inst_reg:4:R"                                                                               ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity         ; Details                                                                                             ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; d    ; Input  ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Bidir" but port on entity declared as "Input"  ;
+; q    ; Output ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Bidir" but port on entity declared as "Output" ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "rf:rf_inst|Reg:\inst_reg:3:R"                                                                               ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity         ; Details                                                                                             ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; d    ; Input  ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Bidir" but port on entity declared as "Input"  ;
+; q    ; Output ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Bidir" but port on entity declared as "Output" ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "rf:rf_inst|Reg:\inst_reg:2:R"                                                                               ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity         ; Details                                                                                             ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; d    ; Input  ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Bidir" but port on entity declared as "Input"  ;
+; q    ; Output ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Bidir" but port on entity declared as "Output" ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "rf:rf_inst|Reg:\inst_reg:1:R"                                                                               ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity         ; Details                                                                                             ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; d    ; Input  ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Bidir" but port on entity declared as "Input"  ;
+; q    ; Output ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Bidir" but port on entity declared as "Output" ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "rf:rf_inst|Reg:\inst_reg:0:R"                                                                               ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity         ; Details                                                                                             ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+; d    ; Input  ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Bidir" but port on entity declared as "Input"  ;
+; q    ; Output ; Critical Warning ; Port on prototype, e.g. VHDL component, declared as "Bidir" but port on entity declared as "Output" ;
++------+--------+------------------+-----------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "rf:rf_inst"                                                                          ;
++--------+-------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                             ;
++--------+-------+----------+-------------------------------------------------------------------------------------+
+; rf_a1  ; Bidir ; Warning  ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; rf_a3  ; Bidir ; Warning  ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; t2_out ; Bidir ; Warning  ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; rf_d3  ; Bidir ; Warning  ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+-------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "bit_reg:c_bit"                                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; q    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "ALU_final:alu|Add:A1|FullAdder:F0" ;
++------+-------+----------+-------------------------------------+
+; Port ; Type  ; Severity ; Details                             ;
++------+-------+----------+-------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                        ;
++------+-------+----------+-------------------------------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "mux4to1:mux_alu_b" ;
++-----------+-------+----------+----------------+
+; Port      ; Type  ; Severity ; Details        ;
++-----------+-------+----------+----------------+
+; d0[15..1] ; Input ; Info     ; Stuck at GND   ;
+; d0[0]     ; Input ; Info     ; Stuck at VCC   ;
++-----------+-------+----------+----------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Fri Oct 26 11:47:49 2018
+    Info: Processing started: Fri Oct 26 19:04:42 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uP -c uP
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic.vhd
-    Info (12022): Found design unit 1: outputlogic-arch File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic.vhd Line: 20
-    Info (12023): Found entity 1: outputlogic File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd
-    Info (12022): Found design unit 1: mux4to1-data File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd Line: 13
-    Info (12023): Found entity 1: mux4to1 File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd Line: 7
-Warning (12090): Entity "mux" obtained from "../mux.vhd" instead of from Quartus Prime megafunction library File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux.vhd
-    Info (12022): Found design unit 1: mux-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux.vhd Line: 11
-    Info (12023): Found entity 1: mux File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/demux3to8.vhd
-    Info (12022): Found design unit 1: demux3to8-behavioral File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/demux3to8.vhd Line: 11
-    Info (12023): Found entity 1: demux3to8 File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/demux3to8.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd
-    Info (12022): Found design unit 1: Shift7-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd Line: 12
-    Info (12023): Found entity 1: Shift7 File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd
-    Info (12022): Found design unit 1: SE9-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd Line: 12
-    Info (12023): Found entity 1: SE9 File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd
-    Info (12022): Found design unit 1: SE6-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd Line: 12
-    Info (12023): Found entity 1: SE6 File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd
-    Info (12022): Found design unit 1: rf-behave File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd Line: 20
-    Info (12023): Found entity 1: rf File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd
-    Info (12022): Found design unit 1: R7-behave File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd Line: 20
-    Info (12023): Found entity 1: R7 File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd Line: 10
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd
-    Info (12022): Found design unit 1: PEN-behave File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd Line: 14
-    Info (12023): Found entity 1: PEN File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd
-    Info (12022): Found design unit 1: statereg-description File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd Line: 15
-    Info (12023): Found entity 1: statereg File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd
-    Info (12022): Found design unit 1: Reg-description File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd Line: 16
-    Info (12023): Found entity 1: Reg File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd
-    Info (12022): Found design unit 1: memory-structure File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 19
-    Info (12023): Found entity 1: memory File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 8
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd
-    Info (12022): Found design unit 1: FullAdder-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd Line: 11
-    Info (12023): Found entity 1: FullAdder File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/ALU_final.vhd
-    Info (12022): Found design unit 1: ALU_final-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/ALU_final.vhd Line: 14
-    Info (12023): Found entity 1: ALU_final File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/ALU_final.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/Add.vhd
-    Info (12022): Found design unit 1: Add-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/Add.vhd Line: 14
-    Info (12023): Found entity 1: Add File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/Add.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file uP.vhd
-    Info (12022): Found design unit 1: uP-Struct File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 13
-    Info (12023): Found entity 1: uP File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd
-    Info (12022): Found design unit 1: bit_reg-WhatDoYouCare File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd Line: 8
-    Info (12023): Found entity 1: bit_reg File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd
-    Info (12022): Found design unit 1: mux2to1-data File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd Line: 13
-    Info (12023): Found entity 1: mux2to1 File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd
-    Info (12022): Found design unit 1: mux4to1_3bit-data File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd Line: 13
-    Info (12023): Found entity 1: mux4to1_3bit File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd
-    Info (12022): Found design unit 1: mux2to1_16bit-data File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd Line: 13
-    Info (12023): Found entity 1: mux2to1_16bit File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd Line: 7
-Info (12021): Found 2 design units, including 1 entities, in source file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd
-    Info (12022): Found design unit 1: mux2to1_8bit-data File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd Line: 13
-    Info (12023): Found entity 1: mux2to1_8bit File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd Line: 7
-Info (12127): Elaborating entity "PEN" for the top level hierarchy
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "pennext[7]" is stuck at GND File: /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd Line: 10
-Info (21057): Implemented 33 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 13 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 1226 megabytes
-    Info: Processing ended: Fri Oct 26 11:48:04 2018
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:39
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/outputlogic.vhd
+    Info (12022): Found design unit 1: outputlogic-arch File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic.vhd Line: 20
+    Info (12023): Found entity 1: outputlogic File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/mux4to1.vhd
+    Info (12022): Found design unit 1: mux4to1-data File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd Line: 13
+    Info (12023): Found entity 1: mux4to1 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd Line: 7
+Warning (12090): Entity "mux" obtained from "../mux.vhd" instead of from Quartus Prime megafunction library File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/mux.vhd
+    Info (12022): Found design unit 1: mux-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux.vhd Line: 11
+    Info (12023): Found entity 1: mux File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/demux3to8.vhd
+    Info (12022): Found design unit 1: demux3to8-behavioral File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/demux3to8.vhd Line: 11
+    Info (12023): Found entity 1: demux3to8 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/demux3to8.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/shift7/shift7.vhd
+    Info (12022): Found design unit 1: Shift7-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd Line: 12
+    Info (12023): Found entity 1: Shift7 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/se9/se9.vhd
+    Info (12022): Found design unit 1: SE9-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd Line: 12
+    Info (12023): Found entity 1: SE9 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/se6/se6.vhd
+    Info (12022): Found design unit 1: SE6-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd Line: 12
+    Info (12023): Found entity 1: SE6 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/rf_final/rf.vhd
+    Info (12022): Found design unit 1: rf-behave File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd Line: 20
+    Info (12023): Found entity 1: rf File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/rf_final/r7.vhd
+    Info (12022): Found design unit 1: R7-behave File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd Line: 20
+    Info (12023): Found entity 1: R7 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/pen/pen.vhd
+    Info (12022): Found design unit 1: PEN-behave File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd Line: 14
+    Info (12023): Found entity 1: PEN File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/nextstatelogic&stateregister/statereg.vhd
+    Info (12022): Found design unit 1: statereg-description File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd Line: 15
+    Info (12023): Found entity 1: statereg File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/memory/reg.vhd
+    Info (12022): Found design unit 1: Reg-description File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd Line: 16
+    Info (12023): Found entity 1: Reg File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/memory/memory.vhd
+    Info (12022): Found design unit 1: memory-structure File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 19
+    Info (12023): Found entity 1: memory File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/alu/alu_final/fulladder.vhd
+    Info (12022): Found design unit 1: FullAdder-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd Line: 11
+    Info (12023): Found entity 1: FullAdder File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/alu/alu_final/alu_final.vhd
+    Info (12022): Found design unit 1: ALU_final-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/ALU_final.vhd Line: 14
+    Info (12023): Found entity 1: ALU_final File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/ALU_final.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/alu/alu_final/add.vhd
+    Info (12022): Found design unit 1: Add-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/Add.vhd Line: 14
+    Info (12023): Found entity 1: Add File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/Add.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file up.vhd
+    Info (12022): Found design unit 1: uP-Struct File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 13
+    Info (12023): Found entity 1: uP File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/bit_reg.vhd
+    Info (12022): Found design unit 1: bit_reg-WhatDoYouCare File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd Line: 8
+    Info (12023): Found entity 1: bit_reg File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/mux2to1.vhd
+    Info (12022): Found design unit 1: mux2to1-data File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd Line: 13
+    Info (12023): Found entity 1: mux2to1 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/mux4to1_3bit.vhd
+    Info (12022): Found design unit 1: mux4to1_3bit-data File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd Line: 13
+    Info (12023): Found entity 1: mux4to1_3bit File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/mux2to1_16bit.vhd
+    Info (12022): Found design unit 1: mux2to1_16bit-data File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd Line: 13
+    Info (12023): Found entity 1: mux2to1_16bit File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/mux2to1_8bit.vhd
+    Info (12022): Found design unit 1: mux2to1_8bit-data File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd Line: 13
+    Info (12023): Found entity 1: mux2to1_8bit File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file reg8.vhd
+    Info (12022): Found design unit 1: Reg8-description File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/Reg8.vhd Line: 16
+    Info (12023): Found entity 1: Reg8 File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/Reg8.vhd Line: 7
+Info (12127): Elaborating entity "uP" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at uP.vhd(119): object "carry" assigned a value but never read File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 119
+Warning (10036): Verilog HDL or VHDL warning at uP.vhd(119): object "tp" assigned a value but never read File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 119
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "G2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "G1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "H2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "H1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "k1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "op" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "L1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "P2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "P1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "EnP" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "D" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "E1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "E2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "F" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "M1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "M2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "M3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "en7" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "WR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "En1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "En2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "En3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "I" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "J1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "J2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "A1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "A2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "EnPEN" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "EnI" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "N" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "B1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "B2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "C1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "wr_bar" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Warning (10541): VHDL Signal Declaration warning at uP.vhd(120): used implicit default value for signal "rd_bar" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 120
+Info (12128): Elaborating entity "mux4to1" for hierarchy "mux4to1:mux_alu_a" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 130
+Info (12128): Elaborating entity "ALU_final" for hierarchy "ALU_final:alu" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 132
+Info (12128): Elaborating entity "Add" for hierarchy "ALU_final:alu|Add:A1" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/ALU_final.vhd Line: 26
+Info (12128): Elaborating entity "FullAdder" for hierarchy "ALU_final:alu|Add:A1|FullAdder:F0" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/Add.vhd Line: 25
+Info (12128): Elaborating entity "bit_reg" for hierarchy "bit_reg:c_bit" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 134
+Info (12128): Elaborating entity "Reg" for hierarchy "Reg:PC_reg" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 138
+Info (12128): Elaborating entity "mux2to1" for hierarchy "mux2to1:mux_a1" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 139
+Info (12128): Elaborating entity "mux4to1_3bit" for hierarchy "mux4to1_3bit:mux_a3" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 140
+Info (12128): Elaborating entity "mux2to1_16bit" for hierarchy "mux2to1_16bit:mux_d3" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 141
+Info (12128): Elaborating entity "rf" for hierarchy "rf:rf_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 142
+Warning (10492): VHDL Process Statement warning at rf.vhd(72): signal "registers" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd Line: 72
+Warning (10492): VHDL Process Statement warning at rf.vhd(72): signal "rf_a1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd Line: 72
+Warning (10492): VHDL Process Statement warning at rf.vhd(73): signal "registers" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd Line: 73
+Warning (10492): VHDL Process Statement warning at rf.vhd(73): signal "rf_a2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd Line: 73
+Info (12128): Elaborating entity "R7" for hierarchy "rf:rf_inst|R7:R_7" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd Line: 56
+Info (12128): Elaborating entity "SE9" for hierarchy "SE9:se9_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 153
+Info (12128): Elaborating entity "SE6" for hierarchy "SE6:se6_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 154
+Info (12128): Elaborating entity "Shift7" for hierarchy "Shift7:Shift7_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 155
+Info (12128): Elaborating entity "mux2to1_8bit" for hierarchy "mux2to1_8bit:mux_pen" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 157
+Info (12128): Elaborating entity "Reg8" for hierarchy "Reg8:reg_PEN" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 158
+Info (12128): Elaborating entity "PEN" for hierarchy "PEN:PEN_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 159
+Info (12128): Elaborating entity "memory" for hierarchy "memory:inst_mem" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 173
+Warning (12241): 8 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (21074): Design contains 18 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "instruction[0]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "instruction[1]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "instruction[2]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "instruction[3]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "instruction[4]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "instruction[5]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "instruction[6]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "instruction[7]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "instruction[8]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "instruction[9]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "instruction[10]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "instruction[11]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "instruction[12]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "instruction[13]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "instruction[14]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "instruction[15]" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 8
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 9
+    Warning (15610): No output dependent on input pin "rst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 10
+Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 18 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 63 warnings
+    Info: Peak virtual memory: 4984 megabytes
+    Info: Processing ended: Fri Oct 26 19:04:56 2018
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:31
 
 

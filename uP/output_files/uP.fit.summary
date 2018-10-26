@@ -1,11 +1,11 @@
-Fitter Status : Successful - Fri Oct 26 11:48:06 2018
+Fitter Status : Successful - Fri Oct 26 19:04:58 2018
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : uP
-Top-level Entity Name : PEN
+Top-level Entity Name : uP
 Family : MAX V
 Device : 5M1270ZT144C5
 Timing Models : Final
-Total logic elements : 13 / 1,270 ( 1 % )
-Total pins : 20 / 114 ( 18 % )
+Total logic elements : 0 / 1,270 ( 0 % )
+Total pins : 18 / 114 ( 16 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

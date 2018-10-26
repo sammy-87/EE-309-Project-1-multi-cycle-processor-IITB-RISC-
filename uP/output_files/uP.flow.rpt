@@ -1,5 +1,5 @@
 Flow report for uP
-Fri Oct 26 11:48:09 2018
+Fri Oct 26 19:05:04 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Fri Oct 26 11:48:09 2018       ;
+; Flow Status           ; Successful - Fri Oct 26 19:05:04 2018       ;
 ; Quartus Prime Version ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name         ; uP                                          ;
-; Top-level Entity Name ; PEN                                         ;
+; Top-level Entity Name ; uP                                          ;
 ; Family                ; MAX V                                       ;
 ; Device                ; 5M1270ZT144C5                               ;
 ; Timing Models         ; Final                                       ;
-; Total logic elements  ; 13 / 1,270 ( 1 % )                          ;
-; Total pins            ; 20 / 114 ( 18 % )                           ;
+; Total logic elements  ; 0 / 1,270 ( 0 % )                           ;
+; Total pins            ; 18 / 114 ( 16 % )                           ;
 ; Total virtual pins    ; 0                                           ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                               ;
 +-----------------------+---------------------------------------------+
@@ -60,26 +60,25 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/26/2018 11:47:49 ;
+; Start date & time ; 10/26/2018 19:04:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; uP                  ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                 ;
-+--------------------------+------------------------+---------------+-------------+----------------+
-; Assignment Name          ; Value                  ; Default Value ; Entity Name ; Section Id     ;
-+--------------------------+------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID    ; 0.154053466900995      ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT   ; Vhdl                   ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL      ; ModelSim-Altera (VHDL) ; <None>        ; --          ; --             ;
-; EDA_TIME_SCALE           ; 1 ps                   ; --            ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP   ; 85                     ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP   ; 0                      ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY ; output_files           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY         ; PEN                    ; uP            ; --          ; --             ;
-+--------------------------+------------------------+---------------+-------------+----------------+
++-----------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                          ;
++--------------------------+---------------------------------+---------------+-------------+----------------+
+; Assignment Name          ; Value                           ; Default Value ; Entity Name ; Section Id     ;
++--------------------------+---------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID    ; 220295154634473.154056088217516 ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT   ; Vhdl                            ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL      ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
+; EDA_TIME_SCALE           ; 1 ps                            ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP   ; 85                              ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP   ; 0                               ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY ; output_files                    ; --            ; --          ; --             ;
++--------------------------+---------------------------------+---------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -87,26 +86,26 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 1226 MB             ; 00:00:39                           ;
-; Fitter                    ; 00:00:01     ; 1.0                     ; 1267 MB             ; 00:00:01                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 1038 MB             ; 00:00:00                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 1005 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 1285 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:18     ; --                      ; --                  ; 00:00:41                           ;
+; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 4984 MB             ; 00:00:31                           ;
+; Fitter                    ; 00:00:01     ; 1.0                     ; 5120 MB             ; 00:00:02                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4855 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4856 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4820 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:36                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                                            ;
-+---------------------------+---------------------------------+----------------+------------+----------------+
-; Module Name               ; Machine Hostname                ; OS Name        ; OS Version ; Processor type ;
-+---------------------------+---------------------------------+----------------+------------+----------------+
-; Analysis & Synthesis      ; pranil-lenovo-ideapad-310-15ikb ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
-; Fitter                    ; pranil-lenovo-ideapad-310-15ikb ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
-; Assembler                 ; pranil-lenovo-ideapad-310-15ikb ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
-; TimeQuest Timing Analyzer ; pranil-lenovo-ideapad-310-15ikb ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
-; EDA Netlist Writer        ; pranil-lenovo-ideapad-310-15ikb ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
-+---------------------------+---------------------------------+----------------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; LAPTOP-5F776IAH  ; Windows 8 ; 6.2        ; x86_64         ;
+; Fitter                    ; LAPTOP-5F776IAH  ; Windows 8 ; 6.2        ; x86_64         ;
+; Assembler                 ; LAPTOP-5F776IAH  ; Windows 8 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; LAPTOP-5F776IAH  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-5F776IAH  ; Windows 8 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------

@@ -39,7 +39,7 @@
 
 set_global_assignment -name FAMILY "MAX V"
 set_global_assignment -name DEVICE 5M1270ZT144C5
-set_global_assignment -name TOP_LEVEL_ENTITY PEN
+set_global_assignment -name TOP_LEVEL_ENTITY uP
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.0.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:14:02  OCTOBER 26, 2018"
 set_global_assignment -name LAST_QUARTUS_VERSION 16.0.0
@@ -75,3 +75,4 @@ set_global_assignment -name VHDL_FILE ../mux2to1.vhd
 set_global_assignment -name VHDL_FILE ../mux4to1_3bit.vhd
 set_global_assignment -name VHDL_FILE ../mux2to1_16bit.vhd
 set_global_assignment -name VHDL_FILE ../mux2to1_8bit.vhd
+set_global_assignment -name VHDL_FILE Reg8.vhd

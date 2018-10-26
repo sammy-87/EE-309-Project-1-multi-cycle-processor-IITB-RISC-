@@ -23,10 +23,6 @@ begin
 		variable next_var : std_logic_vector(7 downto 0);
 	
 	begin
-<<<<<<< HEAD
-=======
-		variable next_var : std_logic_vector(7 downto 0);
->>>>>>> cf9eb090e0df8cd737a8d54b7dfdb01086c87302
 		
 		if (penin(0) = '1') then 
 			penout <= "000";

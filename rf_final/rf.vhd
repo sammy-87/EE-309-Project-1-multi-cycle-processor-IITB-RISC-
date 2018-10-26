@@ -61,19 +61,20 @@ reg_file : process (clk, rst, wr_rf,rf_a3)
 	begin	
 		
 		if wr_rf = '1' then
-			--wrarr1 <= (others => '0');
-			--wrarr1(to_integer(unsigned(rf_a3))) <= '1';
+			wrarr_temp := (others =>'0');
 			wrarr_temp(to_integer(unsigned(rf_a3))) := '1';
 			temp1 <= (others => '0');
 			temp2 <= (others => '0');
-			wrarr1 <= wrarr_temp;
+			
 		
 		else 
+			wrarr_temp := (others =>'0');
 			temp1 <= registers(to_integer(unsigned(rf_a1)));
 			temp2 <= registers(to_integer(unsigned(rf_a2)));
-			wrarr1 <= (others => '0');
 			
 		end if;
+		
+		wrarr1 <= wrarr_temp;
 		
 	end process reg_file;
 		
