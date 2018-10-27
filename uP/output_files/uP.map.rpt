@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uP
-Sat Oct 27 21:07:51 2018
+Sat Oct 27 22:04:29 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Oct 27 21:07:51 2018       ;
+; Analysis & Synthesis Status ; Successful - Sat Oct 27 22:04:29 2018       ;
 ; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name               ; uP                                          ;
 ; Top-level Entity Name       ; uP                                          ;
@@ -269,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Sat Oct 27 21:07:36 2018
+    Info: Processing started: Sat Oct 27 22:04:10 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uP -c uP
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/outputlogic/outputlogic.vhd
@@ -394,8 +394,8 @@ Info (21057): Implemented 18 device resources after synthesis - the final resour
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 28 warnings
     Info: Peak virtual memory: 4985 megabytes
-    Info: Processing ended: Sat Oct 27 21:07:51 2018
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Processing ended: Sat Oct 27 22:04:29 2018
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:43
 
 

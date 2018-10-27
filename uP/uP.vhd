@@ -148,7 +148,7 @@ begin
 
 	c_bit: bit_reg port map (D=>c,CLK=>clk,reset=>rst,controlsignal=>L1,Q=>carry);
 	
-	mux_pc: mux4to1 port map (S1=>P2,S0=>P1,D0=>alu_out,D1=>t2_out,D2=>t3_out,D3=>alu_out,Y=>PC_in);
+	mux_pc: mux4to1 port map (S1=>P2,S0=>P1,D0=>alu_out,D1=>t2_out,D2=>t3_out,D3=>Shift7_out,Y=>PC_in);
 	
 	PC_reg: Reg port map (d=>PC_in,en=>EnP,rst=>rst,clk=>clk,q=>pc_out);
 	mux_a1 : mux2to1 port map (S0=>D,D0=>ir9_11,D1=>PEN_out,Y=>rf_a1);

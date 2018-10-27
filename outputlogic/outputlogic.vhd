@@ -167,6 +167,9 @@ begin
 				control_variable(13) := '1';
 				control_variable(31) := '1';
 				control_variable(32) := '1';
+				if ir(15 downto 12) = "0011" then
+					control_variable(33):='1';
+				end if;
 			else
 				control_variable(12) := '1';
 				control_variable(14) := '1';
