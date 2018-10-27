@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uP
-Sun Oct 28 00:18:18 2018
+Sun Oct 28 00:20:26 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun Oct 28 00:18:18 2018       ;
+; Analysis & Synthesis Status ; Successful - Sun Oct 28 00:20:26 2018       ;
 ; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name               ; uP                                          ;
 ; Top-level Entity Name       ; uP                                          ;
@@ -269,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Sun Oct 28 00:18:05 2018
+    Info: Processing started: Sun Oct 28 00:20:13 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uP -c uP
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/outputlogic/outputlogic.vhd
@@ -395,8 +395,8 @@ Info (21057): Implemented 18 device resources after synthesis - the final resour
     Info (21059): Implemented 0 output pins
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
     Info: Peak virtual memory: 4985 megabytes
-    Info: Processing ended: Sun Oct 28 00:18:18 2018
+    Info: Processing ended: Sun Oct 28 00:20:26 2018
     Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Total CPU time (on all processors): 00:00:30
 
 

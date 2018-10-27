@@ -13,62 +13,62 @@
 # 
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic/outputlogic.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:41 on Oct 27,2018
+# Start time: 00:20:46 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic/outputlogic.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity outputlogic
 # -- Compiling architecture arch of outputlogic
-# End time: 23:57:41 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:46 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:41 on Oct 27,2018
+# Start time: 00:20:46 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux4to1
 # -- Compiling architecture data of mux4to1
-# End time: 23:57:41 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:46 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:41 on Oct 27,2018
+# Start time: 00:20:46 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Shift7
 # -- Compiling architecture Struct of Shift7
-# End time: 23:57:41 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:46 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:41 on Oct 27,2018
+# Start time: 00:20:47 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity SE9
 # -- Compiling architecture Struct of SE9
-# End time: 23:57:41 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:47 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:41 on Oct 27,2018
+# Start time: 00:20:47 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity SE6
 # -- Compiling architecture Struct of SE6
-# End time: 23:57:41 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:47 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:42 on Oct 27,2018
+# Start time: 00:20:47 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -76,11 +76,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity rf
 # -- Compiling architecture behave of rf
-# End time: 23:57:42 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:47 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:42 on Oct 27,2018
+# Start time: 00:20:47 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -90,44 +90,44 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity R7
 # -- Compiling architecture behave of R7
-# End time: 23:57:42 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:47 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:42 on Oct 27,2018
+# Start time: 00:20:47 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity PEN
 # -- Compiling architecture behave of PEN
-# End time: 23:57:42 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:47 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:42 on Oct 27,2018
+# Start time: 00:20:47 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity statereg
 # -- Compiling architecture description of statereg
-# End time: 23:57:42 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:47 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:42 on Oct 27,2018
+# Start time: 00:20:47 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Reg
 # -- Compiling architecture description of Reg
-# End time: 23:57:42 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:47 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:42 on Oct 27,2018
+# Start time: 00:20:48 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -135,44 +135,44 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity memory
 # -- Compiling architecture structure of memory
-# End time: 23:57:42 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:48 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:42 on Oct 27,2018
+# Start time: 00:20:48 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity FullAdder
 # -- Compiling architecture Struct of FullAdder
-# End time: 23:57:42 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:48 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/ALU_final.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:43 on Oct 27,2018
+# Start time: 00:20:48 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/ALU_final.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity ALU_final
 # -- Compiling architecture Struct of ALU_final
-# End time: 23:57:43 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:48 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/Add.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:43 on Oct 27,2018
+# Start time: 00:20:48 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/Add.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Add
 # -- Compiling architecture Struct of Add
-# End time: 23:57:43 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:48 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:43 on Oct 27,2018
+# Start time: 00:20:48 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -181,78 +181,78 @@
 # -- Loading package std_logic_misc
 # -- Compiling entity uP
 # -- Compiling architecture Struct of uP
-# End time: 23:57:43 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:48 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:43 on Oct 27,2018
+# Start time: 00:20:48 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity bit_reg
 # -- Compiling architecture WhatDoYouCare of bit_reg
-# End time: 23:57:43 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:48 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:43 on Oct 27,2018
+# Start time: 00:20:48 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux2to1
 # -- Compiling architecture data of mux2to1
-# End time: 23:57:43 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:48 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:43 on Oct 27,2018
+# Start time: 00:20:48 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux4to1_3bit
 # -- Compiling architecture data of mux4to1_3bit
-# End time: 23:57:43 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:48 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:43 on Oct 27,2018
+# Start time: 00:20:49 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux2to1_16bit
 # -- Compiling architecture data of mux2to1_16bit
-# End time: 23:57:43 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:49 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:43 on Oct 27,2018
+# Start time: 00:20:49 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity mux2to1_8bit
 # -- Compiling architecture data of mux2to1_8bit
-# End time: 23:57:43 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:49 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/Reg8.vhd}
 # Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 23:57:44 on Oct 27,2018
+# Start time: 00:20:49 on Oct 28,2018
 # vcom -reportprogress 300 -93 -work work C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/Reg8.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity Reg8
 # -- Compiling architecture description of Reg8
-# End time: 23:57:44 on Oct 27,2018, Elapsed time: 0:00:00
+# End time: 00:20:49 on Oct 28,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.up
 # vsim work.up 
-# Start time: 23:57:49 on Oct 27,2018
+# Start time: 00:20:55 on Oct 28,2018
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -283,7 +283,7 @@ vsim work.up
 # Loading work.outputlogic(arch)
 # Loading work.statereg(description)
 add wave -position insertpoint sim:/up/*
-force -freeze sim:/up/instruction 0011000001100111 0
+force -freeze sim:/up/instruction 0011000011001110 0
 force -freeze sim:/up/clk 0 0, 1 {50 ps} -r 100
 force -freeze sim:/up/rst 1 0
 run
@@ -300,5 +300,80 @@ run
 run
 run
 run
-# End time: 00:18:40 on Oct 28,2018, Elapsed time: 0:20:51
+force -freeze sim:/up/instruction 0101000011000011 0
+run
+run
+run
+run
+force -freeze sim:/up/instruction 0100001011000011 0
+run
+run
+run
+run
+run
+force -freeze sim:/up/instruction 0011010110011000 0
+run
+run
+run
+force -freeze sim:/up/instruction 0011100110111000 0
+run
+run
+run
+force -freeze sim:/up/instruction 0011110010011000 0
+run
+run
+run
+force -freeze sim:/up/instruction 0111101001010010 0
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/up/instruction 0011000000000000 0
+run
+run
+run
+force -freeze sim:/up/instruction 0011001000000000 0
+run
+run
+run
+force -freeze sim:/up/instruction 0011010000000000 0
+run
+run
+run
+force -freeze sim:/up/instruction 0011011000000000 0
+run
+run
+run
+force -freeze sim:/up/instruction 0011111000000000 0
+run
+run
+run
+force -freeze sim:/up/instruction 0011100000000000 0
+run
+run
+run
+force -freeze sim:/up/instruction 0011101000000000 0
+run
+run
+run
+force -freeze sim:/up/instruction 0011110000000000 0
+run
+run
+run
+force -freeze sim:/up/instruction 0110010001011001 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 00:38:46 on Oct 28,2018, Elapsed time: 0:17:51
 # Errors: 0, Warnings: 4
