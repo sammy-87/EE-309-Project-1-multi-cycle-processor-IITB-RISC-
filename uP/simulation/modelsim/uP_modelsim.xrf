@@ -1,5 +1,5 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic.vhd
+source_file = 1, C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic/outputlogic.vhd
 source_file = 1, C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd
 source_file = 1, C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux.vhd
 source_file = 1, C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/demux3to8.vhd

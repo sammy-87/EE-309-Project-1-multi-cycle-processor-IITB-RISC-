@@ -7,36 +7,36 @@ use ieee.numeric_std.all;
 
 entity rf is 
 	port(
-			 rf_a1, rf_a2, rf_a3   : inout std_logic_vector(2 DOWNTO 0);
+			 rf_a1, rf_a2, rf_a3   : in std_logic_vector(2 DOWNTO 0);
 			 m : in std_logic_vector(2 downto 0);
 			 rst : in std_logic; -- async. clear.
 			 clk : in std_logic; -- clock.
 			 wr_rf  : in std_logic; -- write
 			 en7 : in std_logic; -- enable for register 7
-			 alu_out, t2_out, PC_out, t3_out, rf_d3 : inout std_logic_vector(15 downto 0);
-			 rf_d1,rf_d2  : inout std_logic_vector(15 DOWNTO 0)); -- output
+			 alu_out, t2_out, PC_out, t3_out, rf_d3 : in std_logic_vector(15 downto 0);
+			 rf_d1,rf_d2  : out std_logic_vector(15 DOWNTO 0)); -- output
 end rf;
 
 architecture behave of rf is
 
 component R7 is 
 	port(
-			 alu_out, t2_out, PC_out, t3_out, rf_d3  : inout std_logic_vector(15 DOWNTO 0);
+			 alu_out, t2_out, PC_out, t3_out, rf_d3  : in std_logic_vector(15 DOWNTO 0);
 			 m : in std_logic_vector(2 downto 0);
 			 rst : in std_logic; -- async. clear.
 			 clk : in std_logic; -- clock.
 			 wr  : in std_logic; -- write
-			 q : inout std_logic_vector(15 downto 0) );
+			 q : out std_logic_vector(15 downto 0) );
 end component;
 
 
 component Reg is 
 	port(
-		 d   : inout std_logic_vector(15 DOWNTO 0);
+		 d   : in std_logic_vector(15 DOWNTO 0);
 		 en  : in std_logic; -- load/enable.
 		 rst : in std_logic; -- async. clear.
 		 clk : in std_logic; -- clock.
-		 q   : inout std_logic_vector(15 DOWNTO 0)); -- output
+		 q   : out std_logic_vector(15 DOWNTO 0)); -- output
 end component;
 
 type registerFile is array(0 to 7) of std_logic_vector(15 downto 0);

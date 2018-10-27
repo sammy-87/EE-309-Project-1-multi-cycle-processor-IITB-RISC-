@@ -12,7 +12,7 @@ entity outputlogic is
 		C : in std_logic;
 		Z : in std_logic;
 		Rf_a3 : in std_logic_vector(2 DOWNTO 0);
-		currentstate : inout std_logic_vector(4 DOWNTO 0);
+		--currentstate : inout std_logic_vector(4 DOWNTO 0);
 		control_signal : out std_logic_vector(37 DOWNTO 0);
 		nextstate : inout std_logic_vector(4 DOWNTO 0));
 end outputlogic;
@@ -25,6 +25,7 @@ component statereg is
      clk : in std_logic; -- clock.
      q   : out std_logic_vector(4 DOWNTO 0));
 end component;
+signal currentstate: std_logic_vector(4 downto 0);
 begin 
 	state : statereg port map (d => nextstate, rst => reset, clk => clk, q => currentstate);
 	
