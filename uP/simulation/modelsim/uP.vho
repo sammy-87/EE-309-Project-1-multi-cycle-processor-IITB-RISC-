@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition"
 
--- DATE "10/28/2018 00:20:34"
+-- DATE "10/28/2018 02:16:22"
 
 -- 
 -- Device: Altera 5M1270ZT144C5 Package TQFP144
@@ -34,9 +34,8 @@ USE MAXV.MAXV_COMPONENTS.ALL;
 
 ENTITY 	uP IS
     PORT (
-	instruction : IN std_logic_vector(15 DOWNTO 0);
 	clk : IN std_logic;
-	rst : IN std_logic
+	rst_m : IN std_logic
 	);
 END uP;
 
@@ -53,180 +52,18 @@ SIGNAL devpor : std_logic := '1';
 SIGNAL ww_devoe : std_logic;
 SIGNAL ww_devclrn : std_logic;
 SIGNAL ww_devpor : std_logic;
-SIGNAL ww_instruction : std_logic_vector(15 DOWNTO 0);
 SIGNAL ww_clk : std_logic;
-SIGNAL ww_rst : std_logic;
+SIGNAL ww_rst_m : std_logic;
 
 BEGIN
 
-ww_instruction <= instruction;
 ww_clk <= clk;
-ww_rst <= rst;
+ww_rst_m <= rst_m;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
 
--- Location: PIN_1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[0]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(0));
-
--- Location: PIN_2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[1]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(1));
-
--- Location: PIN_24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[2]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(2));
-
--- Location: PIN_4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[3]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(3));
-
--- Location: PIN_108,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[4]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(4));
-
--- Location: PIN_30,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[5]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(5));
-
--- Location: PIN_96,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[6]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(6));
-
--- Location: PIN_110,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[7]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(7));
-
--- Location: PIN_8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[8]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(8));
-
--- Location: PIN_67,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[9]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(9));
-
--- Location: PIN_14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[10]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(10));
-
--- Location: PIN_88,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[11]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(11));
-
--- Location: PIN_97,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[12]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(12));
-
--- Location: PIN_125,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[13]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(13));
-
--- Location: PIN_79,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[14]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(14));
-
--- Location: PIN_21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\instruction[15]~I\ : maxv_io
--- pragma translate_off
-GENERIC MAP (
-	operation_mode => "input")
--- pragma translate_on
-PORT MAP (
-	oe => GND,
-	padio => ww_instruction(15));
-
--- Location: PIN_31,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+-- Location: PIN_39,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 \clk~I\ : maxv_io
 -- pragma translate_off
 GENERIC MAP (
@@ -236,15 +73,15 @@ PORT MAP (
 	oe => GND,
 	padio => ww_clk);
 
--- Location: PIN_84,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-\rst~I\ : maxv_io
+-- Location: PIN_2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+\rst_m~I\ : maxv_io
 -- pragma translate_off
 GENERIC MAP (
 	operation_mode => "input")
 -- pragma translate_on
 PORT MAP (
 	oe => GND,
-	padio => ww_rst);
+	padio => ww_rst_m);
 END structure;
 
 

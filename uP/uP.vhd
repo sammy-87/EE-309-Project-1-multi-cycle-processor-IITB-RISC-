@@ -6,9 +6,9 @@ use ieee.std_logic_1164.all;
 use ieee.std_logic_misc.all;
 
 entity uP is
-   port(instruction: in std_logic_vector(15 downto 0);
+   port(--instruction: in std_logic_vector(15 downto 0);
 			clk: in std_logic;
-			rst: in std_logic);
+			rst_m: in std_logic);
 end entity;
 
 architecture Struct of uP is
@@ -125,13 +125,14 @@ component outputlogic is
 		C : in std_logic;
 		Z : in std_logic;
 		Rf_a3 : in std_logic_vector(2 DOWNTO 0);
+		rst_i : out std_logic;
 		--currentstate : inout std_logic_vector(4 DOWNTO 0);
 		control_signal : out std_logic_vector(37 DOWNTO 0);
 		nextstate : inout std_logic_vector(4 DOWNTO 0));
 end component;
 
 
-signal c,carry,tp,tz,zero,rst1,rst2 : std_logic;
+signal c,carry,tp,tz,zero,rst1,rst2,rst : std_logic;
 signal G2,G1,H2,H1,k1,op,L1,L2,P2,P1,EnP,D,E1,E2,F,M1,M2,M3,en7,WR,En1,En2,En3,I,J1,J2,A1,A2,EnPEN,EnI,N,B1,B2,C1,wr_bar,rd_bar : std_logic;
 signal t1_in,t1_out,t2_in,t2_out,t3_in,t3_out,mem_out,PC_out,alu_a,alu_b,SE6_out,SE9_out,alu_out,pc_in,shift7_out,mem_a,mem_d,rf_d3,rf_d1,rf_d2,ir: std_logic_vector(15 downto 0);
 signal ir9_11,ir3_5,ir6_8,PEN_out,rf_a1,rf_a2,rf_a3: std_logic_vector(2 downto 0);
@@ -150,7 +151,7 @@ begin
 	
 	mux_pc: mux4to1 port map (S1=>P2,S0=>P1,D0=>alu_out,D1=>t2_out,D2=>t3_out,D3=>Shift7_out,Y=>PC_in);
 	
-	PC_reg: Reg port map (d=>PC_in,en=>EnP,rst=>rst,clk=>clk,q=>pc_out);
+	PC_reg: Reg port map (d=>PC_in,en=>EnP,rst=>rst_m,clk=>clk,q=>pc_out);
 	mux_a1 : mux2to1 port map (S0=>D,D0=>ir9_11,D1=>PEN_out,Y=>rf_a1);
 	mux_a3 : mux4to1_3bit port map (S0=>E1,S1=>E2,D0=>ir9_11,D1=>ir3_5,D2=>ir6_8,D3=>PEN_out,Y=>rf_a3);
 	mux_d3 : mux2to1_16bit port map (S0=>F,D0=>t3_out,D1=>shift7_out,Y=>rf_d3);
@@ -177,7 +178,7 @@ begin
 	reg_PEN: Reg8 port map (d=>PEN_in_reg,en=>EnPEN,rst=>rst,clk=>clk,q=>PEN_out_reg);
 	PEN_inst: PEN port map(penin=>PEN_out_reg,tp=>tp,pennext=>PEN_next,penout=>PEN_out); 
 	
-	IR_reg: Reg port map (d=>instruction,en=>EnI,rst=>rst,clk=>clk,q=>ir);
+	IR_reg: Reg port map (d=>mem_out,en=>EnI,rst=>rst_m,clk=>clk,q=>ir);
 	
 	ir0_5 <= ir(5 downto 0);
 	ir0_7 <= ir(7 downto 0);
@@ -189,8 +190,9 @@ begin
 	mux_mem_a : mux4to1 port map (S0=>B1,S1=>B2,D0=>Pc_out,D1=>T1_out,D2=>T2_out,D3=>PC_out,Y=>mem_a);
 	mux_mem_d : mux2to1_16bit port map (S0=>C1,D0=>T1_out,D1=>T2_out,Y=>mem_d);
 	
-	inst_mem : memory port map (mem_a=>mem_a,mem_d=>mem_d,wr_bar=>wr_bar,rd_bar=>rd_bar,mem_out=>mem_out,clk=>clk,rst=>rst);
-	outputlogic_inst: outputlogic port map (ir=>ir,tp=>tp,tz=>tz,reset=>rst,clk=>clk,C=>carry,Z=>zero,Rf_a3=>rf_a3,
+	inst_mem : memory port map (mem_a=>mem_a,mem_d=>mem_d,wr_bar=>wr_bar,rd_bar=>rd_bar,mem_out=>mem_out,clk=>clk,rst=>rst_m);
+	
+	outputlogic_inst: outputlogic port map (ir=>ir,tp=>tp,tz=>tz,reset=>rst_m,clk=>clk,C=>carry,Z=>zero,Rf_a3=>rf_a3,rst_i=>rst,
 	control_signal(0)=>RD_bar,
 	control_signal(1)=>WR_bar,
 	control_signal(2)=>B2,

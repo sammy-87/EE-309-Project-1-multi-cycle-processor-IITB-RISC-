@@ -12,6 +12,7 @@ entity outputlogic is
 		C : in std_logic;
 		Z : in std_logic;
 		Rf_a3 : in std_logic_vector(2 DOWNTO 0);
+		rst_i : out std_logic;
 		--currentstate : inout std_logic_vector(4 DOWNTO 0);
 		control_signal : out std_logic_vector(37 DOWNTO 0);
 		nextstate : inout std_logic_vector(4 DOWNTO 0));
@@ -32,7 +33,7 @@ begin
 	statelogic_ist : process(currentstate, reset, ir, tp,tz,Rf_a3,C,Z)
 
 	variable control_variable :  std_logic_vector(37 DOWNTO 0);
-
+	
 	begin 
 		if reset = '1' then
 			nextstate <= "10000";
@@ -359,6 +360,12 @@ begin
 			
 			
 
+		end if;
+		
+		if currentstate = "10000" then
+			rst_i <= '1';
+		else 
+			rst_i <= '0';
 		end if;
 
 	control_signal <= control_variable;

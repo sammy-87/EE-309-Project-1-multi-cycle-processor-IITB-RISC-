@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for uP
-Sun Oct 28 00:20:32 2018
+Sun Oct 28 02:16:20 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Sun Oct 28 00:20:31 2018
+    Info: Processing started: Sun Oct 28 02:16:19 2018
 Info: Command: quartus_sta uP -c uP
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -77,8 +77,8 @@ Critical Warning (332012): Synopsys Design Constraints File file not found: 'uP.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4856 megabytes
-    Info: Processing ended: Sun Oct 28 00:20:32 2018
+    Info: Peak virtual memory: 4858 megabytes
+    Info: Processing ended: Sun Oct 28 02:16:20 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

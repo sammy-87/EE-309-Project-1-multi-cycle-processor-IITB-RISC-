@@ -27,18 +27,18 @@ architecture structure of memory is
 --		 q   : out std_logic_vector(15 DOWNTO 0)); -- output
 --end component;
 
-type memarr is array(0 to 31) of std_logic_vector(15 downto 0);
+type memarr is array(0 to 511) of std_logic_vector(15 downto 0);
 signal RAM : memarr := (others => "0000000000000000");
-signal addr : std_logic_vector(4 downto 0);
---signal wrarr : std_logic_vector(31 downto 0) := ( others => '0');
+signal addr : std_logic_vector(8 downto 0);
+--signal wrarr : std_logic_vector(63 downto 0) := ( others => '0');
 --signal rd : std_logic_vector(15 downto 0);
 
 begin
 
-addr <= mem_a(4 downto 0);
+addr <= mem_a(8 downto 0);
 
 --
---inst_mem : for i in 0 to 31 generate
+--inst_mem : for i in 0 to 63 generate
 --
 --	mem_reg : Reg port map (d => mem_d, en => wrarr(i), rst => rst, clk => clk, q => mem1(i));
 --		
@@ -46,12 +46,13 @@ addr <= mem_a(4 downto 0);
 
 	mem_proc : process(rst, wr_bar, rd_bar, clk, addr)
 
-	--	variable wr_var : std_logic_vector(31 downto 0) := ( others => '0');
+	--	variable wr_var : std_logic_vector(63 downto 0) := ( others => '0');
 	--	variable mem_out_var : std_logic_vector(15 downto 0) := (others => '0');
 
 		begin
 			if rst ='1' then
-				RAM <= (others => "0000000000000000");
+				RAM <= (X"30D6",X"32DE",X"0050",X"5350",X"4750", others => X"0000");
+				--RAM <= (others => "0000000000000000");
 				mem_out <= (others => '0');
 				
 			elsif rd_bar = '0' then
