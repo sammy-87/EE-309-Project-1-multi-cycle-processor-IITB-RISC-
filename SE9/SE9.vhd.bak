@@ -13,12 +13,6 @@ architecture Struct of SE9 is
 
 begin
 	op(8 downto 0) <= ip(8 downto 0);
-	op(9) <= ip(8);
-	op(10) <= ip(8);
-	op(11) <= ip(8);
-	op(12) <= ip(8);
-	op(13) <= ip(8);
-	op(14) <= ip(8);
-	op(15) <= ip(8);
+	op(15 downto 9) <= "0000000";
 	
 end Struct;

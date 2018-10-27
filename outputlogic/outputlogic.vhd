@@ -77,8 +77,8 @@ begin
 
 			nextstate(0) <=(ir(13) and ir(12)) or (ir(15) and ir(12)) or (ir(14) and ir(13));
 			nextstate(1) <= ir(15) or ((not ir(13)) and (not ir(12))) or (ir(14) and ir(12)) or ((not ir(14)) and (not ir(12)));
-			nextstate(2) <= ir(15) or (ir(14) and (not ir(13))) or ((not ir(14)) and ir(12));
-			nextstate(3) <= ir(15) or (ir(14) and ir(13));
+			nextstate(2) <= (not ir(15) and ir(14) and not ir(13)) or (ir(15) and (not ir(14))) or ((not ir(14)) and ir(12));
+			nextstate(3) <= (ir(15) or (not ir(14))) or (ir(14) and ir(13)) or (ir(15) and ir(12));
 			nextstate(4) <= '0';
 			
 
@@ -96,9 +96,10 @@ begin
 
 			elsif ((ir(0)='0') and (ir(1)='0')) or ((ir(0)='0') and (ir(1)='1') and C = '1') or ((ir(0)='1') and (ir(1)='0') and Z = '1') then   
 				control_variable(27) := '1';
-				
-				if ir(13) = '0' then
-				control_variable(35) := '1';
+				if ir(13) = '1' then
+					control_variable(16) :='1';
+				else 
+					control_variable(35) := '1';
 				end if;
 			
 			else
@@ -111,8 +112,11 @@ begin
 				nextstate <= "01101";
 			
 			elsif ir(15 DOWNTO 12) = "0000" or ir(15 DOWNTO 12) = "0010" then
-				nextstate <= "00011";
-
+				if ((ir(1 downto 0) = "10") and (C = '1')) or ((ir(1 downto 0) = "01") and (Z = '1')) or (ir(1 downto 0)="00") then 
+					nextstate <= "00011";
+				else 
+				nextstate <= "00000";
+				end if;
 			else
 				nextstate <= "00000";				
 
@@ -193,7 +197,7 @@ begin
 			control_variable(25) := '1';
 
 		elsif currentstate = "00111" then
-			nextstate <= "00000";
+			nextstate <= "00011";
 			control_variable := (others => '0');
 			control_variable(1) := '1';
 			control_variable(2) := '1';

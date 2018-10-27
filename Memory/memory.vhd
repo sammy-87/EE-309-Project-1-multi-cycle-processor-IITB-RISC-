@@ -52,14 +52,16 @@ addr <= mem_a(4 downto 0);
 		begin
 			if rst ='1' then
 				RAM <= (others => "0000000000000000");
+				mem_out <= (others => '0');
+				
+			elsif rd_bar = '0' then
+				mem_out <= RAM(to_integer(unsigned(addr)));
 		
 			elsif rising_edge (clk) then
 				
 				if wr_bar ='0' then
 					RAM(to_integer(unsigned(addr))) <= mem_d;
-				
-				elsif rd_bar = '0' then
-					mem_out <= RAM(to_integer(unsigned(addr)));
+					mem_out <= (others => '0');
 				end if;
 				
 			end if;	

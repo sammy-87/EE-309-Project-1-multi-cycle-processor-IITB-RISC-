@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uP
-Sat Oct 27 22:04:29 2018
+Sat Oct 27 23:52:10 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Oct 27 22:04:29 2018       ;
+; Analysis & Synthesis Status ; Successful - Sat Oct 27 23:52:10 2018       ;
 ; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name               ; uP                                          ;
 ; Top-level Entity Name       ; uP                                          ;
@@ -269,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Sat Oct 27 22:04:10 2018
+    Info: Processing started: Sat Oct 27 23:51:57 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uP -c uP
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/outputlogic/outputlogic.vhd
@@ -367,6 +367,7 @@ Info (12128): Elaborating entity "mux2to1_8bit" for hierarchy "mux2to1_8bit:mux_
 Info (12128): Elaborating entity "Reg8" for hierarchy "Reg8:reg_PEN" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 177
 Info (12128): Elaborating entity "PEN" for hierarchy "PEN:PEN_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 178
 Info (12128): Elaborating entity "memory" for hierarchy "memory:inst_mem" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 192
+Warning (10492): VHDL Process Statement warning at memory.vhd(58): signal "RAM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd Line: 58
 Info (12128): Elaborating entity "outputlogic" for hierarchy "outputlogic:outputlogic_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 193
 Info (12128): Elaborating entity "statereg" for hierarchy "outputlogic:outputlogic_inst|statereg:state" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic/outputlogic.vhd Line: 30
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
@@ -392,10 +393,10 @@ Warning (21074): Design contains 18 input pin(s) that do not drive logic
 Info (21057): Implemented 18 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 28 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
     Info: Peak virtual memory: 4985 megabytes
-    Info: Processing ended: Sat Oct 27 22:04:29 2018
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:43
+    Info: Processing ended: Sat Oct 27 23:52:10 2018
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:31
 
 
