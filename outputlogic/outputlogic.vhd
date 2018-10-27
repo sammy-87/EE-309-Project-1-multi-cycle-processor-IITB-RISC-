@@ -74,12 +74,41 @@ begin
 			control_variable(26) := '1';
 			control_variable(34) := '1';
 			control_variable(37) := '1';
+			
+			if ir(15 downto 12) = "0000" or ir(15 downto 12) = "0010" or ir(15 downto 12) = "1100" then 
+				nextstate <= "00010";
+			
+			elsif ir(15 downto 12) = "0001" then
+				nextstate <= "00100";
+				
+			elsif ir(15 downto 12) = "0011" then  
+				nextstate <= "00101";
+				
+			elsif ir(15 downto 12) = "0100" or ir(15 downto 12) = "0101"  then
+				nextstate <= "00110";
+				
+			elsif ir(15 downto 12) = "0110" then
+				nextstate <= "01001";
+				
+			elsif ir(15 downto 12) = "0111" then
+				nextstate <= "01011";
+				
+			elsif ir(15 downto 12) = "1000" then
+				nextstate <= "01110";
+				
+			elsif ir(15 downto 12) = "1001" then
+				nextstate <= "01111";
+				
+			else 
+				nextstate <= "00000";
+			
+			end if;
 
-			nextstate(0) <=(ir(13) and ir(12)) or (ir(15) and ir(12)) or (ir(14) and ir(13));
-			nextstate(1) <= ir(15) or ((not ir(13)) and (not ir(12))) or (ir(14) and ir(12)) or ((not ir(14)) and (not ir(12)));
-			nextstate(2) <= (not ir(15) and ir(14) and not ir(13)) or (ir(15) and (not ir(14))) or ((not ir(14)) and ir(12));
-			nextstate(3) <= (ir(15) or (not ir(14))) or (ir(14) and ir(13)) or (ir(15) and ir(12));
-			nextstate(4) <= '0';
+--			nextstate(0) <=(ir(13) and ir(12)) or (ir(15) and ir(12)) or (ir(14) and ir(13));
+--			nextstate(1) <= ir(15) or ((not ir(13)) and (not ir(12))) or (ir(14) and ir(12)) or ((not ir(14)) and (not ir(12)));
+--			nextstate(2) <= (not ir(15) and ir(14) and not ir(13)) or (ir(15) and (not ir(14))) or ((not ir(14)) and ir(12));
+--			nextstate(3) <= (ir(15) or (not ir(14))) or (ir(14) and ir(13)) or (ir(15) and ir(12));
+--			nextstate(4) <= '0';
 			
 
 		elsif currentstate = "00010" then
