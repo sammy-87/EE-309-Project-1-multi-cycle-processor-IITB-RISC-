@@ -131,6 +131,11 @@ begin
 				else 
 					control_variable(35) := '1';
 				end if;
+
+			elsif (((ir(0)='0') and (ir(1)='1') and C = '0') or ((ir(0)='1') and (ir(1)='0') and Z = '0')) then
+				control_variable(12) := '1';
+				control_variable(14) := '1';
+				control_variable(15) := '1';
 			
 			else
 				control_variable := (others => '0');
@@ -145,7 +150,7 @@ begin
 				if ((ir(1 downto 0) = "10") and (C = '1')) or ((ir(1 downto 0) = "01") and (Z = '1')) or (ir(1 downto 0)="00") then 
 					nextstate <= "00011";
 				else 
-				nextstate <= "00000";
+					nextstate <= "00000";
 				end if;
 			else
 				nextstate <= "00000";				
