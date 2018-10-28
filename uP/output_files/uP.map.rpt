@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uP
-Sun Oct 28 02:15:56 2018
+Sun Oct 28 13:38:42 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sun Oct 28 02:15:56 2018       ;
+; Analysis & Synthesis Status ; Successful - Sun Oct 28 13:38:42 2018       ;
 ; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name               ; uP                                          ;
 ; Top-level Entity Name       ; uP                                          ;
@@ -269,7 +269,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Sun Oct 28 02:15:07 2018
+    Info: Processing started: Sun Oct 28 13:38:00 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uP -c uP
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file /users/anirudh singhal/documents/sem5/ee309/ee-309-project-1-multi-cycle-processor-iitb-risc-/outputlogic/outputlogic.vhd
@@ -356,9 +356,7 @@ Info (12128): Elaborating entity "mux4to1_3bit" for hierarchy "mux4to1_3bit:mux_
 Info (12128): Elaborating entity "mux2to1_16bit" for hierarchy "mux2to1_16bit:mux_d3" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 157
 Info (12128): Elaborating entity "rf" for hierarchy "rf:rf_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 160
 Warning (10492): VHDL Process Statement warning at rf.vhd(72): signal "registers" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd Line: 72
-Warning (10492): VHDL Process Statement warning at rf.vhd(72): signal "rf_a1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd Line: 72
 Warning (10492): VHDL Process Statement warning at rf.vhd(73): signal "registers" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd Line: 73
-Warning (10492): VHDL Process Statement warning at rf.vhd(73): signal "rf_a2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd Line: 73
 Info (12128): Elaborating entity "R7" for hierarchy "rf:rf_inst|R7:R_7" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd Line: 56
 Info (12128): Elaborating entity "SE9" for hierarchy "SE9:se9_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 173
 Info (12128): Elaborating entity "SE6" for hierarchy "SE6:se6_inst" File: C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd Line: 174
@@ -377,10 +375,10 @@ Warning (21074): Design contains 2 input pin(s) that do not drive logic
 Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
-    Info: Peak virtual memory: 5049 megabytes
-    Info: Processing ended: Sun Oct 28 02:15:56 2018
-    Info: Elapsed time: 00:00:49
-    Info: Total CPU time (on all processors): 00:00:41
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 5508 megabytes
+    Info: Processing ended: Sun Oct 28 13:38:42 2018
+    Info: Elapsed time: 00:00:42
+    Info: Total CPU time (on all processors): 00:01:06
 
 

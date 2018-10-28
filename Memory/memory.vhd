@@ -27,15 +27,15 @@ architecture structure of memory is
 --		 q   : out std_logic_vector(15 DOWNTO 0)); -- output
 --end component;
 
-type memarr is array(0 to 511) of std_logic_vector(15 downto 0);
+type memarr is array(0 to 4095) of std_logic_vector(15 downto 0);
 signal RAM : memarr := (others => "0000000000000000");
-signal addr : std_logic_vector(8 downto 0);
+signal addr : std_logic_vector(11 downto 0);
 --signal wrarr : std_logic_vector(63 downto 0) := ( others => '0');
 --signal rd : std_logic_vector(15 downto 0);
 
 begin
 
-addr <= mem_a(8 downto 0);
+addr <= mem_a(11 downto 0);
 
 --
 --inst_mem : for i in 0 to 63 generate
@@ -51,7 +51,7 @@ addr <= mem_a(8 downto 0);
 
 		begin
 			if rst ='1' then
-				RAM <= (X"30D6",X"32DE",X"0050",X"5350",X"4750", others => X"0000");
+				RAM <= (X"30D6",X"32DE",X"0050",X"5350",X"4750", others => X"F000");
 				--RAM <= (others => "0000000000000000");
 				mem_out <= (others => '0');
 				

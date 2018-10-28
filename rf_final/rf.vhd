@@ -56,7 +56,7 @@ wr_7 <= (wrarr1(7) or en7);
 R_7 : R7 port map (alu_out => alu_out, t2_out => t2_out, PC_out => PC_out, t3_out => t3_out, rf_d3 => rf_d3, m => m, rst => rst, clk => clk, wr => wr_7, q => registers(7));
 
 
-reg_file : process (clk, rst, wr_rf,rf_a3)
+reg_file : process (clk, rst, wr_rf,rf_a3,rf_a1,rf_a2)
 	variable wrarr_temp: bitarr:="00000000";
 	begin	
 		

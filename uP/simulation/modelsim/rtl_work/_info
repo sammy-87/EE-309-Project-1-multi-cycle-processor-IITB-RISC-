@@ -21,9 +21,9 @@ V1l@Wh5BSTdL9bK@cZdFeY2
 !s100 k[;;V6b>1jONmC6CdRCmh1
 Z6 OV;C;10.4d;61
 31
-Z7 !s110 1540672852
+Z7 !s110 1540713743
 !i10b 1
-Z8 !s108 1540672852.000000
+Z8 !s108 1540713743.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/Add.vhd|
 Z10 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/Add.vhd|
 !i113 1
@@ -99,9 +99,9 @@ V`GWnHKX_]MOQDo_ccXTIa0
 !s100 UgRYcH[1V3RCIC?nV_C`e1
 R6
 31
-Z21 !s110 1540672853
+Z21 !s110 1540713744
 !i10b 1
-Z22 !s108 1540672853.000000
+Z22 !s108 1540713744.000000
 Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd|
 Z24 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd|
 !i113 1
@@ -165,7 +165,7 @@ R29
 R11
 R12
 Ememory
-Z30 w1540672802
+Z30 w1540713281
 Z31 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R2
 R3
@@ -193,8 +193,8 @@ R3
 DEx4 work 6 memory 0 22 7ZG?8IH4_jIjZSB`hBQHG2
 l36
 L19
-Vi^nO@C7D<0[10EC8a`a>S3
-!s100 l85IKe01eFPZA[GRZ4MS12
+VYGOzSAa@]^no<`DBd9jgF3
+!s100 OLFQgY@LDdUALQ_EoK@Jz3
 R6
 31
 R7
@@ -296,11 +296,11 @@ Vf9ZGMR@E<kn1X8M>]4JX40
 !s100 ?iQjTe>2z_RW^9I4GDlMY2
 R6
 31
-R21
+Z46 !s110 1540713745
 !i10b 1
-R22
-Z46 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd|
-Z47 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd|
+Z47 !s108 1540713745.000000
+Z48 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd|
+Z49 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd|
 !i113 1
 R11
 R12
@@ -314,11 +314,11 @@ VDnX<n;WB_[kUTANC2N@1U2
 !s100 13GoKELiXlZ0R@93NEa4F0
 R6
 31
-R21
-!i10b 1
-R22
 R46
+!i10b 1
 R47
+R48
+R49
 !i113 1
 R11
 R12
@@ -327,19 +327,19 @@ R18
 R2
 R3
 R0
-Z48 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd
-Z49 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd
+Z50 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd
+Z51 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd
 l0
 L7
 VN222`B_AWK73;>6oKkX4E2
 !s100 ]G4EOJ4LGoBK3ZK2VGdUB2
 R6
 31
-Z50 !s110 1540672850
+Z52 !s110 1540713741
 !i10b 1
-Z51 !s108 1540672850.000000
-Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd|
-Z53 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd|
+Z53 !s108 1540713741.000000
+Z54 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd|
+Z55 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd|
 !i113 1
 R11
 R12
@@ -353,11 +353,11 @@ VJb6nUFLne>3480a4Qg3Dz0
 !s100 35UOnmh367TQzIO@7@I9h2
 R6
 31
-R50
-!i10b 1
-R51
 R52
+!i10b 1
 R53
+R54
+R55
 !i113 1
 R11
 R12
@@ -366,8 +366,8 @@ R18
 R2
 R3
 R0
-Z54 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd
-Z55 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd
+Z56 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd
+Z57 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd
 l0
 L7
 VfYC3iBVD8T7i;^ZP6Hmfl2
@@ -377,8 +377,8 @@ R6
 R21
 !i10b 1
 R22
-Z56 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd|
-Z57 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd|
+Z58 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd|
+Z59 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd|
 !i113 1
 R11
 R12
@@ -395,29 +395,29 @@ R6
 R21
 !i10b 1
 R22
-R56
-R57
+R58
+R59
 !i113 1
 R11
 R12
 Eoutputlogic
-Z58 w1540672366
+Z60 w1540672366
 R2
 R3
 R0
-Z59 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic/outputlogic.vhd
-Z60 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic/outputlogic.vhd
+Z61 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic/outputlogic.vhd
+Z62 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic/outputlogic.vhd
 l0
 L7
 VL@VS1RM`=J<[C:X@4njh<3
 !s100 h0;Y1UA[H[AK=b8UR]Cz_3
 R6
 31
-R50
+R52
 !i10b 1
-R51
-Z61 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic/outputlogic.vhd|
-Z62 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic/outputlogic.vhd|
+Z63 !s108 1540713740.000000
+Z64 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic/outputlogic.vhd|
+Z65 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic/outputlogic.vhd|
 !i113 1
 R11
 R12
@@ -431,32 +431,32 @@ VDcE[jS4Pne<2?K^g1lk]V2
 !s100 ;2P<kfRGQD1;CTO2k?2:g2
 R6
 31
-R50
+R52
 !i10b 1
-R51
-R61
-R62
+R63
+R64
+R65
 !i113 1
 R11
 R12
 Epen
-Z63 w1540559419
+Z66 w1540559419
 R2
 R3
 R0
-Z64 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd
-Z65 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd
+Z67 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd
+Z68 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd
 l0
 L7
 Vbl3N32cNd<:OY:d13izh43
 !s100 faf92UP=4eV^ODmW94iiC0
 R6
 31
-Z66 !s110 1540672851
+Z69 !s110 1540713742
 !i10b 1
-Z67 !s108 1540672851.000000
-Z68 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd|
-Z69 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd|
+Z70 !s108 1540713742.000000
+Z71 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd|
+Z72 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd|
 !i113 1
 R11
 R12
@@ -470,41 +470,41 @@ V;a]SzRK=jB[W:bKcfl=[K3
 !s100 hUaX4mgna;M8zeY_]5cZE1
 R6
 31
-R66
-!i10b 1
-R67
-R68
 R69
+!i10b 1
+R70
+R71
+R72
 !i113 1
 R11
 R12
 Er7
-Z70 w1540653544
-Z71 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z72 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z73 w1540653544
+Z74 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z75 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 R31
 R2
 R3
 R0
-Z73 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd
-Z74 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd
+Z76 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd
+Z77 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd
 l0
 L10
 VB:AR7HlQYBFmz9A6ZLn9_0
 !s100 01Uj<C8`=E5iWFE0@4WTC2
 R6
 31
-R66
+R69
 !i10b 1
-R67
-Z75 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd|
-Z76 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd|
+R70
+Z78 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd|
+Z79 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd|
 !i113 1
 R11
 R12
 Abehave
-R71
-R72
+R74
+R75
 R31
 R2
 R3
@@ -515,32 +515,32 @@ VFh53hhQADbN>0^M`3H3gM0
 !s100 ?C5[QQh2ibWSPioc0IEm_3
 R6
 31
-R66
+R69
 !i10b 1
-R67
-R75
-R76
+R70
+R78
+R79
 !i113 1
 R11
 R12
 Ereg
-Z77 w1540494186
+Z80 w1540494186
 R2
 R3
 R0
-Z78 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd
-Z79 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd
+Z81 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd
+Z82 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd
 l0
 L7
 V<F[Oc4]<1:A<l=e^A>^Gk3
 !s100 ^4Kg`BVPziQJkimZT7Y@?0
 R6
 31
-R66
+R7
 !i10b 1
-R67
-Z80 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd|
-Z81 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd|
+R70
+Z83 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd|
+Z84 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd|
 !i113 1
 R11
 R12
@@ -554,32 +554,32 @@ VdNdM1P`jNR]zRnHmzN`1l2
 !s100 M2`<mlLMZeWc;0mzl]9@[0
 R6
 31
-R66
+R7
 !i10b 1
-R67
-R80
-R81
+R70
+R83
+R84
 !i113 1
 R11
 R12
 Ereg8
-Z82 w1540559884
+Z85 w1540559884
 R2
 R3
 R0
-Z83 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/Reg8.vhd
-Z84 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/Reg8.vhd
+Z86 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/Reg8.vhd
+Z87 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/Reg8.vhd
 l0
 L7
 VFRKdNSRmn=]X]95KQOOYc0
 !s100 KzX00c;EU[zj7T]G5UF9M2
 R6
 31
-R21
+R46
 !i10b 1
-R22
-Z85 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/Reg8.vhd|
-Z86 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/Reg8.vhd|
+R47
+Z88 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/Reg8.vhd|
+Z89 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/Reg8.vhd|
 !i113 1
 R11
 R12
@@ -593,33 +593,33 @@ VoScQDj;GIncBYM;C0W>W^1
 !s100 gHa2JNhzn[PeNK6P5J0R10
 R6
 31
-R21
+R46
 !i10b 1
-R22
-R85
-R86
+R47
+R88
+R89
 !i113 1
 R11
 R12
 Erf
-Z87 w1540653543
+Z90 w1540713100
 R31
 R2
 R3
 R0
-Z88 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd
-Z89 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd
+Z91 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd
+Z92 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd
 l0
 L8
 VAZ]:TVK?aT13dP9n7G@mW3
 !s100 <Y?eNG589g>o>zXmlRI8M3
 R6
 31
-R66
+R69
 !i10b 1
-R67
-Z90 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd|
-Z91 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd|
+R70
+Z93 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd|
+Z94 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd|
 !i113 1
 R11
 R12
@@ -630,36 +630,36 @@ R3
 DEx4 work 2 rf 0 22 AZ]:TVK?aT13dP9n7G@mW3
 l49
 L20
-V[DTUIS9JcGGA<>g`Pnbc_2
-!s100 4a1Aca?^I;:dSVY6k>gzX0
+V[I<652IL^02k`=lo71D691
+!s100 cNjA?ZQdS5ZIidneZE37O3
 R6
 31
-R66
+R69
 !i10b 1
-R67
-R90
-R91
+R70
+R93
+R94
 !i113 1
 R11
 R12
 Ese6
-Z92 w1540663157
+Z95 w1540663157
 R2
 R3
 R0
-Z93 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd
-Z94 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd
+Z96 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd
+Z97 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd
 l0
 L7
 VV^_zJ1CNRCGoX8Ba7INO@1
 !s100 DNRmDdJSfBW8Yhi3aSGDD2
 R6
 31
-R50
+R52
 !i10b 1
-R51
-Z95 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd|
-Z96 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd|
+R53
+Z98 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd|
+Z99 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd|
 !i113 1
 R11
 R12
@@ -673,32 +673,32 @@ VT^eMKdNXdb]m?Z2Jf4Q=W2
 !s100 >O2]5A1DjkhVE_gn7gH;@2
 R6
 31
-R50
+R52
 !i10b 1
-R51
-R95
-R96
+R53
+R98
+R99
 !i113 1
 R11
 R12
 Ese9
-Z97 w1540663097
+Z100 w1540663097
 R2
 R3
 R0
-Z98 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd
-Z99 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd
+Z101 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd
+Z102 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd
 l0
 L7
 Va]GN8D>?BXD7=<8R?PPRY1
 !s100 :V3Gi:Yia1R;LF:=TE6Mc3
 R6
 31
-R50
+R52
 !i10b 1
-R51
-Z100 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd|
-Z101 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd|
+R53
+Z103 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd|
+Z104 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd|
 !i113 1
 R11
 R12
@@ -712,32 +712,32 @@ VCnN=;]cC=8bZHLEYUMH;62
 !s100 n56gH>=HK2cMR7T>JQkBf0
 R6
 31
-R50
+R52
 !i10b 1
-R51
-R100
-R101
+R53
+R103
+R104
 !i113 1
 R11
 R12
 Eshift7
-Z102 w1540271617
+Z105 w1540271617
 R2
 R3
 R0
-Z103 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd
-Z104 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd
+Z106 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd
+Z107 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd
 l0
 L7
 V0F>:hXHU=4ahX0HQBIUHN2
 !s100 S0^2:B^]7Q4gCKHTdgm[z2
 R6
 31
-R50
+R52
 !i10b 1
-R51
-Z105 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd|
-Z106 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd|
+R53
+Z108 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd|
+Z109 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd|
 !i113 1
 R11
 R12
@@ -751,32 +751,32 @@ Vc=iGZY1=c@0UMI3KPM:Z`1
 !s100 Fmb]_z:3hBnT0jC92SUTQ3
 R6
 31
-R50
+R52
 !i10b 1
-R51
-R105
-R106
+R53
+R108
+R109
 !i113 1
 R11
 R12
 Estatereg
-Z107 w1540315303
+Z110 w1540315303
 R2
 R3
 R0
-Z108 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd
-Z109 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd
+Z111 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd
+Z112 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd
 l0
 L7
 V1zVZ>X?NC;]]WZ<KFYKC;2
 !s100 anNHQXz:9L8?FD0GzPMA81
 R6
 31
-R66
+R69
 !i10b 1
-R67
-Z110 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd|
-Z111 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd|
+R70
+Z113 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd|
+Z114 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd|
 !i113 1
 R11
 R12
@@ -790,40 +790,40 @@ V^VI8l1dUokmVRWIIV`gmR0
 !s100 ]32N[zla4>P4l_QPTfX432
 R6
 31
-R66
+R69
 !i10b 1
-R67
-R110
-R111
+R70
+R113
+R114
 !i113 1
 R11
 R12
 Eup
-Z112 w1540671955
-Z113 DPx8 synopsys 10 attributes 0 22 liCm]LV3<lX4Zl>o6^8IV1
-Z114 DPx4 ieee 14 std_logic_misc 0 22 BLzBaQbXS>Q1z>5YO]m[52
+Z115 w1540671955
+Z116 DPx8 synopsys 10 attributes 0 22 liCm]LV3<lX4Zl>o6^8IV1
+Z117 DPx4 ieee 14 std_logic_misc 0 22 BLzBaQbXS>Q1z>5YO]m[52
 R2
 R3
 R0
-Z115 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd
-Z116 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd
+Z118 8C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd
+Z119 FC:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd
 l0
 L8
 Va9h`nJ@0U0ZB9cYz<ne9e1
 !s100 c7PX[ZH9mMdkFR<:1M@6>3
 R6
 31
-R7
+R21
 !i10b 1
-R8
-Z117 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd|
-Z118 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd|
+R22
+Z120 !s90 -reportprogress|300|-93|-work|work|C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd|
+Z121 !s107 C:/Users/Anirudh Singhal/Documents/sem5/ee309/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd|
 !i113 1
 R11
 R12
 Astruct
-R113
-R114
+R116
+R117
 R2
 R3
 DEx4 work 2 up 0 22 a9h`nJ@0U0ZB9cYz<ne9e1
@@ -833,11 +833,11 @@ Vi@>K4267T=IAJbFh@]kH83
 !s100 G]1dZWd^^9KObKg0Sz<b11
 R6
 31
-R7
+R21
 !i10b 1
-R8
-R117
-R118
+R22
+R120
+R121
 !i113 1
 R11
 R12
