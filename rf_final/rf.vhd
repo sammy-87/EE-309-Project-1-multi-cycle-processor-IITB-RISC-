@@ -14,7 +14,7 @@ entity rf is
 			 wr_rf  : in std_logic; -- write
 			 en7 : in std_logic; -- enable for register 7
 			 alu_out, t2_out, PC_out, t3_out, rf_d3 : in std_logic_vector(15 downto 0);
-			 rf_d1,rf_d2  : out std_logic_vector(15 DOWNTO 0)); -- output
+			 rf_d1,rf_d2, R7_out  : out std_logic_vector(15 DOWNTO 0)); -- output
 end rf;
 
 architecture behave of rf is
@@ -80,5 +80,5 @@ reg_file : process (clk, rst, wr_rf,rf_a3,rf_a1,rf_a2)
 		
 		rf_d1 <= temp1;
 		rf_d2 <= temp2;
-		
+		R7_out <= registers(7);
 end behave;

@@ -48,7 +48,7 @@ component rf is
 			 wr_rf  : in std_logic; -- write
 			 en7 : in std_logic; -- enable for register 7
 			 alu_out, t2_out, PC_out, t3_out, rf_d3 : in std_logic_vector(15 downto 0);
-			 rf_d1,rf_d2  : out std_logic_vector(15 DOWNTO 0)); -- output
+			 rf_d1,rf_d2, R7_out  : out std_logic_vector(15 DOWNTO 0)); -- output
 end component;
 
 component mux2to1 is
@@ -134,7 +134,7 @@ end component;
 
 signal c,carry,tp,tz,zero,rst1,rst2,rst : std_logic;
 signal G2,G1,H2,H1,k1,op,L1,L2,P2,P1,EnP,D,E1,E2,F,M1,M2,M3,en7,WR,En1,En2,En3,I,J1,J2,A1,A2,EnPEN,EnI,N,B1,B2,C1,wr_bar,rd_bar : std_logic;
-signal t1_in,t1_out,t2_in,t2_out,t3_in,t3_out,mem_out,PC_out,alu_a,alu_b,SE6_out,SE9_out,alu_out,pc_in,shift7_out,mem_a,mem_d,rf_d3,rf_d1,rf_d2,ir: std_logic_vector(15 downto 0);
+signal t1_in,t1_out,t2_in,t2_out,t3_in,t3_out,mem_out,PC_out,alu_a,alu_b,SE6_out,SE9_out,alu_out,pc_in,shift7_out,mem_a,mem_d,rf_d3,rf_d1,rf_d2,ir, R7_out: std_logic_vector(15 downto 0);
 signal ir9_11,ir3_5,ir6_8,PEN_out,rf_a1,rf_a2,rf_a3: std_logic_vector(2 downto 0);
 signal ir0_8 : std_logic_vector(8 downto 0);
 signal ir0_5 : std_logic_vector(5 downto 0);
@@ -143,7 +143,7 @@ signal ir0_7,PEN_next,PEN_in_reg,PEN_out_reg : std_logic_vector(7 downto 0);
 signal nextstate: std_logic_vector(4 downto 0);
 begin
 	
-	mux_alu_a: mux4to1 port map (S1=>G2,S0=>G1,D0=>t1_out,D1=>t2_out,D2=>t3_out,D3=>PC_out,Y=>alu_a);
+	mux_alu_a: mux4to1 port map (S1=>G2,S0=>G1,D0=>t1_out,D1=>t2_out,D2=>t3_out,D3=>R7_out,Y=>alu_a);
 	mux_alu_b: mux4to1 port map (S1=>H2,S0=>H1,D0=>"0000000000000001",D1=>t2_out,D2=>SE6_out,D3=>SE9_out,Y=>alu_b);
 	alu: ALU_final port map (alu_a=>alu_a,alu_b=>alu_b,k1=>k1,op=>op,alu_out=>alu_out,c_out=>c);
 
@@ -157,7 +157,7 @@ begin
 	mux_d3 : mux2to1_16bit port map (S0=>F,D0=>t3_out,D1=>shift7_out,Y=>rf_d3);
 	mux_a2 : mux2to1 port map (S0=>'0',D0=>ir6_8,D1=>ir6_8,Y=>rf_a2);
 	
-	rf_inst : rf port map (rf_a1=>rf_a1,rf_a2=>rf_a2,rf_a3=>rf_a3,m(0)=>M1,m(1)=>M2,m(2)=>M3,rst=>rst,clk=>clk,wr_rf=>WR,en7=>en7,alu_out=>alu_out,PC_out=>PC_out, t3_out=>t3_out, t2_out=>t2_out, rf_d3=>rf_d3,rf_d1=>rf_d1,rf_d2=>rf_d2);
+	rf_inst : rf port map (rf_a1=>rf_a1,rf_a2=>rf_a2,rf_a3=>rf_a3,m(0)=>M1,m(1)=>M2,m(2)=>M3,rst=>rst,clk=>clk,wr_rf=>WR,en7=>en7,alu_out=>alu_out,PC_out=>PC_out, t3_out=>t3_out, t2_out=>t2_out, rf_d3=>rf_d3,rf_d1=>rf_d1,rf_d2=>rf_d2, R7_out=>R7_out);
 	
 	mux_t1: mux2to1_16bit port map (S0=>I,D0=>alu_out,D1=>rf_d1,Y=>t1_in);
 	t1_reg: Reg port map (d=>t1_in,en=>En1,rst=>rst,clk=>clk,q=>t1_out);

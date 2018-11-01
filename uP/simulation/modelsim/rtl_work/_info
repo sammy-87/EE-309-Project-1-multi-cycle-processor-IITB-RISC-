@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/simulation/modelsim
 Eadd
-Z1 w1540714643
+Z1 w1541089627
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
@@ -21,9 +21,9 @@ V1l@Wh5BSTdL9bK@cZdFeY2
 !s100 k[;;V6b>1jONmC6CdRCmh1
 Z6 OV;C;10.4d;61
 31
-Z7 !s110 1540731414
+Z7 !s110 1541091934
 !i10b 1
-Z8 !s108 1540731414.000000
+Z8 !s108 1541091934.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/Add.vhd|
 Z10 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/Add.vhd|
 !i113 1
@@ -87,12 +87,12 @@ R16
 R11
 R12
 Ebit_reg
-R1
+Z17 w1541089628
 R2
 R3
 R0
-Z17 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd
-Z18 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd
+Z18 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd
+Z19 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd
 l0
 L4
 V`GWnHKX_]MOQDo_ccXTIa0
@@ -102,8 +102,8 @@ R6
 R7
 !i10b 1
 R8
-Z19 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd|
-Z20 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd|
+Z20 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd|
+Z21 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/bit_reg.vhd|
 !i113 1
 R11
 R12
@@ -120,8 +120,8 @@ R6
 R7
 !i10b 1
 R8
-R19
 R20
+R21
 !i113 1
 R11
 R12
@@ -130,8 +130,8 @@ R1
 R2
 R3
 R0
-Z21 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd
-Z22 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd
+Z22 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd
+Z23 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd
 l0
 L7
 V?4A<FNoCc:hh`bVMjK[Kb2
@@ -141,8 +141,8 @@ R6
 R7
 !i10b 1
 R8
-Z23 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd|
-Z24 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd|
+Z24 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd|
+Z25 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/ALU/ALU_final/FullAdder.vhd|
 !i113 1
 R11
 R12
@@ -159,19 +159,19 @@ R6
 R7
 !i10b 1
 R8
-R23
 R24
+R25
 !i113 1
 R11
 R12
 Ememory
-Z25 w1540731388
-Z26 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z26 w1541090551
+Z27 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R2
 R3
 R0
-Z27 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd
-Z28 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd
+Z28 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd
+Z29 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd
 l0
 L8
 V7ZG?8IH4_jIjZSB`hBQHG2
@@ -181,37 +181,37 @@ R6
 R7
 !i10b 1
 R8
-Z29 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd|
-Z30 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd|
+Z30 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd|
+Z31 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/memory.vhd|
 !i113 1
 R11
 R12
 Astructure
-R26
+R27
 R2
 R3
 DEx4 work 6 memory 0 22 7ZG?8IH4_jIjZSB`hBQHG2
 l36
 L19
-V9^Y0IE@hO0IjcC>bcz^Sc3
-!s100 05n6c1SNm@T`R5jc=N>IR0
+V==i<k<ZG4>_MH;AD^MAo81
+!s100 Hk;g8kII;ha^3omDXYDJ:3
 R6
 31
 R7
 !i10b 1
 R8
-R29
 R30
+R31
 !i113 1
 R11
 R12
 Emux2to1
-R1
+R17
 R2
 R3
 R0
-Z31 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd
-Z32 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd
+Z32 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd
+Z33 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd
 l0
 L7
 V;Z^JeVNBB1nP=G[HCn7Xn2
@@ -221,8 +221,8 @@ R6
 R7
 !i10b 1
 R8
-Z33 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd|
-Z34 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd|
+Z34 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd|
+Z35 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1.vhd|
 !i113 1
 R11
 R12
@@ -239,18 +239,18 @@ R6
 R7
 !i10b 1
 R8
-R33
 R34
+R35
 !i113 1
 R11
 R12
 Emux2to1_16bit
-R1
+R17
 R2
 R3
 R0
-Z35 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd
-Z36 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd
+Z36 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd
+Z37 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd
 l0
 L7
 V]mPPae]eWC;4:KTGP@P5Z0
@@ -260,8 +260,8 @@ R6
 R7
 !i10b 1
 R8
-Z37 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd|
-Z38 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd|
+Z38 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd|
+Z39 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_16bit.vhd|
 !i113 1
 R11
 R12
@@ -278,18 +278,18 @@ R6
 R7
 !i10b 1
 R8
-R37
 R38
+R39
 !i113 1
 R11
 R12
 Emux2to1_8bit
-R1
+R17
 R2
 R3
 R0
-Z39 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd
-Z40 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd
+Z40 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd
+Z41 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd
 l0
 L7
 Vf9ZGMR@E<kn1X8M>]4JX40
@@ -299,8 +299,8 @@ R6
 R7
 !i10b 1
 R8
-Z41 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd|
-Z42 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd|
+Z42 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd|
+Z43 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux2to1_8bit.vhd|
 !i113 1
 R11
 R12
@@ -317,29 +317,29 @@ R6
 R7
 !i10b 1
 R8
-R41
 R42
+R43
 !i113 1
 R11
 R12
 Emux4to1
-R1
+R17
 R2
 R3
 R0
-Z43 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd
-Z44 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd
+Z44 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd
+Z45 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd
 l0
 L7
 VN222`B_AWK73;>6oKkX4E2
 !s100 ]G4EOJ4LGoBK3ZK2VGdUB2
 R6
 31
-Z45 !s110 1540731413
+Z46 !s110 1541091933
 !i10b 1
-Z46 !s108 1540731413.000000
-Z47 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd|
-Z48 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd|
+Z47 !s108 1541091933.000000
+Z48 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd|
+Z49 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1.vhd|
 !i113 1
 R11
 R12
@@ -353,21 +353,21 @@ VJb6nUFLne>3480a4Qg3Dz0
 !s100 35UOnmh367TQzIO@7@I9h2
 R6
 31
-R45
-!i10b 1
 R46
+!i10b 1
 R47
 R48
+R49
 !i113 1
 R11
 R12
 Emux4to1_3bit
-R1
+R17
 R2
 R3
 R0
-Z49 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd
-Z50 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd
+Z50 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd
+Z51 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd
 l0
 L7
 VfYC3iBVD8T7i;^ZP6Hmfl2
@@ -377,8 +377,8 @@ R6
 R7
 !i10b 1
 R8
-Z51 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd|
-Z52 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd|
+Z52 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd|
+Z53 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/mux4to1_3bit.vhd|
 !i113 1
 R11
 R12
@@ -395,13 +395,13 @@ R6
 R7
 !i10b 1
 R8
-R51
 R52
+R53
 !i113 1
 R11
 R12
 Eoutputlogic
-Z53 w1540729212
+R17
 R2
 R3
 R0
@@ -413,9 +413,9 @@ VL@VS1RM`=J<[C:X@4njh<3
 !s100 h0;Y1UA[H[AK=b8UR]Cz_3
 R6
 31
-R45
-!i10b 1
 R46
+!i10b 1
+R47
 Z56 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic/outputlogic.vhd|
 Z57 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/outputlogic/outputlogic.vhd|
 !i113 1
@@ -431,16 +431,16 @@ VAl7b?LP]KJ8]m`CGAi?R;2
 !s100 Ke1R3:i3i=Td>81:ZAiKX3
 R6
 31
-R45
-!i10b 1
 R46
+!i10b 1
+R47
 R56
 R57
 !i113 1
 R11
 R12
 Epen
-R1
+R17
 R2
 R3
 R0
@@ -452,9 +452,9 @@ Vbl3N32cNd<:OY:d13izh43
 !s100 faf92UP=4eV^ODmW94iiC0
 R6
 31
-R7
+R46
 !i10b 1
-R8
+R47
 Z60 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd|
 Z61 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/PEN/PEN.vhd|
 !i113 1
@@ -470,19 +470,19 @@ V;a]SzRK=jB[W:bKcfl=[K3
 !s100 hUaX4mgna;M8zeY_]5cZE1
 R6
 31
-R7
+R46
 !i10b 1
-R8
+R47
 R60
 R61
 !i113 1
 R11
 R12
 Er7
-R1
+R17
 Z62 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z63 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-R26
+R27
 R2
 R3
 R0
@@ -494,9 +494,9 @@ VB:AR7HlQYBFmz9A6ZLn9_0
 !s100 01Uj<C8`=E5iWFE0@4WTC2
 R6
 31
-R7
-!i10b 1
 R46
+!i10b 1
+R47
 Z66 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd|
 Z67 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/R7.vhd|
 !i113 1
@@ -505,7 +505,7 @@ R12
 Abehave
 R62
 R63
-R26
+R27
 R2
 R3
 DEx4 work 2 r7 0 22 B:AR7HlQYBFmz9A6ZLn9_0
@@ -515,16 +515,16 @@ VFh53hhQADbN>0^M`3H3gM0
 !s100 ?C5[QQh2ibWSPioc0IEm_3
 R6
 31
-R7
-!i10b 1
 R46
+!i10b 1
+R47
 R66
 R67
 !i113 1
 R11
 R12
 Ereg
-R1
+R17
 R2
 R3
 R0
@@ -538,7 +538,7 @@ R6
 31
 R7
 !i10b 1
-R8
+R47
 Z70 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd|
 Z71 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Memory/Reg.vhd|
 !i113 1
@@ -556,14 +556,14 @@ R6
 31
 R7
 !i10b 1
-R8
+R47
 R70
 R71
 !i113 1
 R11
 R12
 Ereg8
-R1
+R17
 R2
 R3
 R0
@@ -602,64 +602,64 @@ R75
 R11
 R12
 Erf
-R1
-R26
+Z76 w1541089868
+R27
 R2
 R3
 R0
-Z76 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd
-Z77 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd
+Z77 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd
+Z78 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd
 l0
 L8
-VAZ]:TVK?aT13dP9n7G@mW3
-!s100 <Y?eNG589g>o>zXmlRI8M3
+VkRzAE<zgDMXdZ]BT_K=kM0
+!s100 8U=?=nG3`^6;6J1RcHo3D0
 R6
 31
-R45
-!i10b 1
 R46
-Z78 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd|
-Z79 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd|
+!i10b 1
+R47
+Z79 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd|
+Z80 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/rf_final/rf.vhd|
 !i113 1
 R11
 R12
 Abehave
-R26
+R27
 R2
 R3
-DEx4 work 2 rf 0 22 AZ]:TVK?aT13dP9n7G@mW3
+DEx4 work 2 rf 0 22 kRzAE<zgDMXdZ]BT_K=kM0
 l49
 L20
-V[I<652IL^02k`=lo71D691
-!s100 cNjA?ZQdS5ZIidneZE37O3
+Vk6;K^c^ZY`kLHHV>=]m240
+!s100 @i[1T9Im^M26J1LRQJ0oJ2
 R6
 31
-R45
-!i10b 1
 R46
-R78
+!i10b 1
+R47
 R79
+R80
 !i113 1
 R11
 R12
 Ese6
-R1
+R17
 R2
 R3
 R0
-Z80 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd
-Z81 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd
+Z81 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd
+Z82 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd
 l0
 L7
 VV^_zJ1CNRCGoX8Ba7INO@1
 !s100 DNRmDdJSfBW8Yhi3aSGDD2
 R6
 31
-R45
-!i10b 1
 R46
-Z82 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd|
-Z83 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd|
+!i10b 1
+R47
+Z83 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd|
+Z84 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE6/SE6.vhd|
 !i113 1
 R11
 R12
@@ -673,32 +673,32 @@ VT^eMKdNXdb]m?Z2Jf4Q=W2
 !s100 >O2]5A1DjkhVE_gn7gH;@2
 R6
 31
-R45
-!i10b 1
 R46
-R82
+!i10b 1
+R47
 R83
+R84
 !i113 1
 R11
 R12
 Ese9
-R1
+R17
 R2
 R3
 R0
-Z84 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd
-Z85 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd
+Z85 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd
+Z86 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd
 l0
 L7
 Va]GN8D>?BXD7=<8R?PPRY1
 !s100 :V3Gi:Yia1R;LF:=TE6Mc3
 R6
 31
-R45
-!i10b 1
 R46
-Z86 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd|
-Z87 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd|
+!i10b 1
+R47
+Z87 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd|
+Z88 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/SE9/SE9.vhd|
 !i113 1
 R11
 R12
@@ -712,32 +712,32 @@ VCnN=;]cC=8bZHLEYUMH;62
 !s100 n56gH>=HK2cMR7T>JQkBf0
 R6
 31
-R45
-!i10b 1
 R46
-R86
+!i10b 1
+R47
 R87
+R88
 !i113 1
 R11
 R12
 Eshift7
-R1
+R17
 R2
 R3
 R0
-Z88 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd
-Z89 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd
+Z89 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd
+Z90 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd
 l0
 L7
 V0F>:hXHU=4ahX0HQBIUHN2
 !s100 S0^2:B^]7Q4gCKHTdgm[z2
 R6
 31
-R45
-!i10b 1
 R46
-Z90 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd|
-Z91 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd|
+!i10b 1
+R47
+Z91 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd|
+Z92 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/Shift7/Shift7.vhd|
 !i113 1
 R11
 R12
@@ -751,32 +751,32 @@ Vc=iGZY1=c@0UMI3KPM:Z`1
 !s100 Fmb]_z:3hBnT0jC92SUTQ3
 R6
 31
-R45
-!i10b 1
 R46
-R90
+!i10b 1
+R47
 R91
+R92
 !i113 1
 R11
 R12
 Estatereg
-R1
+R17
 R2
 R3
 R0
-Z92 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd
-Z93 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd
+Z93 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd
+Z94 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd
 l0
 L7
 V1zVZ>X?NC;]]WZ<KFYKC;2
 !s100 anNHQXz:9L8?FD0GzPMA81
 R6
 31
-R7
+R46
 !i10b 1
-R8
-Z94 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd|
-Z95 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd|
+R47
+Z95 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd|
+Z96 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/nextstatelogic&stateregister/statereg.vhd|
 !i113 1
 R11
 R12
@@ -790,23 +790,23 @@ V^VI8l1dUokmVRWIIV`gmR0
 !s100 ]32N[zla4>P4l_QPTfX432
 R6
 31
-R7
+R46
 !i10b 1
-R8
-R94
+R47
 R95
+R96
 !i113 1
 R11
 R12
 Eup
-R1
-Z96 DPx8 synopsys 10 attributes 0 22 liCm]LV3<lX4Zl>o6^8IV1
-Z97 DPx4 ieee 14 std_logic_misc 0 22 BLzBaQbXS>Q1z>5YO]m[52
+Z97 w1541089979
+Z98 DPx8 synopsys 10 attributes 0 22 liCm]LV3<lX4Zl>o6^8IV1
+Z99 DPx4 ieee 14 std_logic_misc 0 22 BLzBaQbXS>Q1z>5YO]m[52
 R2
 R3
 R0
-Z98 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd
-Z99 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd
+Z100 8/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd
+Z101 F/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd
 l0
 L8
 Va9h`nJ@0U0ZB9cYz<ne9e1
@@ -816,28 +816,28 @@ R6
 R7
 !i10b 1
 R8
-Z100 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd|
-Z101 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd|
+Z102 !s90 -reportprogress|300|-93|-work|work|/home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd|
+Z103 !s107 /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/uP.vhd|
 !i113 1
 R11
 R12
 Astruct
-R96
-R97
+R98
+R99
 R2
 R3
 DEx4 work 2 up 0 22 a9h`nJ@0U0ZB9cYz<ne9e1
 l144
 L14
-Vi@>K4267T=IAJbFh@]kH83
-!s100 G]1dZWd^^9KObKg0Sz<b11
+V9CCC]D:jCgMjdXT8MIG1;1
+!s100 >8MgGee`712ako6PJY7^h2
 R6
 31
 R7
 !i10b 1
 R8
-R100
-R101
+R102
+R103
 !i113 1
 R11
 R12

@@ -1,5 +1,5 @@
 Flow report for uP
-Sun Oct 28 18:18:48 2018
+Thu Nov  1 22:43:45 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Sun Oct 28 18:18:48 2018       ;
+; Flow Status           ; Successful - Thu Nov  1 22:43:45 2018       ;
 ; Quartus Prime Version ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name         ; uP                                          ;
 ; Top-level Entity Name ; uP                                          ;
@@ -60,7 +60,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/28/2018 18:18:17 ;
+; Start date & time ; 11/01/2018 22:43:25 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; uP                  ;
 +-------------------+---------------------+
@@ -71,7 +71,7 @@ agreement for further details.
 +-------------------------------+-----------------------------+---------------+-------------+----------------+
 ; Assignment Name               ; Value                       ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------+-----------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID         ; 0.154073089712924           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID         ; 0.154109240527020           ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT        ; Vhdl                        ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL           ; ModelSim-Altera (VHDL)      ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                ; 1 ps                        ; --            ; --          ; eda_simulation ;
@@ -87,12 +87,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:26     ; 1.0                     ; 1742 MB             ; 00:00:42                           ;
-; Fitter                    ; 00:00:01     ; 1.0                     ; 1268 MB             ; 00:00:01                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 1039 MB             ; 00:00:00                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 996 MB              ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1282 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:30     ; --                      ; --                  ; 00:00:43                           ;
+; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 1386 MB             ; 00:00:32                           ;
+; Fitter                    ; 00:00:00     ; 1.0                     ; 1266 MB             ; 00:00:01                           ;
+; Assembler                 ; 00:00:00     ; 1.0                     ; 1039 MB             ; 00:00:00                           ;
+; TimeQuest Timing Analyzer ; 00:00:00     ; 1.0                     ; 995 MB              ; 00:00:00                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 1282 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:16     ; --                      ; --                  ; 00:00:33                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

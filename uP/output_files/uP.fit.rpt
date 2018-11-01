@@ -1,5 +1,5 @@
 Fitter report for uP
-Sun Oct 28 18:18:45 2018
+Thu Nov  1 22:43:42 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -49,7 +49,7 @@ agreement for further details.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Sun Oct 28 18:18:45 2018       ;
+; Fitter Status         ; Successful - Thu Nov  1 22:43:42 2018       ;
 ; Quartus Prime Version ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name         ; uP                                          ;
 ; Top-level Entity Name ; uP                                          ;
@@ -482,9 +482,9 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file /home/pranil/Desktop/EE309 Microcontrollers/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/uP/output_files/uP.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1268 megabytes
-    Info: Processing ended: Sun Oct 28 18:18:45 2018
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 1266 megabytes
+    Info: Processing ended: Thu Nov  1 22:43:42 2018
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 
