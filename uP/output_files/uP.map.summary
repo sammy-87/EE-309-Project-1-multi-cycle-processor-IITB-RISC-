@@ -1,9 +1,14 @@
-Analysis & Synthesis Status : Successful - Thu Nov  1 22:43:41 2018
+Analysis & Synthesis Status : Successful - Sat Nov 03 19:05:49 2018
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : uP
 Top-level Entity Name : uP
-Family : MAX V
+Family : Cyclone IV E
 Total logic elements : 0
+    Total combinational functions : 0
+    Dedicated logic registers : 0
+Total registers : 0
 Total pins : 2
 Total virtual pins : 0
-UFM blocks : 0 / 1 ( 0 % )
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
