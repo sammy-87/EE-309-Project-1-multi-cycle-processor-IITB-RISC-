@@ -1,16 +1,16 @@
-Fitter Status : Successful - Sat Nov 03 19:06:03 2018
+Fitter Status : Successful - Mon Nov 05 19:39:38 2018
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : uP
 Top-level Entity Name : uP
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 0 / 22,320 ( 0 % )
-    Total combinational functions : 0 / 22,320 ( 0 % )
-    Dedicated logic registers : 0 / 22,320 ( 0 % )
-Total registers : 0
-Total pins : 2 / 154 ( 1 % )
+Total logic elements : 3,588 / 22,320 ( 16 % )
+    Total combinational functions : 1,934 / 22,320 ( 9 % )
+    Dedicated logic registers : 2,729 / 22,320 ( 12 % )
+Total registers : 2729
+Total pins : 3 / 154 ( 2 % )
 Total virtual pins : 0
-Total memory bits : 0 / 608,256 ( 0 % )
+Total memory bits : 13,312 / 608,256 ( 2 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )

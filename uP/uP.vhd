@@ -8,6 +8,7 @@ use ieee.std_logic_misc.all;
 entity uP is
    port(--instruction: in std_logic_vector(15 downto 0);
 			clk: in std_logic;
+			Clock_50: in std_logic;
 			rst_m: in std_logic);
 end entity;
 
