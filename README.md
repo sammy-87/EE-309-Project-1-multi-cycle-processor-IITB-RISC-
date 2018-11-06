@@ -12,7 +12,7 @@ The machine is a 16-bit system, designed completely using VHDL.
 7. Miscellaneous Registers- T1,T2,T3,PEN,IR
 
 - There are 38 control bits and 17 states(including reset state) in our design. 
-- The top level entity is **up**. The design was verified using RTL simulation and Signal Tap Analyzer.
+- The top level entity is [up](https://github.com/sammy-87/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/tree/master/uP). The design was verified using RTL simulation and Signal Tap Analyzer.
 
 # Team Members:
 - Pranil Joshi       (16D070008)
