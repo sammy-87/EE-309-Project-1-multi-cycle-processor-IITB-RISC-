@@ -11,7 +11,8 @@ The machine is a 16-bit system, designed completely using VHDL.
 6. Priority Encoder
 7. Miscellaneous Registers- T1,T2,T3,PEN,IR
 
-- There are 38 control bits and 17 states(including reset state) in our design. 
+- There are 38 control bits and 17 states(including reset state) in our design.
+- The datapath and the hardware flowcharts have been provided as PDF files in repo.
 - The top level entity is [up](https://github.com/sammy-87/EE-309-Project-1-multi-cycle-processor-IITB-RISC-/tree/master/uP). The design was verified using RTL simulation and Signal Tap Analyzer.
 
 # Team Members:
