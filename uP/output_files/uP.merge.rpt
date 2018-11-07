@@ -1,5 +1,5 @@
 Partition Merge report for uP
-Mon Nov 05 18:52:20 2018
+Tue Nov 06 00:55:40 2018
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Partition Merge Summary                                                          ;
 +------------------------------------+---------------------------------------------+
-; Partition Merge Status             ; Successful - Mon Nov 05 18:52:20 2018       ;
+; Partition Merge Status             ; Successful - Tue Nov 06 00:55:40 2018       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; uP                                          ;
 ; Top-level Entity Name              ; uP                                          ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 878                                         ;
-;     Total combinational functions  ; 477                                         ;
-;     Dedicated logic registers      ; 686                                         ;
-; Total registers                    ; 686                                         ;
+; Total logic elements               ; 4,453                                       ;
+;     Total combinational functions  ; 2,057                                       ;
+;     Dedicated logic registers      ; 3,225                                       ;
+; Total registers                    ; 3225                                        ;
 ; Total pins                         ; 3                                           ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 2,304                                       ;
+; Total memory bits                  ; 17,536                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
@@ -70,226 +70,604 @@ agreement for further details.
 +--------------------------------+----------------+-------------------+------------------------+--------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                                               ;
-+----------------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+------------------------------------------------------------------------------------------+
-; Name                       ; Type          ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                   ; Details                                                                                  ;
-+----------------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+------------------------------------------------------------------------------------------+
-; Clock_50                   ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Clock_50                            ; N/A                                                                                      ;
-; clk                        ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; clk                                 ; N/A                                                                                      ;
-; clk                        ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; clk                                 ; N/A                                                                                      ;
-; rst_m                      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rst_m                               ; N/A                                                                                      ;
-; rst_m                      ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rst_m                               ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|gnd       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND ; N/A                                                                                      ;
-; auto_signaltap_0|vcc       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                      ;
-; auto_signaltap_0|vcc       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                      ;
-; auto_signaltap_0|vcc       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                      ;
-; auto_signaltap_0|vcc       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                      ;
-; auto_signaltap_0|vcc       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                      ;
-; auto_signaltap_0|vcc       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                      ;
-; auto_signaltap_0|vcc       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                      ;
-; auto_signaltap_0|vcc       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                      ;
-; auto_signaltap_0|vcc       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                      ;
-; auto_signaltap_0|vcc       ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC ; N/A                                                                                      ;
-; memory:inst_mem|RAM[0][0]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][0]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][10] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][10] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][11] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][11] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][12] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][12] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][13] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][13] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][14] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][14] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][15] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][15] ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][1]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][1]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][2]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][2]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][3]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][3]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][4]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][4]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][5]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][5]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][6]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][6]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][7]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][7]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][8]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][8]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][9]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-; memory:inst_mem|RAM[0][9]  ; post-fitting  ; missing   ; Top                            ; post-synthesis    ; GND                                 ; The post-fitting netlist is not being used.  Set the partition's netlist type to source. ;
-+----------------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------+------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                          ;
++--------------------------------------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------------+---------+
+; Name                                             ; Type          ; Status    ; Partition Name                 ; Netlist Type Used ; Actual Connection                         ; Details ;
++--------------------------------------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------------+---------+
+; Clock_50                                         ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Clock_50                                  ; N/A     ;
+; Reg:IR_reg|q[0]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[0]                           ; N/A     ;
+; Reg:IR_reg|q[0]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[0]                           ; N/A     ;
+; Reg:IR_reg|q[10]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[10]                          ; N/A     ;
+; Reg:IR_reg|q[10]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[10]                          ; N/A     ;
+; Reg:IR_reg|q[11]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[11]                          ; N/A     ;
+; Reg:IR_reg|q[11]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[11]                          ; N/A     ;
+; Reg:IR_reg|q[12]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[12]                          ; N/A     ;
+; Reg:IR_reg|q[12]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[12]                          ; N/A     ;
+; Reg:IR_reg|q[13]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[13]                          ; N/A     ;
+; Reg:IR_reg|q[13]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[13]                          ; N/A     ;
+; Reg:IR_reg|q[14]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[14]                          ; N/A     ;
+; Reg:IR_reg|q[14]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[14]                          ; N/A     ;
+; Reg:IR_reg|q[15]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[15]                          ; N/A     ;
+; Reg:IR_reg|q[15]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[15]                          ; N/A     ;
+; Reg:IR_reg|q[1]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[1]                           ; N/A     ;
+; Reg:IR_reg|q[1]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[1]                           ; N/A     ;
+; Reg:IR_reg|q[2]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[2]                           ; N/A     ;
+; Reg:IR_reg|q[2]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[2]                           ; N/A     ;
+; Reg:IR_reg|q[3]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[3]                           ; N/A     ;
+; Reg:IR_reg|q[3]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[3]                           ; N/A     ;
+; Reg:IR_reg|q[4]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[4]                           ; N/A     ;
+; Reg:IR_reg|q[4]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[4]                           ; N/A     ;
+; Reg:IR_reg|q[5]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[5]                           ; N/A     ;
+; Reg:IR_reg|q[5]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[5]                           ; N/A     ;
+; Reg:IR_reg|q[6]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[6]                           ; N/A     ;
+; Reg:IR_reg|q[6]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[6]                           ; N/A     ;
+; Reg:IR_reg|q[7]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[7]                           ; N/A     ;
+; Reg:IR_reg|q[7]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[7]                           ; N/A     ;
+; Reg:IR_reg|q[8]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[8]                           ; N/A     ;
+; Reg:IR_reg|q[8]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[8]                           ; N/A     ;
+; Reg:IR_reg|q[9]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[9]                           ; N/A     ;
+; Reg:IR_reg|q[9]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:IR_reg|q[9]                           ; N/A     ;
+; Reg:PC_reg|q[0]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[0]                           ; N/A     ;
+; Reg:PC_reg|q[0]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[0]                           ; N/A     ;
+; Reg:PC_reg|q[10]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[10]                          ; N/A     ;
+; Reg:PC_reg|q[10]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[10]                          ; N/A     ;
+; Reg:PC_reg|q[11]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[11]                          ; N/A     ;
+; Reg:PC_reg|q[11]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[11]                          ; N/A     ;
+; Reg:PC_reg|q[12]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[12]                          ; N/A     ;
+; Reg:PC_reg|q[12]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[12]                          ; N/A     ;
+; Reg:PC_reg|q[13]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[13]                          ; N/A     ;
+; Reg:PC_reg|q[13]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[13]                          ; N/A     ;
+; Reg:PC_reg|q[14]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[14]                          ; N/A     ;
+; Reg:PC_reg|q[14]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[14]                          ; N/A     ;
+; Reg:PC_reg|q[15]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[15]                          ; N/A     ;
+; Reg:PC_reg|q[15]                                 ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[15]                          ; N/A     ;
+; Reg:PC_reg|q[1]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[1]                           ; N/A     ;
+; Reg:PC_reg|q[1]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[1]                           ; N/A     ;
+; Reg:PC_reg|q[2]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[2]                           ; N/A     ;
+; Reg:PC_reg|q[2]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[2]                           ; N/A     ;
+; Reg:PC_reg|q[3]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[3]                           ; N/A     ;
+; Reg:PC_reg|q[3]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[3]                           ; N/A     ;
+; Reg:PC_reg|q[4]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[4]                           ; N/A     ;
+; Reg:PC_reg|q[4]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[4]                           ; N/A     ;
+; Reg:PC_reg|q[5]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[5]                           ; N/A     ;
+; Reg:PC_reg|q[5]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[5]                           ; N/A     ;
+; Reg:PC_reg|q[6]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[6]                           ; N/A     ;
+; Reg:PC_reg|q[6]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[6]                           ; N/A     ;
+; Reg:PC_reg|q[7]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[7]                           ; N/A     ;
+; Reg:PC_reg|q[7]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[7]                           ; N/A     ;
+; Reg:PC_reg|q[8]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[8]                           ; N/A     ;
+; Reg:PC_reg|q[8]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[8]                           ; N/A     ;
+; Reg:PC_reg|q[9]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[9]                           ; N/A     ;
+; Reg:PC_reg|q[9]                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; Reg:PC_reg|q[9]                           ; N/A     ;
+; bit_reg:z_bit|Q                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; bit_reg:z_bit|Q                           ; N/A     ;
+; bit_reg:z_bit|Q                                  ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; bit_reg:z_bit|Q                           ; N/A     ;
+; clk                                              ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; clk                                       ; N/A     ;
+; clk                                              ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; clk                                       ; N/A     ;
+; outputlogic:outputlogic_inst|nextstate[0]~direct ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; outputlogic:outputlogic_inst|nextstate~13 ; N/A     ;
+; outputlogic:outputlogic_inst|nextstate[0]~direct ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; outputlogic:outputlogic_inst|nextstate~13 ; N/A     ;
+; outputlogic:outputlogic_inst|nextstate[1]~direct ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; outputlogic:outputlogic_inst|nextstate~20 ; N/A     ;
+; outputlogic:outputlogic_inst|nextstate[1]~direct ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; outputlogic:outputlogic_inst|nextstate~20 ; N/A     ;
+; outputlogic:outputlogic_inst|nextstate[2]~direct ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; outputlogic:outputlogic_inst|nextstate~25 ; N/A     ;
+; outputlogic:outputlogic_inst|nextstate[2]~direct ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; outputlogic:outputlogic_inst|nextstate~25 ; N/A     ;
+; outputlogic:outputlogic_inst|nextstate[3]~direct ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; outputlogic:outputlogic_inst|nextstate~32 ; N/A     ;
+; outputlogic:outputlogic_inst|nextstate[3]~direct ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; outputlogic:outputlogic_inst|nextstate~32 ; N/A     ;
+; outputlogic:outputlogic_inst|nextstate[4]~direct ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rst_m                                     ; N/A     ;
+; outputlogic:outputlogic_inst|nextstate[4]~direct ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rst_m                                     ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[0]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[0]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[0]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[0]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[10]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[10]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[10]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[10]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[11]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[11]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[11]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[11]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[12]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[12]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[12]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[12]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[13]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[13]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[13]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[13]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[14]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[14]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[14]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[14]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[15]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[15]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[15]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[15]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[1]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[1]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[1]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[1]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[2]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[2]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[2]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[2]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[3]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[3]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[3]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[3]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[4]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[4]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[4]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[4]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[5]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[5]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[5]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[5]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[6]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[6]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[6]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[6]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[7]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[7]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[7]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[7]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[8]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[8]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[8]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[8]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[9]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[9]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:0:R|q[9]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:0:R|q[9]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[0]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[0]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[0]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[0]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[10]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[10]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[10]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[10]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[11]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[11]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[11]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[11]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[12]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[12]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[12]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[12]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[13]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[13]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[13]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[13]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[14]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[14]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[14]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[14]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[15]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[15]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[15]               ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[15]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[1]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[1]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[1]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[1]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[2]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[2]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[2]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[2]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[3]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[3]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[3]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[3]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[4]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[4]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[4]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[4]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[5]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[5]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[5]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[5]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[6]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[6]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[6]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[6]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[7]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[7]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[7]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[7]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[8]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[8]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[8]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[8]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[9]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[9]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:1:R|q[9]                ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:1:R|q[9]         ; N/A     ;
+; rst_m                                            ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rst_m                                     ; N/A     ;
+; rst_m                                            ; pre-synthesis ; connected ; Top                            ; post-synthesis    ; rst_m                                     ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|gnd                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~GND       ; N/A     ;
+; auto_signaltap_0|vcc                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC       ; N/A     ;
+; auto_signaltap_0|vcc                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC       ; N/A     ;
+; auto_signaltap_0|vcc                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC       ; N/A     ;
+; auto_signaltap_0|vcc                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC       ; N/A     ;
+; auto_signaltap_0|vcc                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC       ; N/A     ;
+; auto_signaltap_0|vcc                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC       ; N/A     ;
+; auto_signaltap_0|vcc                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC       ; N/A     ;
+; auto_signaltap_0|vcc                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC       ; N/A     ;
+; auto_signaltap_0|vcc                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC       ; N/A     ;
+; auto_signaltap_0|vcc                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC       ; N/A     ;
+; auto_signaltap_0|vcc                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC       ; N/A     ;
+; auto_signaltap_0|vcc                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC       ; N/A     ;
+; auto_signaltap_0|vcc                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC       ; N/A     ;
+; auto_signaltap_0|vcc                             ; post-fitting  ; connected ; sld_signaltap:auto_signaltap_0 ; post-synthesis    ; sld_signaltap:auto_signaltap_0|~VCC       ; N/A     ;
+; bit_reg:c_bit|Q                                  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; bit_reg:c_bit|Q                           ; N/A     ;
+; bit_reg:c_bit|Q                                  ; post-fitting  ; connected ; Top                            ; post-synthesis    ; bit_reg:c_bit|Q                           ; N/A     ;
+; rf:rf_inst|R7:R_7|q[0]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[0]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[0]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[0]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[10]                          ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[10]                   ; N/A     ;
+; rf:rf_inst|R7:R_7|q[10]                          ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[10]                   ; N/A     ;
+; rf:rf_inst|R7:R_7|q[11]                          ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[11]                   ; N/A     ;
+; rf:rf_inst|R7:R_7|q[11]                          ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[11]                   ; N/A     ;
+; rf:rf_inst|R7:R_7|q[12]                          ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[12]                   ; N/A     ;
+; rf:rf_inst|R7:R_7|q[12]                          ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[12]                   ; N/A     ;
+; rf:rf_inst|R7:R_7|q[13]                          ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[13]                   ; N/A     ;
+; rf:rf_inst|R7:R_7|q[13]                          ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[13]                   ; N/A     ;
+; rf:rf_inst|R7:R_7|q[14]                          ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[14]                   ; N/A     ;
+; rf:rf_inst|R7:R_7|q[14]                          ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[14]                   ; N/A     ;
+; rf:rf_inst|R7:R_7|q[15]                          ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[15]                   ; N/A     ;
+; rf:rf_inst|R7:R_7|q[15]                          ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[15]                   ; N/A     ;
+; rf:rf_inst|R7:R_7|q[1]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[1]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[1]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[1]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[2]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[2]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[2]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[2]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[3]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[3]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[3]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[3]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[4]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[4]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[4]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[4]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[5]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[5]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[5]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[5]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[6]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[6]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[6]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[6]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[7]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[7]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[7]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[7]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[8]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[8]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[8]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[8]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[9]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[9]                    ; N/A     ;
+; rf:rf_inst|R7:R_7|q[9]                           ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|R7:R_7|q[9]                    ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[0]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[0]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[0]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[0]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[10]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[10]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[10]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[10]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[11]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[11]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[11]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[11]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[12]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[12]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[12]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[12]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[13]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[13]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[13]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[13]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[14]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[14]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[14]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[14]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[15]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[15]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[15]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[15]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[1]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[1]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[1]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[1]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[2]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[2]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[2]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[2]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[3]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[3]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[3]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[3]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[4]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[4]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[4]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[4]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[5]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[5]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[5]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[5]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[6]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[6]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[6]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[6]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[7]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[7]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[7]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[7]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[8]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[8]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[8]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[8]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[9]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[9]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:2:R|q[9]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:2:R|q[9]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[0]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[0]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[0]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[0]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[10]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[10]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[10]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[10]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[11]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[11]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[11]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[11]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[12]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[12]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[12]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[12]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[13]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[13]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[13]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[13]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[14]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[14]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[14]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[14]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[15]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[15]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[15]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[15]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[1]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[1]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[1]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[1]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[2]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[2]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[2]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[2]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[3]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[3]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[3]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[3]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[4]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[4]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[4]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[4]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[5]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[5]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[5]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[5]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[6]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[6]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[6]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[6]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[7]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[7]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[7]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[7]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[8]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[8]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[8]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[8]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[9]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[9]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:3:R|q[9]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:3:R|q[9]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[0]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[0]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[0]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[0]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[10]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[10]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[10]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[10]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[11]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[11]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[11]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[11]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[12]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[12]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[12]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[12]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[13]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[13]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[13]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[13]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[14]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[14]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[14]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[14]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[15]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[15]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[15]               ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[15]        ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[1]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[1]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[1]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[1]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[2]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[2]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[2]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[2]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[3]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[3]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[3]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[3]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[4]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[4]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[4]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[4]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[5]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[5]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[5]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[5]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[6]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[6]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[6]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[6]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[7]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[7]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[7]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[7]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[8]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[8]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[8]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[8]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[9]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[9]         ; N/A     ;
+; rf:rf_inst|Reg:\inst_reg:4:R|q[9]                ; post-fitting  ; connected ; Top                            ; post-synthesis    ; rf:rf_inst|Reg:\inst_reg:4:R|q[9]         ; N/A     ;
++--------------------------------------------------+---------------+-----------+--------------------------------+-------------------+-------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------+
-; Partition Merge Partition Statistics                                                                                                   ;
-+---------------------------------------------+-----+------------------+--------------------------------+--------------------------------+
-; Statistic                                   ; Top ; sld_hub:auto_hub ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
-+---------------------------------------------+-----+------------------+--------------------------------+--------------------------------+
-; Estimated Total logic elements              ; 1   ; 151              ; 727                            ; 0                              ;
-;                                             ;     ;                  ;                                ;                                ;
-; Total combinational functions               ; 1   ; 125              ; 351                            ; 0                              ;
-; Logic element usage by number of LUT inputs ;     ;                  ;                                ;                                ;
-;     -- 4 input functions                    ; 0   ; 54               ; 152                            ; 0                              ;
-;     -- 3 input functions                    ; 0   ; 33               ; 102                            ; 0                              ;
-;     -- <=2 input functions                  ; 1   ; 38               ; 97                             ; 0                              ;
-;                                             ;     ;                  ;                                ;                                ;
-; Logic elements by mode                      ;     ;                  ;                                ;                                ;
-;     -- normal mode                          ; 1   ; 117              ; 285                            ; 0                              ;
-;     -- arithmetic mode                      ; 0   ; 8                ; 66                             ; 0                              ;
-;                                             ;     ;                  ;                                ;                                ;
-; Total registers                             ; 0   ; 90               ; 596                            ; 0                              ;
-;     -- Dedicated logic registers            ; 0   ; 90               ; 596                            ; 0                              ;
-;     -- I/O registers                        ; 0   ; 0                ; 0                              ; 0                              ;
-;                                             ;     ;                  ;                                ;                                ;
-; Virtual pins                                ; 0   ; 0                ; 0                              ; 0                              ;
-; I/O pins                                    ; 3   ; 0                ; 0                              ; 0                              ;
-; Embedded Multiplier 9-bit elements          ; 0   ; 0                ; 0                              ; 0                              ;
-; Total memory bits                           ; 0   ; 0                ; 2304                           ; 0                              ;
-; Total RAM block bits                        ; 0   ; 0                ; 0                              ; 0                              ;
-; JTAG                                        ; 1   ; 0                ; 0                              ; 0                              ;
-;                                             ;     ;                  ;                                ;                                ;
-; Connections                                 ;     ;                  ;                                ;                                ;
-;     -- Input Connections                    ; 1   ; 133              ; 855                            ; 0                              ;
-;     -- Registered Input Connections         ; 0   ; 101              ; 656                            ; 0                              ;
-;     -- Output Connections                   ; 795 ; 160              ; 34                             ; 0                              ;
-;     -- Registered Output Connections        ; 0   ; 160              ; 0                              ; 0                              ;
-;                                             ;     ;                  ;                                ;                                ;
-; Internal Connections                        ;     ;                  ;                                ;                                ;
-;     -- Total Connections                    ; 807 ; 839              ; 3206                           ; 0                              ;
-;     -- Registered Connections               ; 0   ; 612              ; 2060                           ; 0                              ;
-;                                             ;     ;                  ;                                ;                                ;
-; External Connections                        ;     ;                  ;                                ;                                ;
-;     -- Top                                  ; 0   ; 122              ; 674                            ; 0                              ;
-;     -- sld_hub:auto_hub                     ; 122 ; 20               ; 151                            ; 0                              ;
-;     -- sld_signaltap:auto_signaltap_0       ; 674 ; 151              ; 64                             ; 0                              ;
-;     -- hard_block:auto_generated_inst       ; 0   ; 0                ; 0                              ; 0                              ;
-;                                             ;     ;                  ;                                ;                                ;
-; Partition Interface                         ;     ;                  ;                                ;                                ;
-;     -- Input Ports                          ; 6   ; 45               ; 122                            ; 0                              ;
-;     -- Output Ports                         ; 1   ; 62               ; 51                             ; 0                              ;
-;     -- Bidir Ports                          ; 0   ; 0                ; 0                              ; 0                              ;
-;                                             ;     ;                  ;                                ;                                ;
-; Registered Ports                            ;     ;                  ;                                ;                                ;
-;     -- Registered Input Ports               ; 0   ; 4                ; 42                             ; 0                              ;
-;     -- Registered Output Ports              ; 0   ; 29               ; 37                             ; 0                              ;
-;                                             ;     ;                  ;                                ;                                ;
-; Port Connectivity                           ;     ;                  ;                                ;                                ;
-;     -- Input Ports driven by GND            ; 0   ; 0                ; 54                             ; 0                              ;
-;     -- Output Ports driven by GND           ; 0   ; 28               ; 2                              ; 0                              ;
-;     -- Input Ports driven by VCC            ; 0   ; 0                ; 10                             ; 0                              ;
-;     -- Output Ports driven by VCC           ; 0   ; 0                ; 1                              ; 0                              ;
-;     -- Input Ports with no Source           ; 0   ; 25               ; 21                             ; 0                              ;
-;     -- Output Ports with no Source          ; 0   ; 0                ; 0                              ; 0                              ;
-;     -- Input Ports with no Fanout           ; 0   ; 30               ; 35                             ; 0                              ;
-;     -- Output Ports with no Fanout          ; 0   ; 29               ; 39                             ; 0                              ;
-+---------------------------------------------+-----+------------------+--------------------------------+--------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                    ;
++---------------------------------------------+------+------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top  ; sld_hub:auto_hub ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+------+------------------+--------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 1624 ; 152              ; 2677                           ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Total combinational functions               ; 1177 ; 126              ; 754                            ; 0                              ;
+; Logic element usage by number of LUT inputs ;      ;                  ;                                ;                                ;
+;     -- 4 input functions                    ; 854  ; 54               ; 434                            ; 0                              ;
+;     -- 3 input functions                    ; 131  ; 35               ; 218                            ; 0                              ;
+;     -- <=2 input functions                  ; 192  ; 37               ; 102                            ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Logic elements by mode                      ;      ;                  ;                                ;                                ;
+;     -- normal mode                          ; 1177 ; 118              ; 685                            ; 0                              ;
+;     -- arithmetic mode                      ; 0    ; 8                ; 69                             ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Total registers                             ; 751  ; 90               ; 2384                           ; 0                              ;
+;     -- Dedicated logic registers            ; 751  ; 90               ; 2384                           ; 0                              ;
+;     -- I/O registers                        ; 0    ; 0                ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Virtual pins                                ; 0    ; 0                ; 0                              ; 0                              ;
+; I/O pins                                    ; 3    ; 0                ; 0                              ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0    ; 0                ; 0                              ; 0                              ;
+; Total memory bits                           ; 0    ; 0                ; 17536                          ; 0                              ;
+; Total RAM block bits                        ; 0    ; 0                ; 0                              ; 0                              ;
+; JTAG                                        ; 1    ; 0                ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Connections                                 ;      ;                  ;                                ;                                ;
+;     -- Input Connections                    ; 1    ; 133              ; 3242                           ; 0                              ;
+;     -- Registered Input Connections         ; 0    ; 101              ; 2682                           ; 0                              ;
+;     -- Output Connections                   ; 3059 ; 283              ; 34                             ; 0                              ;
+;     -- Registered Output Connections        ; 260  ; 283              ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Internal Connections                        ;      ;                  ;                                ;                                ;
+;     -- Total Connections                    ; 9697 ; 966              ; 11487                          ; 0                              ;
+;     -- Registered Connections               ; 1804 ; 741              ; 8974                           ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; External Connections                        ;      ;                  ;                                ;                                ;
+;     -- Top                                  ; 0    ; 122              ; 2938                           ; 0                              ;
+;     -- sld_hub:auto_hub                     ; 122  ; 20               ; 274                            ; 0                              ;
+;     -- sld_signaltap:auto_signaltap_0       ; 2938 ; 274              ; 64                             ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 0    ; 0                ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Partition Interface                         ;      ;                  ;                                ;                                ;
+;     -- Input Ports                          ; 6    ; 45               ; 479                            ; 0                              ;
+;     -- Output Ports                         ; 71   ; 62               ; 289                            ; 0                              ;
+;     -- Bidir Ports                          ; 0    ; 0                ; 0                              ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Registered Ports                            ;      ;                  ;                                ;                                ;
+;     -- Registered Input Ports               ; 0    ; 4                ; 280                            ; 0                              ;
+;     -- Registered Output Ports              ; 0    ; 29               ; 275                            ; 0                              ;
+;                                             ;      ;                  ;                                ;                                ;
+; Port Connectivity                           ;      ;                  ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0    ; 0                ; 18                             ; 0                              ;
+;     -- Output Ports driven by GND           ; 0    ; 28               ; 2                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0    ; 0                ; 14                             ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0    ; 0                ; 1                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0    ; 25               ; 140                            ; 0                              ;
+;     -- Output Ports with no Source          ; 0    ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0    ; 30               ; 154                            ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0    ; 29               ; 277                            ; 0                              ;
++---------------------------------------------+------+------------------+--------------------------------+--------------------------------+
 Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Partition Merge Partition Pin Processing                                                                                ;
-+-----------------------------------------------+--------------------------------+---------------+----------+-------------+
-; Name                                          ; Partition                      ; Type          ; Location ; Status      ;
-+-----------------------------------------------+--------------------------------+---------------+----------+-------------+
-; Clock_50                                      ; Top                            ; Input Port    ; n/a      ;             ;
-;     -- Clock_50                               ; Top                            ; Input Pad     ; Unplaced ; Synthesized ;
-;     -- Clock_50~input                         ; Top                            ; Input Buffer  ; Unplaced ; Synthesized ;
-;     -- sld_signaltap:auto_signaltap_0|acq_clk ; sld_signaltap:auto_signaltap_0 ; Input Port    ; n/a      ;             ;
-;                                               ;                                ;               ;          ;             ;
-; altera_reserved_tck                           ; Top                            ; Input Port    ; n/a      ;             ;
-;     -- altera_reserved_tck                    ; Top                            ; Input Pad     ; Unplaced ; Synthesized ;
-;     -- altera_reserved_tck~input              ; Top                            ; Input Buffer  ; Unplaced ; Synthesized ;
-;                                               ;                                ;               ;          ;             ;
-; altera_reserved_tdi                           ; Top                            ; Input Port    ; n/a      ;             ;
-;     -- altera_reserved_tdi                    ; Top                            ; Input Pad     ; Unplaced ; Synthesized ;
-;     -- altera_reserved_tdi~input              ; Top                            ; Input Buffer  ; Unplaced ; Synthesized ;
-;                                               ;                                ;               ;          ;             ;
-; altera_reserved_tdo                           ; Top                            ; Output Port   ; n/a      ;             ;
-;     -- altera_reserved_tdo                    ; Top                            ; Output Pad    ; Unplaced ; Synthesized ;
-;     -- altera_reserved_tdo~output             ; Top                            ; Output Buffer ; Unplaced ; Synthesized ;
-;                                               ;                                ;               ;          ;             ;
-; altera_reserved_tms                           ; Top                            ; Input Port    ; n/a      ;             ;
-;     -- altera_reserved_tms                    ; Top                            ; Input Pad     ; Unplaced ; Synthesized ;
-;     -- altera_reserved_tms~input              ; Top                            ; Input Buffer  ; Unplaced ; Synthesized ;
-;                                               ;                                ;               ;          ;             ;
-; clk                                           ; Top                            ; Input Port    ; n/a      ;             ;
-;     -- clk                                    ; Top                            ; Input Pad     ; Unplaced ; Synthesized ;
-;     -- clk~input                              ; Top                            ; Input Buffer  ; Unplaced ; Synthesized ;
-;                                               ;                                ;               ;          ;             ;
-; rst_m                                         ; Top                            ; Input Port    ; n/a      ;             ;
-;     -- rst_m                                  ; Top                            ; Input Pad     ; Unplaced ; Synthesized ;
-;     -- rst_m~input                            ; Top                            ; Input Buffer  ; Unplaced ; Synthesized ;
-;                                               ;                                ;               ;          ;             ;
-+-----------------------------------------------+--------------------------------+---------------+----------+-------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Pin Processing                                                                                  ;
++-------------------------------------------------+--------------------------------+---------------+----------+-------------+
+; Name                                            ; Partition                      ; Type          ; Location ; Status      ;
++-------------------------------------------------+--------------------------------+---------------+----------+-------------+
+; Clock_50                                        ; Top                            ; Input Port    ; n/a      ;             ;
+;     -- Clock_50                                 ; Top                            ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- Clock_50~input                           ; Top                            ; Input Buffer  ; Unplaced ; Synthesized ;
+;     -- sld_signaltap:auto_signaltap_0|acq_clk   ; sld_signaltap:auto_signaltap_0 ; Input Port    ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; altera_reserved_tck                             ; Top                            ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tck                      ; Top                            ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tck~input                ; Top                            ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                                 ;                                ;               ;          ;             ;
+; altera_reserved_tdi                             ; Top                            ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tdi                      ; Top                            ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tdi~input                ; Top                            ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                                 ;                                ;               ;          ;             ;
+; altera_reserved_tdo                             ; Top                            ; Output Port   ; n/a      ;             ;
+;     -- altera_reserved_tdo                      ; Top                            ; Output Pad    ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tdo~output               ; Top                            ; Output Buffer ; Unplaced ; Synthesized ;
+;                                                 ;                                ;               ;          ;             ;
+; altera_reserved_tms                             ; Top                            ; Input Port    ; n/a      ;             ;
+;     -- altera_reserved_tms                      ; Top                            ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- altera_reserved_tms~input                ; Top                            ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                                 ;                                ;               ;          ;             ;
+; clk                                             ; Top                            ; Input Port    ; n/a      ;             ;
+;     -- clk                                      ; Top                            ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- clk~input                                ; Top                            ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_0_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_10_                         ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_11_                         ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_12_                         ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_13_                         ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_14_                         ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_15_                         ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_1_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_2_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_3_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_4_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_5_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_6_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_7_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_8_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.IR_reg_q_9_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_0_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_10_                         ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_11_                         ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_12_                         ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_13_                         ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_14_                         ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_15_                         ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_1_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_2_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_3_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_4_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_5_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_6_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_7_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_8_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.PC_reg_q_9_                          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.outputlogic_inst_nextstate_0_~direct ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.outputlogic_inst_nextstate_1_~direct ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.outputlogic_inst_nextstate_2_~direct ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.outputlogic_inst_nextstate_3_~direct ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.outputlogic_inst_nextstate_4_~direct ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_0_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_10_          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_11_          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_12_          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_13_          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_14_          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_15_          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_1_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_2_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_3_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_4_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_5_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_6_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_7_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_8_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_0_R_q_9_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_0_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_10_          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_11_          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_12_          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_13_          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_14_          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_15_          ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_1_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_2_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_3_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_4_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_5_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_6_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_7_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_8_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.rf_inst__inst_reg_1_R_q_9_           ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; pre_syn.bp.z_bit_Q                              ; Top                            ; Output Port   ; n/a      ;             ;
+;                                                 ;                                ;               ;          ;             ;
+; rst_m                                           ; Top                            ; Input Port    ; n/a      ;             ;
+;     -- rst_m                                    ; Top                            ; Input Pad     ; Unplaced ; Synthesized ;
+;     -- rst_m~input                              ; Top                            ; Input Buffer  ; Unplaced ; Synthesized ;
+;                                                 ;                                ;               ;          ;             ;
++-------------------------------------------------+--------------------------------+---------------+----------+-------------+
 
 
-+------------------------------------------------------------------------+
-; Partition Merge Resource Usage Summary                                 ;
-+---------------------------------------------+--------------------------+
-; Resource                                    ; Usage                    ;
-+---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 878                      ;
-;                                             ;                          ;
-; Total combinational functions               ; 477                      ;
-; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 206                      ;
-;     -- 3 input functions                    ; 135                      ;
-;     -- <=2 input functions                  ; 136                      ;
-;                                             ;                          ;
-; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 403                      ;
-;     -- arithmetic mode                      ; 74                       ;
-;                                             ;                          ;
-; Total registers                             ; 686                      ;
-;     -- Dedicated logic registers            ; 686                      ;
-;     -- I/O registers                        ; 0                        ;
-;                                             ;                          ;
-; I/O pins                                    ; 3                        ;
-; Total memory bits                           ; 2304                     ;
-;                                             ;                          ;
-; Embedded Multiplier 9-bit elements          ; 0                        ;
-;                                             ;                          ;
-; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
-; Maximum fan-out                             ; 376                      ;
-; Total fan-out                               ; 3863                     ;
-; Average fan-out                             ; 3.23                     ;
-+---------------------------------------------+--------------------------+
++--------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                       ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 4,453          ;
+;                                             ;                ;
+; Total combinational functions               ; 2057           ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 1342           ;
+;     -- 3 input functions                    ; 384            ;
+;     -- <=2 input functions                  ; 331            ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 1980           ;
+;     -- arithmetic mode                      ; 77             ;
+;                                             ;                ;
+; Total registers                             ; 3225           ;
+;     -- Dedicated logic registers            ; 3225           ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 3              ;
+; Total memory bits                           ; 17536          ;
+;                                             ;                ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; Clock_50~input ;
+; Maximum fan-out                             ; 1798           ;
+; Total fan-out                               ; 18657          ;
+; Average fan-out                             ; 3.43           ;
++---------------------------------------------+----------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Partition Merge RAM Summary                                                                                                                                                                                                                                                                               ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
-; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_iu14:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 128          ; 18           ; 128          ; 18           ; 2304 ; None ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                                                                ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF  ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_m124:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 128          ; 137          ; 128          ; 137          ; 17536 ; None ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------+
 
 
 +--------------------------+
@@ -298,26 +676,26 @@ Note: Resource usage numbers presented for Partitions containing post-synthesis 
 Info: *******************************************************************
 Info: Running Quartus Prime Partition Merge
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Mon Nov 05 18:52:19 2018
+    Info: Processing started: Tue Nov 06 00:55:39 2018
 Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off uP -c uP --merge=on
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (35007): Using synthesis netlist for partition "Top"
 Info (35007): Using synthesis netlist for partition "sld_hub:auto_hub"
 Info (35007): Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
-Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 37 of its 69 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 32 missing sources or connections.
+Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 307 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (35002): Resolved and merged 3 partition(s)
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Critical Warning (138067): Current license file does not support incremental compilation. The Quartus Prime software removes all the user-specified design partitions in the design automatically.
-Info (21057): Implemented 918 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4695 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 892 logic cells
-    Info (21064): Implemented 18 RAM segments
-Info: Quartus Prime Partition Merge was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4922 megabytes
-    Info: Processing ended: Mon Nov 05 18:52:20 2018
+    Info (21061): Implemented 4550 logic cells
+    Info (21064): Implemented 137 RAM segments
+Info: Quartus Prime Partition Merge was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4930 megabytes
+    Info: Processing ended: Tue Nov 06 00:55:40 2018
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

@@ -28,7 +28,7 @@ architecture structure of memory is
 --end component;
 
 type memarr is array(0 to 31) of std_logic_vector(15 downto 0);
-signal RAM : memarr := ("0011000000011111","0100001000100101", "0110001001010000","1100001101111101",X"F000",X"0007",X"F000",X"ABCD",X"7531",others => X"F000");
+signal RAM : memarr := ("0011000000011111","0100001000000101", "0100010000000111","0000001010111000","0000001010100010",X"0001",X"FFFF",X"FFFF",others => X"F000");
 signal addr : std_logic_vector(4 downto 0);
 --signal wrarr : std_logic_vector(63 downto 0) := ( others => '0');
 --signal rd : std_logic_vector(15 downto 0);

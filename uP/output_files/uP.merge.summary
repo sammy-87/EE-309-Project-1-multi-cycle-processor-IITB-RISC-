@@ -1,14 +1,14 @@
-Partition Merge Status : Successful - Mon Nov 05 18:52:20 2018
+Partition Merge Status : Successful - Tue Nov 06 00:55:40 2018
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : uP
 Top-level Entity Name : uP
 Family : Cyclone IV E
-Total logic elements : 878
-    Total combinational functions : 477
-    Dedicated logic registers : 686
-Total registers : 686
+Total logic elements : 4,453
+    Total combinational functions : 2,057
+    Dedicated logic registers : 3,225
+Total registers : 3225
 Total pins : 3
 Total virtual pins : 0
-Total memory bits : 2,304
+Total memory bits : 17,536
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0
